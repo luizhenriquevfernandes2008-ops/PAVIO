@@ -1,0 +1,86 @@
+[
+  { "id": "pistola", "nome": "Pistola de Pavio", "desc": "Confiável. Munição infinita.", "raridade": 0,
+    "sprite": "arma_pistola", "bala": "bala", "cor": "#ffd27f", "som": "pistola",
+    "dano": 1.6, "cadencia": 0.2, "pente": 10, "recarga": 0.8, "projeteis": 1, "dispersao": 4,
+    "velocidade": 300, "alcance": 230, "municao": -1, "recuo": 0, "empurrao": 60, "tremor": 0.002 },
+
+  { "id": "escopeta", "nome": "Escopeta", "desc": "7 chumbos. De perto, ninguém aguenta.", "raridade": 1,
+    "sprite": "arma_escopeta", "bala": "chumbo", "cor": "#ffb43a", "som": "escopeta",
+    "dano": 1.1, "cadencia": 0.55, "pente": 6, "recarga": 1.1, "projeteis": 7, "dispersao": 32,
+    "velocidade": 290, "alcance": 120, "municao": 48, "recuo": 110, "empurrao": 130, "tremor": 0.009 },
+
+  { "id": "metralhadora", "nome": "Submetralhadora", "desc": "Chuva de balas. Segura o gatilho.", "raridade": 1,
+    "sprite": "arma_metralhadora", "bala": "bala", "cor": "#ffe066", "som": "smg",
+    "dano": 0.75, "cadencia": 0.075, "pente": 32, "recarga": 1.3, "projeteis": 1, "dispersao": 12,
+    "velocidade": 330, "alcance": 210, "municao": 192, "recuo": 0, "empurrao": 25, "tremor": 0.0015 },
+
+  { "id": "revolver", "nome": "Canhão de Mão", "desc": "Lento e brutal. Atravessa 4 inimigos.", "raridade": 2,
+    "sprite": "arma_revolver", "bala": "bala_grande", "cor": "#fff4d6", "som": "revolver",
+    "dano": 6, "cadencia": 0.6, "pente": 6, "recarga": 1.4, "projeteis": 1, "dispersao": 1, "perfura": 4,
+    "velocidade": 420, "alcance": 300, "municao": 36, "recuo": 60, "empurrao": 160, "tremor": 0.007 },
+
+  { "id": "lancador", "nome": "Lança-Bombas", "desc": "Bombas que explodem em área.", "raridade": 2,
+    "sprite": "arma_lancador", "bala": "granada", "cor": "#ff6a3d", "som": "lancador",
+    "dano": 7, "explosao": 30, "cadencia": 0.8, "pente": 4, "recarga": 1.7, "projeteis": 1, "dispersao": 3,
+    "velocidade": 200, "alcance": 170, "municao": 16, "recuo": 70, "empurrao": 0, "tremor": 0.004 },
+
+  { "id": "macarico", "nome": "Maçarico", "desc": "Jato de fogo curto que incendeia.", "raridade": 1,
+    "sprite": "arma_macarico", "bala": "chama", "cor": "#ff9a2e", "som": "macarico",
+    "dano": 0.45, "cadencia": 0.045, "pente": 70, "recarga": 1.6, "projeteis": 1, "dispersao": 16, "queima": true,
+    "velocidade": 160, "alcance": 75, "municao": 280, "recuo": 0, "empurrao": 15, "tremor": 0.001 },
+
+  { "id": "ricochete", "nome": "Bate-Volta", "desc": "Balas pesadas que quicam 3 vezes nas paredes.", "raridade": 1,
+    "sprite": "arma_ricochete", "bala": "bala_grande", "cor": "#7fffd4", "som": "revolver",
+    "dano": 2.2, "cadencia": 0.3, "pente": 8, "recarga": 1.1, "projeteis": 1, "dispersao": 3, "ricochete": 3,
+    "velocidade": 280, "alcance": 420, "municao": 64, "recuo": 30, "empurrao": 80, "tremor": 0.003 },
+
+  { "id": "vagalume", "nome": "Pistola Vagalume", "desc": "Vagalumes que perseguem os monstros.", "raridade": 1,
+    "sprite": "arma_vagalume", "bala": "vagalume", "cor": "#b6ff5e", "som": "vagalume",
+    "dano": 1.3, "cadencia": 0.16, "pente": 14, "recarga": 1.0, "projeteis": 1, "dispersao": 22, "teleguiado": 4,
+    "velocidade": 170, "alcance": 280, "municao": 112, "recuo": 0, "empurrao": 30, "tremor": 0.001 },
+
+  { "id": "tesla", "nome": "Bastão Tesla", "desc": "O raio salta para mais 3 inimigos.", "raridade": 2,
+    "sprite": "arma_tesla", "bala": "faisca", "cor": "#8fe3ff", "som": "tesla",
+    "dano": 1.2, "cadencia": 0.22, "pente": 20, "recarga": 1.2, "projeteis": 1, "dispersao": 6, "eletrico": 3,
+    "velocidade": 360, "alcance": 150, "municao": 120, "recuo": 0, "empurrao": 20, "tremor": 0.002 },
+
+  { "id": "gelo", "nome": "Pistola de Gelo", "desc": "Chance alta de congelar quem acertar.", "raridade": 1,
+    "sprite": "arma_gelo", "bala": "cristal", "cor": "#bfefff", "som": "gelo",
+    "dano": 1.4, "cadencia": 0.25, "pente": 12, "recarga": 1.0, "projeteis": 1, "dispersao": 5, "congela": 0.35,
+    "velocidade": 260, "alcance": 230, "municao": 96, "recuo": 0, "empurrao": 40, "tremor": 0.002 },
+
+  { "id": "gatling", "nome": "Gatling de Cera", "desc": "Demora a esquentar. Depois, ninguém para.", "raridade": 3,
+    "sprite": "arma_gatling", "bala": "bala", "cor": "#ffd27f", "som": "smg",
+    "dano": 0.6, "cadencia": 0.045, "aquecimento": 1.2, "pente": 120, "recarga": 2.4, "projeteis": 1, "dispersao": 14,
+    "velocidade": 340, "alcance": 220, "municao": 480, "recuo": 0, "empurrao": 20, "tremor": 0.002 },
+
+  { "id": "cluster", "nome": "Granada Cluster", "desc": "Explode e espalha 8 fragmentos.", "raridade": 3,
+    "sprite": "arma_cluster", "bala": "granada", "cor": "#ff6a3d", "som": "lancador",
+    "dano": 4, "explosao": 22, "fragmenta": 8, "cadencia": 0.9, "pente": 3, "recarga": 1.8, "projeteis": 1, "dispersao": 3,
+    "velocidade": 190, "alcance": 150, "municao": 12, "recuo": 60, "empurrao": 0, "tremor": 0.004 },
+
+  { "id": "laser", "nome": "Raio de Pavio", "desc": "Laser instantâneo que atravessa tudo que é vivo.", "raridade": 3,
+    "sprite": "arma_laser", "bala": "laser", "cor": "#ff5a8a", "som": "laser", "laser": true,
+    "dano": 3, "cadencia": 0.45, "pente": 8, "recarga": 1.3, "projeteis": 1, "dispersao": 0, "perfura": 99,
+    "velocidade": 0, "alcance": 320, "municao": 48, "recuo": 40, "empurrao": 50, "tremor": 0.005 },
+
+  { "id": "serra", "nome": "Serra Bumerangue", "desc": "Vai, corta tudo no caminho e volta.", "raridade": 2,
+    "sprite": "arma_serra", "bala": "serra", "cor": "#cfd8dc", "som": "serra",
+    "dano": 2, "bumerangue": true, "perfura": 99, "cadencia": 0.5, "pente": 4, "recarga": 0.8, "projeteis": 1, "dispersao": 0,
+    "velocidade": 230, "alcance": 150, "municao": 60, "recuo": 0, "empurrao": 50, "tremor": 0.002 },
+
+  { "id": "zarabatana", "nome": "Zarabatana Tóxica", "desc": "Agulhas que envenenam e atravessam.", "raridade": 1,
+    "sprite": "arma_zarabatana", "bala": "agulha", "cor": "#9cff6b", "som": "agulha",
+    "dano": 0.8, "veneno": true, "perfura": 1, "cadencia": 0.18, "pente": 16, "recarga": 1.0, "projeteis": 1, "dispersao": 2,
+    "velocidade": 380, "alcance": 260, "municao": 128, "recuo": 0, "empurrao": 10, "tremor": 0.001 },
+
+  { "id": "vazio", "nome": "Canhão do Vazio", "desc": "Um buraco negro lento que puxa tudo e explode.", "raridade": 3,
+    "sprite": "arma_vazio", "bala": "orbe", "cor": "#b06bff", "som": "vazio",
+    "dano": 9, "atrator": true, "explosao": 40, "cadencia": 1.4, "pente": 2, "recarga": 1.8, "projeteis": 1, "dispersao": 0,
+    "velocidade": 110, "alcance": 160, "municao": 10, "recuo": 90, "empurrao": 0, "tremor": 0.006 },
+
+  { "id": "vela_romana", "nome": "Vela Romana", "desc": "3 fogos de artifício teleguiados que explodem.", "raridade": 2,
+    "sprite": "arma_vela_romana", "bala": "foguete", "cor": "#ff5af0", "som": "foguete",
+    "dano": 2, "projeteis": 3, "dispersao": 40, "teleguiado": 3, "explosao": 14, "cadencia": 0.7, "pente": 6, "recarga": 1.4,
+    "velocidade": 210, "alcance": 260, "municao": 36, "recuo": 20, "empurrao": 0, "tremor": 0.003 }
+]

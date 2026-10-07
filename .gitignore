@@ -1,0 +1,7 @@
+node_modules/
+dist/
+release/
+Thumbs.db
+desktop.ini
+.DS_Store
+.claude/

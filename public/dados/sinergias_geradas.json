@@ -1,0 +1,1251 @@
+[
+ {
+  "id": "t_fogo_3",
+  "itens": [],
+  "tags": {
+   "fogo": 3
+  },
+  "nome": "PIRA",
+  "desc": "balas incendeiam, balas explodem",
+  "mods": {
+   "queima": true,
+   "explosao": 8
+  }
+ },
+ {
+  "id": "t_fogo_5",
+  "itens": [],
+  "tags": {
+   "fogo": 5
+  },
+  "nome": "INFERNO",
+  "desc": "+15% dano, balas explodem",
+  "mods": {
+   "explosao": 14
+  },
+  "stats": {
+   "dano": 1.15
+  },
+  "visual": {
+   "chama": "vermelha"
+  }
+ },
+ {
+  "id": "t_gelo_3",
+  "itens": [],
+  "tags": {
+   "gelo": 3
+  },
+  "nome": "NEVASCA",
+  "desc": "15% de congelar",
+  "mods": {
+   "congela": 0.15
+  }
+ },
+ {
+  "id": "t_gelo_5",
+  "itens": [],
+  "tags": {
+   "gelo": 5
+  },
+  "nome": "ERA DO GELO",
+  "desc": "25% de congelar, balas se partem em 3",
+  "mods": {
+   "congela": 0.25,
+   "fragmenta": 2
+  },
+  "visual": {
+   "chama": "ciano"
+  }
+ },
+ {
+  "id": "t_raio_3",
+  "itens": [],
+  "tags": {
+   "raio": 3
+  },
+  "nome": "TEMPESTADE",
+  "desc": "raio pula 2x",
+  "mods": {
+   "eletrico": 2
+  }
+ },
+ {
+  "id": "t_raio_5",
+  "itens": [],
+  "tags": {
+   "raio": 5
+  },
+  "nome": "DEUS DO TROVÃO",
+  "desc": "raio pula 3x, balas mais rápidas",
+  "mods": {
+   "eletrico": 3,
+   "velBala": 1.2
+  },
+  "visual": {
+   "chama": "azul"
+  }
+ },
+ {
+  "id": "t_veneno_3",
+  "itens": [],
+  "tags": {
+   "veneno": 3
+  },
+  "nome": "PRAGA",
+  "desc": "venenoForca, balas envenenam",
+  "mods": {
+   "veneno": true
+  },
+  "stats": {
+   "venenoForca": 1.5
+  }
+ },
+ {
+  "id": "t_veneno_5",
+  "itens": [],
+  "tags": {
+   "veneno": 5
+  },
+  "nome": "PESTE NEGRA",
+  "desc": "venenoForca",
+  "stats": {
+   "venenoForca": 2.2
+  },
+  "visual": {
+   "chama": "verde"
+  }
+ },
+ {
+  "id": "t_polvora_3",
+  "itens": [],
+  "tags": {
+   "polvora": 3
+  },
+  "nome": "FOGOS",
+  "desc": "balas explodem",
+  "mods": {
+   "explosao": 10
+  }
+ },
+ {
+  "id": "t_polvora_5",
+  "itens": [],
+  "tags": {
+   "polvora": 5
+  },
+  "nome": "ARTILHARIA",
+  "desc": "balas explodem, balas se partem em 3, fragmentoExplode",
+  "mods": {
+   "explosao": 18,
+   "fragmenta": 2,
+   "fragmentoExplode": true
+  }
+ },
+ {
+  "id": "t_vidro_3",
+  "itens": [],
+  "tags": {
+   "vidro": 3
+  },
+  "nome": "CACOS",
+  "desc": "balas se partem em 3",
+  "mods": {
+   "fragmenta": 2
+  }
+ },
+ {
+  "id": "t_vidro_5",
+  "itens": [],
+  "tags": {
+   "vidro": 5
+  },
+  "nome": "VITRAL",
+  "desc": "balas se partem em 5, atravessam 1",
+  "mods": {
+   "fragmenta": 4,
+   "perfura": 1
+  },
+  "visual": {
+   "chama": "branca"
+  }
+ },
+ {
+  "id": "t_mola_3",
+  "itens": [],
+  "tags": {
+   "mola": 3
+  },
+  "nome": "PINBALL",
+  "desc": "quicam 2x",
+  "mods": {
+   "ricochete": 2
+  }
+ },
+ {
+  "id": "t_mola_5",
+  "itens": [],
+  "tags": {
+   "mola": 5
+  },
+  "nome": "BATE-REBATE",
+  "desc": "quicam 4x, balas mais rápidas",
+  "mods": {
+   "ricochete": 4,
+   "velBala": 1.15
+  }
+ },
+ {
+  "id": "t_olhar_3",
+  "itens": [],
+  "tags": {
+   "olhar": 3
+  },
+  "nome": "MIRA LASER",
+  "desc": "balas perseguem",
+  "mods": {
+   "teleguiado": 1.5
+  }
+ },
+ {
+  "id": "t_olhar_5",
+  "itens": [],
+  "tags": {
+   "olhar": 5
+  },
+  "nome": "OLHO QUE TUDO VÊ",
+  "desc": "+30% alcance, balas perseguem",
+  "mods": {
+   "teleguiado": 3
+  },
+  "stats": {
+   "alcance": 1.3
+  }
+ },
+ {
+  "id": "t_lamina_3",
+  "itens": [],
+  "tags": {
+   "lamina": 3
+  },
+  "nome": "ESPETO",
+  "desc": "atravessam 2",
+  "mods": {
+   "perfura": 2
+  }
+ },
+ {
+  "id": "t_lamina_5",
+  "itens": [],
+  "tags": {
+   "lamina": 5
+  },
+  "nome": "MIL LÂMINAS",
+  "desc": "atravessam 5, multiplos",
+  "mods": {
+   "perfura": 5,
+   "multiplos": 1
+  }
+ },
+ {
+  "id": "t_sombra_3",
+  "itens": [],
+  "tags": {
+   "sombra": 3
+  },
+  "nome": "PENUMBRA",
+  "desc": "esquiva perfeita mais fácil, +5% crítico",
+  "stats": {
+   "raioEsquiva": 4,
+   "critico": 0.05
+  }
+ },
+ {
+  "id": "t_sombra_5",
+  "itens": [],
+  "tags": {
+   "sombra": 5
+  },
+  "nome": "SOMBRA VIVA",
+  "desc": "+10% crítico, espectral",
+  "mods": {
+   "espectral": true
+  },
+  "stats": {
+   "critico": 0.1
+  },
+  "visual": {
+   "chama": "roxa"
+  }
+ },
+ {
+  "id": "t_luz_3",
+  "itens": [],
+  "tags": {
+   "luz": 3
+  },
+  "nome": "AURORA",
+  "desc": "+30% luz, +3 chama por sala",
+  "stats": {
+   "luz": 1.3,
+   "curaSala": 3
+  }
+ },
+ {
+  "id": "t_luz_5",
+  "itens": [],
+  "tags": {
+   "luz": 5
+  },
+  "nome": "SOL NASCENTE",
+  "desc": "+60% luz, +15% dano",
+  "stats": {
+   "luz": 1.6,
+   "dano": 1.15
+  },
+  "visual": {
+   "chama": "branca"
+  }
+ },
+ {
+  "id": "t_sangue_3",
+  "itens": [],
+  "tags": {
+   "sangue": 3
+  },
+  "nome": "SEDE",
+  "desc": "abate cura 1",
+  "stats": {
+   "roubaVida": 1
+  }
+ },
+ {
+  "id": "t_sangue_5",
+  "itens": [],
+  "tags": {
+   "sangue": 5
+  },
+  "nome": "VAMPIRO",
+  "desc": "abate cura 2, +10% dano",
+  "stats": {
+   "roubaVida": 2,
+   "dano": 1.1
+  },
+  "visual": {
+   "chama": "vermelha"
+  }
+ },
+ {
+  "id": "t_ouro_3",
+  "itens": [],
+  "tags": {
+   "ouro": 3
+  },
+  "nome": "TESOURO",
+  "desc": "+30% cera",
+  "stats": {
+   "ceraBonus": 1.3
+  }
+ },
+ {
+  "id": "t_ouro_5",
+  "itens": [],
+  "tags": {
+   "ouro": 5
+  },
+  "nome": "TOQUE DE MIDAS",
+  "desc": "+70% cera, +1 sorte",
+  "stats": {
+   "ceraBonus": 1.7,
+   "sorte": 1
+  },
+  "visual": {
+   "chama": "dourada"
+  }
+ },
+ {
+  "id": "t_tempo_3",
+  "itens": [],
+  "tags": {
+   "tempo": 3
+  },
+  "nome": "RELOJOEIRO",
+  "desc": "dash volta 20% antes, câmera lenta maior",
+  "stats": {
+   "cooldownDash": 0.8,
+   "lentoExtra": 1.3
+  }
+ },
+ {
+  "id": "t_tempo_5",
+  "itens": [],
+  "tags": {
+   "tempo": 5
+  },
+  "nome": "PARAR O TEMPO",
+  "desc": "câmera lenta maior, dashes",
+  "stats": {
+   "lentoExtra": 2,
+   "dashes": 1
+  }
+ },
+ {
+  "id": "t_eco_3",
+  "itens": [],
+  "tags": {
+   "eco": 3
+  },
+  "nome": "REPETECO",
+  "desc": "20% de tiro duplo",
+  "mods": {
+   "duploTiro": 0.2
+  }
+ },
+ {
+  "id": "t_eco_5",
+  "itens": [],
+  "tags": {
+   "eco": 5
+  },
+  "nome": "ECO INFINITO",
+  "desc": "35% de tiro duplo, multiplos",
+  "mods": {
+   "duploTiro": 0.35,
+   "multiplos": 1
+  }
+ },
+ {
+  "id": "t_vento_3",
+  "itens": [],
+  "tags": {
+   "vento": 3
+  },
+  "nome": "VENTANIA",
+  "desc": "+12% velocidade",
+  "stats": {
+   "velocidade": 1.12
+  }
+ },
+ {
+  "id": "t_vento_5",
+  "itens": [],
+  "tags": {
+   "vento": 5
+  },
+  "nome": "FURACÃO",
+  "desc": "+20% velocidade, dashes, balas mais rápidas",
+  "stats": {
+   "velocidade": 1.2,
+   "dashes": 1
+  },
+  "mods": {
+   "velBala": 1.3
+  }
+ },
+ {
+  "id": "t_terra_3",
+  "itens": [],
+  "tags": {
+   "terra": 3
+  },
+  "nome": "ROCHEDO",
+  "desc": "-10% dano recebido, +30% empurrão",
+  "stats": {
+   "danoRecebido": 0.9,
+   "empurrao": 1.3
+  }
+ },
+ {
+  "id": "t_terra_5",
+  "itens": [],
+  "tags": {
+   "terra": 5
+  },
+  "nome": "TERREMOTO",
+  "desc": "-20% dano recebido, balas maiores, balas explodem",
+  "stats": {
+   "danoRecebido": 0.8
+  },
+  "mods": {
+   "tamanho": 1.4,
+   "explosao": 8
+  }
+ },
+ {
+  "id": "t_sorte_3",
+  "itens": [],
+  "tags": {
+   "sorte": 3
+  },
+  "nome": "TREVO DE QUATRO FOLHAS",
+  "desc": "+1 sorte, +5% crítico",
+  "stats": {
+   "sorte": 1,
+   "critico": 0.05
+  }
+ },
+ {
+  "id": "t_sorte_5",
+  "itens": [],
+  "tags": {
+   "sorte": 5
+  },
+  "nome": "JACKPOT",
+  "desc": "+2 sorte, +12% crítico",
+  "stats": {
+   "sorte": 2,
+   "critico": 0.12
+  }
+ },
+ {
+  "id": "t_anel_3",
+  "itens": [],
+  "tags": {
+   "anel": 3
+  },
+  "nome": "O SENHOR DOS ANÉIS",
+  "desc": "+20% dano",
+  "stats": {
+   "dano": 1.2
+  }
+ },
+ {
+  "id": "t_colar_3",
+  "itens": [],
+  "tags": {
+   "colar": 3
+  },
+  "nome": "COLAR DE PÉROLAS",
+  "desc": "+25 chama máx",
+  "stats": {
+   "chamaMax": 25
+  }
+ },
+ {
+  "id": "t_amuleto_3",
+  "itens": [],
+  "tags": {
+   "amuleto": 3
+  },
+  "nome": "AMULETO DA SORTE",
+  "desc": "+8% crítico",
+  "stats": {
+   "critico": 0.08
+  }
+ },
+ {
+  "id": "t_pavio_3",
+  "itens": [],
+  "tags": {
+   "pavio": 3
+  },
+  "nome": "PAVIO INFINITO",
+  "desc": "chama dura +25%",
+  "stats": {
+   "decaimento": 0.75
+  }
+ },
+ {
+  "id": "t_lente_3",
+  "itens": [],
+  "tags": {
+   "lente": 3
+  },
+  "nome": "TELESCÓPIO",
+  "desc": "+30% alcance, balas perseguem",
+  "stats": {
+   "alcance": 1.3
+  },
+  "mods": {
+   "teleguiado": 0.5
+  }
+ },
+ {
+  "id": "t_frasco_3",
+  "itens": [],
+  "tags": {
+   "frasco": 3
+  },
+  "nome": "ALQUIMIA",
+  "desc": "cera cura +40%",
+  "stats": {
+   "curaCera": 1.4
+  }
+ },
+ {
+  "id": "t_pena_3",
+  "itens": [],
+  "tags": {
+   "pena": 3
+  },
+  "nome": "LEVE COMO UMA PENA",
+  "desc": "+12% velocidade, esquiva perfeita mais fácil",
+  "stats": {
+   "velocidade": 1.12,
+   "raioEsquiva": 2
+  }
+ },
+ {
+  "id": "t_dente_3",
+  "itens": [],
+  "tags": {
+   "dente": 3
+  },
+  "nome": "MANDÍBULA",
+  "desc": "+10% dano, +30% empurrão, abate cura 0.5",
+  "stats": {
+   "dano": 1.1,
+   "empurrao": 1.3,
+   "roubaVida": 0.5
+  }
+ },
+ {
+  "id": "t_olho_3",
+  "itens": [],
+  "tags": {
+   "olho": 3
+  },
+  "nome": "TERCEIRO OLHO",
+  "desc": "+4% crítico, balas perseguem",
+  "stats": {
+   "critico": 0.04
+  },
+  "mods": {
+   "teleguiado": 1.5
+  }
+ },
+ {
+  "id": "t_coracao_3",
+  "itens": [],
+  "tags": {
+   "coracao": 3
+  },
+  "nome": "CORAÇÃO VALENTE",
+  "desc": "+35 chama máx",
+  "stats": {
+   "chamaMax": 35
+  }
+ },
+ {
+  "id": "t_moeda_3",
+  "itens": [],
+  "tags": {
+   "moeda": 3
+  },
+  "nome": "COFRINHO",
+  "desc": "+30% cera",
+  "stats": {
+   "ceraBonus": 1.3
+  }
+ },
+ {
+  "id": "t_chave_3",
+  "itens": [],
+  "tags": {
+   "chave": 3
+  },
+  "nome": "MOLHO DE CHAVES",
+  "desc": "+1.5 sorte",
+  "stats": {
+   "sorte": 1.5
+  }
+ },
+ {
+  "id": "t_pergaminho_3",
+  "itens": [],
+  "tags": {
+   "pergaminho": 3
+  },
+  "nome": "BIBLIOTECA PROIBIDA",
+  "desc": "recarga 30% mais rápida",
+  "stats": {
+   "recarga": 0.7
+  }
+ },
+ {
+  "id": "t_runa_3",
+  "itens": [],
+  "tags": {
+   "runa": 3
+  },
+  "nome": "CÍRCULO RÚNICO",
+  "desc": "+15% dano, raio pula 1x",
+  "stats": {
+   "dano": 1.15
+  },
+  "mods": {
+   "eletrico": 1
+  }
+ },
+ {
+  "id": "t_sino_3",
+  "itens": [],
+  "tags": {
+   "sino": 3
+  },
+  "nome": "CARRILHÃO",
+  "desc": "parry rebate +3, parry mais fácil",
+  "stats": {
+   "parryExtra": 3,
+   "janelaParry": 0.03
+  }
+ },
+ {
+  "id": "t_espelho_3",
+  "itens": [],
+  "tags": {
+   "espelho": 3
+  },
+  "nome": "SALA DOS ESPELHOS",
+  "desc": "parry rebate +2, multiplos",
+  "stats": {
+   "parryExtra": 2
+  },
+  "mods": {
+   "multiplos": 1
+  }
+ },
+ {
+  "id": "t_vela_3",
+  "itens": [],
+  "tags": {
+   "vela": 3
+  },
+  "nome": "PROCISSÃO",
+  "desc": "+6 chama por sala",
+  "stats": {
+   "curaSala": 6
+  },
+  "visual": {
+   "chamas": 3
+  }
+ },
+ {
+  "id": "t_cristal_3",
+  "itens": [],
+  "tags": {
+   "cristal": 3
+  },
+  "nome": "GEODO",
+  "desc": "balas maiores, balas se partem em 2",
+  "mods": {
+   "tamanho": 1.3,
+   "fragmenta": 1
+  }
+ },
+ {
+  "id": "t_osso_3",
+  "itens": [],
+  "tags": {
+   "osso": 3
+  },
+  "nome": "OSSUÁRIO",
+  "desc": "+40% empurrão, atravessam 1",
+  "stats": {
+   "empurrao": 1.4
+  },
+  "mods": {
+   "perfura": 1
+  }
+ },
+ {
+  "id": "t_mascara_3",
+  "itens": [],
+  "tags": {
+   "mascara": 3
+  },
+  "nome": "BAILE DE MÁSCARAS",
+  "desc": "esquiva perfeita mais fácil, +4% crítico",
+  "stats": {
+   "raioEsquiva": 4,
+   "critico": 0.04
+  }
+ },
+ {
+  "id": "t_luva_3",
+  "itens": [],
+  "tags": {
+   "luva": 3
+  },
+  "nome": "MÃOS LIGEIRAS",
+  "desc": "atira 15% mais rápido",
+  "stats": {
+   "cadencia": 0.85
+  }
+ },
+ {
+  "id": "t_bota_3",
+  "itens": [],
+  "tags": {
+   "bota": 3
+  },
+  "nome": "BOTAS DE SETE LÉGUAS",
+  "desc": "+15% velocidade, dashes",
+  "stats": {
+   "velocidade": 1.15,
+   "dashes": 1
+  }
+ },
+ {
+  "id": "t_capa_3",
+  "itens": [],
+  "tags": {
+   "capa": 3
+  },
+  "nome": "SUPER-HERÓI",
+  "desc": "-15% dano recebido",
+  "stats": {
+   "danoRecebido": 0.85
+  }
+ },
+ {
+  "id": "t_coroa_3",
+  "itens": [],
+  "tags": {
+   "coroa": 3
+  },
+  "nome": "REALEZA",
+  "desc": "+10% dano, +20% cera, +3% crítico",
+  "stats": {
+   "dano": 1.1,
+   "ceraBonus": 1.2,
+   "critico": 0.03
+  }
+ },
+ {
+  "id": "t_relogio_3",
+  "itens": [],
+  "tags": {
+   "relogio": 3
+  },
+  "nome": "RELÓGIO SUÍÇO",
+  "desc": "dash volta 25% antes",
+  "stats": {
+   "cooldownDash": 0.75
+  }
+ },
+ {
+  "id": "t_dado_3",
+  "itens": [],
+  "tags": {
+   "dado": 3
+  },
+  "nome": "CASSINO",
+  "desc": "+6% crítico, +1 sorte",
+  "stats": {
+   "critico": 0.06,
+   "sorte": 1
+  }
+ },
+ {
+  "id": "t_carta_3",
+  "itens": [],
+  "tags": {
+   "carta": 3
+  },
+  "nome": "BARALHO COMPLETO",
+  "desc": "15% de tiro duplo",
+  "mods": {
+   "duploTiro": 0.15
+  }
+ },
+ {
+  "id": "t_bussola_3",
+  "itens": [],
+  "tags": {
+   "bussola": 3
+  },
+  "nome": "NORTE VERDADEIRO",
+  "desc": "puxa cera de longe, balas perseguem",
+  "stats": {
+   "ima": 1
+  },
+  "mods": {
+   "teleguiado": 0.6
+  }
+ },
+ {
+  "id": "t_lanterna_3",
+  "itens": [],
+  "tags": {
+   "lanterna": 3
+  },
+  "nome": "FAROL",
+  "desc": "+40% luz, +2 chama por sala",
+  "stats": {
+   "luz": 1.4,
+   "curaSala": 2
+  }
+ },
+ {
+  "id": "t_pedra_3",
+  "itens": [],
+  "tags": {
+   "pedra": 3
+  },
+  "nome": "PEDREIRA",
+  "desc": "+30% pente, balas maiores",
+  "stats": {
+   "pente": 1.3
+  },
+  "mods": {
+   "tamanho": 1.1
+  }
+ },
+ {
+  "id": "t_fogo_gelo",
+  "itens": [],
+  "tags": {
+   "fogo": 2,
+   "gelo": 2
+  },
+  "nome": "VAPOR",
+  "desc": "+5% dano, balas incendeiam, 10% de congelar",
+  "stats": {
+   "dano": 1.05
+  },
+  "mods": {
+   "queima": true,
+   "congela": 0.1
+  }
+ },
+ {
+  "id": "t_fogo_polvora",
+  "itens": [],
+  "tags": {
+   "fogo": 2,
+   "polvora": 2
+  },
+  "nome": "NAPALM",
+  "desc": "balas incendeiam, balas explodem",
+  "mods": {
+   "queima": true,
+   "explosao": 10
+  }
+ },
+ {
+  "id": "t_fogo_vento",
+  "itens": [],
+  "tags": {
+   "fogo": 2,
+   "vento": 2
+  },
+  "nome": "INCÊNDIO FLORESTAL",
+  "desc": "+5% velocidade, balas incendeiam, balas mais rápidas",
+  "stats": {
+   "velocidade": 1.05
+  },
+  "mods": {
+   "queima": true,
+   "velBala": 1.2
+  }
+ },
+ {
+  "id": "t_gelo_vidro",
+  "itens": [],
+  "tags": {
+   "gelo": 2,
+   "vidro": 2
+  },
+  "nome": "CRISTAL DE GELO",
+  "desc": "10% de congelar, balas se partem em 3",
+  "mods": {
+   "congela": 0.1,
+   "fragmenta": 2
+  }
+ },
+ {
+  "id": "t_raio_mola",
+  "itens": [],
+  "tags": {
+   "raio": 2,
+   "mola": 2
+  },
+  "nome": "CURTO-CIRCUITO",
+  "desc": "quicam 1x, raio pula 1x",
+  "mods": {
+   "ricochete": 1,
+   "eletrico": 1
+  }
+ },
+ {
+  "id": "t_raio_vento",
+  "itens": [],
+  "tags": {
+   "raio": 2,
+   "vento": 2
+  },
+  "nome": "TROVOADA",
+  "desc": "raio pula 2x",
+  "mods": {
+   "eletrico": 2
+  }
+ },
+ {
+  "id": "t_veneno_sangue",
+  "itens": [],
+  "tags": {
+   "veneno": 2,
+   "sangue": 2
+  },
+  "nome": "SANGUE PODRE",
+  "desc": "abate cura 0.5, venenoForca",
+  "stats": {
+   "roubaVida": 0.5,
+   "venenoForca": 1.3
+  }
+ },
+ {
+  "id": "t_veneno_terra",
+  "itens": [],
+  "tags": {
+   "veneno": 2,
+   "terra": 2
+  },
+  "nome": "PÂNTANO",
+  "desc": "balas envenenam, balas maiores",
+  "mods": {
+   "veneno": true,
+   "tamanho": 1.2
+  }
+ },
+ {
+  "id": "t_sombra_luz",
+  "itens": [],
+  "tags": {
+   "sombra": 2,
+   "luz": 2
+  },
+  "nome": "ECLIPSE",
+  "desc": "+10% crítico",
+  "stats": {
+   "critico": 0.1
+  }
+ },
+ {
+  "id": "t_sombra_lamina",
+  "itens": [],
+  "tags": {
+   "sombra": 2,
+   "lamina": 2
+  },
+  "nome": "ASSASSINO",
+  "desc": "+6% crítico, atravessam 2",
+  "stats": {
+   "critico": 0.06
+  },
+  "mods": {
+   "perfura": 2
+  }
+ },
+ {
+  "id": "t_olhar_lamina",
+  "itens": [],
+  "tags": {
+   "olhar": 2,
+   "lamina": 2
+  },
+  "nome": "FRANCO-ATIRADOR",
+  "desc": "+20% alcance, balas perseguem, atravessam 2",
+  "stats": {
+   "alcance": 1.2
+  },
+  "mods": {
+   "teleguiado": 1,
+   "perfura": 2
+  }
+ },
+ {
+  "id": "t_olhar_eco",
+  "itens": [],
+  "tags": {
+   "olhar": 2,
+   "eco": 2
+  },
+  "nome": "ENXAME",
+  "desc": "multiplos, balas perseguem",
+  "mods": {
+   "multiplos": 1,
+   "teleguiado": 0.8
+  }
+ },
+ {
+  "id": "t_mola_vidro",
+  "itens": [],
+  "tags": {
+   "mola": 2,
+   "vidro": 2
+  },
+  "nome": "ESTILHAÇOS QUICANTES",
+  "desc": "quicam 2x, balas se partem em 2",
+  "mods": {
+   "ricochete": 2,
+   "fragmenta": 1
+  }
+ },
+ {
+  "id": "t_ouro_sorte",
+  "itens": [],
+  "tags": {
+   "ouro": 2,
+   "sorte": 2
+  },
+  "nome": "SORTE GRANDE",
+  "desc": "+30% cera, +1 sorte",
+  "stats": {
+   "ceraBonus": 1.3,
+   "sorte": 1
+  }
+ },
+ {
+  "id": "t_ouro_sangue",
+  "itens": [],
+  "tags": {
+   "ouro": 2,
+   "sangue": 2
+  },
+  "nome": "SANGUE AZUL",
+  "desc": "+10% dano, abate cura 0.5",
+  "stats": {
+   "dano": 1.1,
+   "roubaVida": 0.5
+  }
+ },
+ {
+  "id": "t_tempo_eco",
+  "itens": [],
+  "tags": {
+   "tempo": 2,
+   "eco": 2
+  },
+  "nome": "DÉJÀ VU",
+  "desc": "dash volta 15% antes, 20% de tiro duplo",
+  "stats": {
+   "cooldownDash": 0.85
+  },
+  "mods": {
+   "duploTiro": 0.2
+  }
+ },
+ {
+  "id": "t_tempo_vento",
+  "itens": [],
+  "tags": {
+   "tempo": 2,
+   "vento": 2
+  },
+  "nome": "VELOCISTA",
+  "desc": "+12% velocidade, atira 10% mais rápido",
+  "stats": {
+   "velocidade": 1.12,
+   "cadencia": 0.9
+  }
+ },
+ {
+  "id": "t_terra_polvora",
+  "itens": [],
+  "tags": {
+   "terra": 2,
+   "polvora": 2
+  },
+  "nome": "MINA TERRESTRE",
+  "desc": "balas explodem, balas maiores",
+  "mods": {
+   "explosao": 14,
+   "tamanho": 1.2
+  }
+ },
+ {
+  "id": "t_luz_fogo",
+  "itens": [],
+  "tags": {
+   "luz": 2,
+   "fogo": 2
+  },
+  "nome": "SOL",
+  "desc": "+30% luz, +8% dano, balas incendeiam",
+  "stats": {
+   "luz": 1.3,
+   "dano": 1.08
+  },
+  "mods": {
+   "queima": true
+  }
+ },
+ {
+  "id": "t_gelo_sombra",
+  "itens": [],
+  "tags": {
+   "gelo": 2,
+   "sombra": 2
+  },
+  "nome": "NOITE POLAR",
+  "desc": "esquiva perfeita mais fácil, 12% de congelar",
+  "stats": {
+   "raioEsquiva": 2
+  },
+  "mods": {
+   "congela": 0.12
+  }
+ },
+ {
+  "id": "t_raio_lamina",
+  "itens": [],
+  "tags": {
+   "raio": 2,
+   "lamina": 2
+  },
+  "nome": "LÂMINA ELÉTRICA",
+  "desc": "atravessam 1, raio pula 1x",
+  "mods": {
+   "perfura": 1,
+   "eletrico": 1
+  }
+ },
+ {
+  "id": "t_eco_polvora",
+  "itens": [],
+  "tags": {
+   "eco": 2,
+   "polvora": 2
+  },
+  "nome": "REAÇÃO EM CADEIA",
+  "desc": "balas explodem, 10% de tiro duplo",
+  "mods": {
+   "explosao": 8,
+   "duploTiro": 0.1
+  }
+ },
+ {
+  "id": "t_sorte_vidro",
+  "itens": [],
+  "tags": {
+   "sorte": 2,
+   "vidro": 2
+  },
+  "nome": "ESPELHO QUEBRADO",
+  "desc": "+8% crítico, balas se partem em 2",
+  "stats": {
+   "critico": 0.08
+  },
+  "mods": {
+   "fragmenta": 1
+  }
+ },
+ {
+  "id": "t_sangue_lamina",
+  "itens": [],
+  "tags": {
+   "sangue": 2,
+   "lamina": 2
+  },
+  "nome": "SANGRIA",
+  "desc": "abate cura 0.8, atravessam 1",
+  "stats": {
+   "roubaVida": 0.8
+  },
+  "mods": {
+   "perfura": 1
+  }
+ }
+]

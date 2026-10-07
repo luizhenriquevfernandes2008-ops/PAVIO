@@ -1,0 +1,83 @@
+[
+  {
+    "id": "vela", "nome": "Velinha", "tipo": "vela", "cor": "#ffe066",
+    "desc": "A última vela da Catedral. Equilibrada em tudo.",
+    "armas": ["pistola", "escopeta"], "itens": []
+  },
+  {
+    "id": "luiz", "nome": "Luiz", "tipo": "humano", "cor": "#f4ead6",
+    "desc": "O criador. Pistolas gêmeas, a tatuagem \"E\" e um sorriso que não apaga.",
+    "humano": { "pele": "#c68a5e", "cabelo": "#1b1320", "estilo": "ondulado", "roupa": "#f2efe6", "gola": true, "calca": "#cdbb98", "tatuagem": true },
+    "armas": ["ebano_marfim", "escopeta"], "itens": ["tatuagem_e"], "ativo": "dado_cera",
+    "stats": { "dano": 1.05 }
+  },
+  {
+    "id": "ana", "nome": "Ana", "tipo": "humano", "cor": "#c99a62",
+    "desc": "Capuz de pelúcia e a Polaroid do Luiz: o flash atordoa os monstros.",
+    "humano": { "pele": "#f0c8a8", "cabelo": "#1b1320", "estilo": "franja", "roupa": "#1b1325", "calca": "#2a2033", "capuz": "#c99a62", "cruz": true },
+    "armas": ["polaroid_luiz", "pistola"], "itens": ["sorriso_luiz", "capuz_pelucia"],
+    "stats": { "velocidade": 1.08, "chamaMax": -10 }
+  },
+  {
+    "id": "henrique", "nome": "Luizãooo", "tipo": "humano", "cor": "#a0784a",
+    "desc": "Grandão de bigode: muita chama, mais lento, e quem encosta voa.",
+    "humano": { "pele": "#e8b896", "cabelo": "#1b1320", "estilo": "baguncado", "roupa": "#3a4a5a", "calca": "#3a3f4a", "barba": "#3a2a20", "largo": true },
+    "armas": ["espingarda_exterminador", "pistola"], "itens": ["bigode_lendario"], "ativo": "polvora_viva",
+    "stats": { "velocidade": 0.92, "chamaMax": 30 }
+  },
+  {
+    "id": "fosforo", "nome": "Fósforo", "tipo": "chama", "cor": "#e2452b",
+    "desc": "Pouca chama, muito dano. Rápido e frágil.",
+    "corpo": ["......kkkk......", "......krrk......", "......krrk......", "......kttk......", "......kttk......", "......kTtk......", "......kTtk......", "......kkkk......"],
+    "armas": ["macarico", "pistola"], "itens": ["chama_azul"],
+    "stats": { "chamaMax": -40, "dano": 1.4, "velocidade": 1.15 }
+  },
+  {
+    "id": "lamparina", "nome": "Lamparina", "tipo": "chama", "cor": "#7fd7ff",
+    "desc": "Uma chama protegida por vidro: dura muito, anda devagar.",
+    "corpo": ["....kkkkkkkk....", "...kzzzzzzzzk...", "...kzwzzzzzzk...", "...kzzzyyzzzk...", "...kzzzzzzzzk...", "....kAAAAAAk....", "...kaaaaaaaak...", "...kkkkkkkkkk..."],
+    "armas": ["lancador", "pistola"], "itens": ["lamparina"],
+    "stats": { "chamaMax": 60, "decaimento": 0.6, "velocidade": 0.85 }
+  },
+  {
+    "id": "aniversario", "nome": "Vela de Aniversário", "tipo": "chama", "cor": "#ff8ac8",
+    "desc": "Três chamas, três tiros. Cada um mais fraco.",
+    "corpo": [".....kkkkkk.....", "....kwWwWwWk....", "....kWwWwWwk....", "....kwWwWwWk....", "....kWwWwWwk....", "....kwWwWwWk....", "....kWwWwWwk....", "....kkkkkkkk...."],
+    "cores": { "w": "#ffffff", "W": "#ff8ac8" }, "chamas": 3,
+    "armas": ["lanca_confete", "pistola"], "itens": ["pavio_duplo"],
+    "stats": { "dano": 0.85 }
+  },
+  {
+    "id": "isqueiro", "nome": "Isqueiro", "tipo": "chama", "cor": "#cfd8dc",
+    "desc": "Metal e fogo: luva de fogo e balas que incendeiam.",
+    "corpo": [".....kkkkkk.....", "....kAAAAAAk....", "....kAmAAAak....", "....kkkkkkkk....", "....kAAAAAak....", "....kAmAAAak....", "....kaaaaaak....", "....kkkkkkkk...."],
+    "armas": ["luva_fogo", "pistola"], "itens": ["cera_quente"], "ativo": "polvora_viva",
+    "stats": { "cadencia": 0.9 }
+  },
+  {
+    "id": "bruxinha", "nome": "A Bruxinha", "tipo": "chama", "cor": "#b06bff",
+    "desc": "Cera preta, chapéu de bruxa e a NIX no colo.",
+    "cores": { "w": "#2a1f33", "W": "#1b1325" }, "chama": "roxa", "acessorios": ["chapeu", "olhos_azuis"],
+    "armas": ["nix", "pistola"], "itens": ["chapeu_bruxa"],
+    "stats": { "chamaMax": -10 }
+  },
+  {
+    "id": "cavaleiro", "nome": "Cavaleiro", "tipo": "pack", "cor": "#cfd8dc",
+    "desc": "Escudo por sala e escopeta. Aguenta tudo.",
+    "armas": ["escopeta", "pistola"], "itens": ["casca"],
+    "stats": { "chamaMax": 20, "velocidade": 0.95 }
+  },
+  {
+    "id": "elfa", "nome": "Elfa", "tipo": "pack", "cor": "#7fdc8a",
+    "desc": "Arco que atravessa tudo e passos leves.",
+    "armas": ["arco_heroi", "pistola"], "itens": ["asas_mariposa"],
+    "stats": { "velocidade": 1.1 }
+  },
+  {
+    "id": "mago", "nome": "Mago", "tipo": "pack", "cor": "#c86bff",
+    "desc": "Bobina de Tesla e um orbe de cera que gira.",
+    "armas": ["tesla", "pistola"], "itens": ["orbe_cera"],
+    "stats": { "chamaMax": -10 }
+  },
+  {"id":"moedinha","nome":"Moedinha","tipo":"chama","cor":"#ffd23f","desc":"Uma vela de ouro que vive de apostas. Muita sorte e cera, pouca chama.","corpo":[".....kkkkkk.....","....kwwwwwwk....","....kwkwwkWk....","....kwkwwkWk....","....kwwmmwWk....","....kwmwwmWk....","....kWwmmwWk....","....kWWWWWWk...."],"cores":{"w":"#ffd23f","W":"#c08a10","m":"#fff4b0"},"chama":"dourada","armas":["pistola","escopeta"],"itens":[],"ativo":"dado_cera","stats":{"sorte":2,"chamaMax":-15,"ceraBonus":1.3}}
+]

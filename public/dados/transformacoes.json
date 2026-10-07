@@ -1,0 +1,61 @@
+[
+  {
+    "id": "tr_igreja", "nome": "VELA DE IGREJA", "transformacao": true, "itens": [],
+    "familia": { "tags": ["luz", "vela", "lanterna", "coracao"], "n": 3 },
+    "desc": "Transformação! Atira também para trás e para os lados. Cura 3 ao limpar.",
+    "mods": { "traseiro": 1, "multiplos": 2 }, "stats": { "chamaMax": 15 },
+    "gatilhos": [{ "quando": "limpar", "efeitos": [["curar", { "qtd": 3 }]] }],
+    "visual": { "cera": "#fff8ec", "chama": "dourada", "acessorios": ["aureola"] }
+  },
+  {
+    "id": "tr_vodu", "nome": "VELA VODU", "transformacao": true, "itens": [],
+    "familia": { "tags": ["sangue", "sombra", "mascara", "dente"], "n": 3 },
+    "desc": "Transformação! Abates curam 1 e a maldição pula de um monstro para outro.",
+    "stats": { "roubaVida": 1 }, "passivos": ["ressonancia"],
+    "visual": { "cera": "#4a2a3a", "chama": "vermelha", "acessorios": ["olhos_vermelhos", "costura"] }
+  },
+  {
+    "id": "tr_vapor", "nome": "VELA A VAPOR", "transformacao": true, "itens": [],
+    "familia": { "tags": ["raio", "relogio", "pedra", "tempo"], "n": 3 },
+    "desc": "Transformação! A cada 3s uma descarga elétrica pula entre 6 monstros.",
+    "gatilhos": [{ "quando": "tempo", "cada": 3, "efeitos": [["raios", { "saltos": 6, "dano": 4 }]] }],
+    "visual": { "cera": "#9a93a3", "chama": "azul", "acessorios": ["antena", "oculos"] }
+  },
+  {
+    "id": "tr_bruxa", "nome": "VELA BRUXA", "transformacao": true, "itens": [],
+    "familia": { "tags": ["veneno", "frasco", "olho"], "n": 3 },
+    "desc": "Transformação! O dash deixa nuvens de veneno e o veneno fica 2x mais forte.",
+    "stats": { "venenoForca": 2 },
+    "gatilhos": [{ "quando": "dash", "cd": 0.5, "efeitos": [["nuvem", { "raio": 26, "seg": 4, "dps": 3, "tipo": "veneno" }]] }],
+    "visual": { "cera": "#5a8a4a", "chama": "verde", "acessorios": ["chapeu"] }
+  },
+  {
+    "id": "tr_anjo", "nome": "VELA ANJO", "transformacao": true, "itens": [],
+    "familia": { "tags": ["vento", "pena", "bota", "capa"], "n": 3 },
+    "desc": "Transformação! +1 dash, +20% velocidade e intocável por mais tempo no dash.",
+    "stats": { "dashes": 1, "velocidade": 1.2, "raioEsquiva": 4 },
+    "visual": { "cera": "#ffffff", "chama": "branca", "acessorios": ["asas", "aureola"] }
+  },
+  {
+    "id": "tr_demonio", "nome": "VELA DEMÔNIO", "transformacao": true, "itens": [],
+    "familia": { "tags": ["fogo", "polvora", "osso"], "n": 3 },
+    "desc": "Transformação! Todo monstro que morre explode. +15% dano.",
+    "stats": { "dano": 1.15 },
+    "gatilhos": [{ "quando": "matar", "efeitos": [["explosao", { "raio": 22, "dano": 4 }]] }],
+    "visual": { "cera": "#8a1a1a", "chama": "vermelha", "acessorios": ["chifres", "olhos_vermelhos"] }
+  },
+  {
+    "id": "tr_fantasma", "nome": "VELA FANTASMA", "transformacao": true, "itens": [],
+    "familia": { "tags": ["sombra", "espelho", "eco", "cristal"], "n": 3 },
+    "desc": "Transformação! Balas atravessam paredes e a esquiva perfeita fica fácil.",
+    "mods": { "espectral": true }, "stats": { "raioEsquiva": 4 },
+    "visual": { "cera": "#d8e0ff", "chama": "ciano", "acessorios": ["lencol"] }
+  },
+  {
+    "id": "tr_rei", "nome": "VELA REI", "transformacao": true, "itens": [],
+    "familia": { "tags": ["ouro", "coroa", "moeda", "sorte", "dado"], "n": 3 },
+    "desc": "Transformação! Cera em dobro, +1 sorte e +8% crítico.",
+    "stats": { "ceraBonus": 2, "sorte": 1, "critico": 0.08 },
+    "visual": { "cera": "#ffd23f", "chama": "dourada", "acessorios": ["coroa", "monoculo"] }
+  }
+]

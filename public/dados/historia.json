@@ -1,0 +1,91 @@
+{
+  "_leia": "A história do jogo. \"quadros\" é o começo; \"final\" aparece ao vencer O Apagador, \"final2\" ao vencer O Pavio Negro e \"final3\" ao vencer O Acendedor (saindo pela luz). Cada quadro tem uma cena (o desenho, em src/cenas/Historia.ts) e o texto que aparece letra por letra.",
+  "quadros": [
+    {
+      "cena": "catedral",
+      "texto": "Há muito tempo, no fundo da Catedral de Cera, mil velas guardavam a Chama Primeira: a luz que mantinha a escuridão presa debaixo da terra."
+    },
+    {
+      "cena": "apagador",
+      "texto": "Mas a escuridão tem fome. Numa noite sem lua, O Apagador subiu das profundezas... e soprou as velas, uma por uma."
+    },
+    {
+      "cena": "escondida",
+      "texto": "Todas, menos uma. Pequena demais para ser notada, uma velinha tremia escondida atrás do altar."
+    },
+    {
+      "cena": "roubo",
+      "texto": "O Apagador levou a Chama Primeira para o fundo da masmorra. Sem ela, o mundo começou a esfriar. Sem ela, tudo se apaga."
+    },
+    {
+      "cena": "arma",
+      "texto": "Então a velinha fez o que nenhuma vela jamais fez. Pegou uma arma... e desceu."
+    }
+  ],
+  "final": [
+    {
+      "cena": "fim_apagador",
+      "texto": "Com um último sopro sem forças, O Apagador se desfez em fumaça. Pela primeira vez, a escuridão recuou."
+    },
+    {
+      "cena": "fim_lanterna",
+      "texto": "No fundo da masmorra, a Chama Primeira ainda queimava, presa numa lanterna velha."
+    },
+    {
+      "cena": "fim_toque",
+      "texto": "A velinha encostou seu pavio na Chama Primeira..."
+    },
+    {
+      "cena": "fim_catedral",
+      "texto": "...e a luz subiu por todos os andares, acendendo vela por vela, até o alto da Catedral de Cera."
+    },
+    {
+      "cena": "fim_altar",
+      "texto": "Desde aquela noite, a menor das velas guarda o altar. E ela nunca mais teve medo do escuro."
+    }
+  ],
+  "final2": [
+    {
+      "cena": "fim2_sombra",
+      "texto": "O Pavio Negro caiu de joelhos. Por baixo da cera preta, a velinha reconheceu o próprio rosto."
+    },
+    {
+      "cena": "fim2_medo",
+      "texto": "Ele era o medo dela. Todo o escuro que ela engoliu para continuar descendo."
+    },
+    {
+      "cena": "fim2_abraco",
+      "texto": "Em vez de apagá-lo, a velinha o abraçou. A sombra derreteu e voltou para dentro dela."
+    },
+    {
+      "cena": "fim_catedral",
+      "texto": "Inteira de novo, ela subiu. Por onde a sua luz passava, a sombra ia junto... e protegia."
+    },
+    {
+      "cena": "fim2_dupla",
+      "texto": "Desde então, toda vela da Catedral tem uma sombra. Para lembrar que o escuro também faz parte da chama."
+    }
+  ],
+  "final3": [
+    {
+      "cena": "fim3_acendedor",
+      "texto": "O Acendedor caiu. Foi ele quem riscou o primeiro fósforo do mundo, há muito, muito tempo."
+    },
+    {
+      "cena": "fim3_fosforo",
+      "texto": "Ele tinha tanto medo do escuro que quis acender tudo, para sempre. Até o mundo virar cinza."
+    },
+    {
+      "cena": "fim3_entrega",
+      "texto": "A velinha ofereceu a ele a sua chama: pequena, gasta, teimosa. \"Não precisa queimar tudo para ser luz.\""
+    },
+    {
+      "cena": "fim3_amanhecer",
+      "texto": "O Acendedor sorriu e se apagou em paz. E, pela primeira vez, o sol nasceu sobre a Catedral."
+    },
+    {
+      "cena": "fim3_sol",
+      "texto": "A menor das velas finalmente descansou. Ela não precisava mais brilhar sozinha: agora havia o dia."
+    }
+  ]
+}

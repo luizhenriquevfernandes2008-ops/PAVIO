@@ -1,0 +1,1577 @@
+{
+  "_leia": "custo = quanto 'pesa' no orçamento de inimigos da sala · andarMin = a partir de qual andar aparece · grupo = surge em bando.",
+  "morcego": {
+    "nome": "Diabrete",
+    "desc": "Voa em zigue-zague. Atira a partir do andar 2.",
+    "custo": 1,
+    "andarMin": 1,
+    "grupo": 2,
+    "vida": 3,
+    "velocidade": 92,
+    "dano": 12,
+    "cera": [
+      1,
+      2
+    ],
+    "ia": "zigue-zague",
+    "sprite": "morcego",
+    "corpo": [
+      10,
+      10
+    ],
+    "projetil": {
+      "velocidade": 80,
+      "dano": 10,
+      "intervalo": 2.6,
+      "quantidade": 1,
+      "dispersao": 0
+    }
+  },
+  "goblin": {
+    "nome": "Goblin",
+    "desc": "Fraco, mas vem em bando e corre muito.",
+    "custo": 1,
+    "andarMin": 1,
+    "grupo": 3,
+    "vida": 3,
+    "velocidade": 105,
+    "dano": 10,
+    "cera": [
+      0,
+      2
+    ],
+    "ia": "enxame",
+    "sprite": "goblin",
+    "corpo": [
+      10,
+      10
+    ]
+  },
+  "zumbi": {
+    "nome": "Zumbizinho",
+    "desc": "Servo dos mortos. Sempre vem em dupla.",
+    "custo": 1,
+    "andarMin": 1,
+    "grupo": 2,
+    "vida": 2,
+    "velocidade": 82,
+    "dano": 9,
+    "cera": [
+      0,
+      1
+    ],
+    "ia": "enxame",
+    "sprite": "zumbi",
+    "corpo": [
+      10,
+      10
+    ]
+  },
+  "esqueleto": {
+    "nome": "Esqueleto",
+    "desc": "Treme antes do bote. No andar 2, solta balas.",
+    "custo": 2,
+    "andarMin": 1,
+    "vida": 7,
+    "velocidade": 56,
+    "dano": 14,
+    "cera": [
+      1,
+      3
+    ],
+    "ia": "perseguir",
+    "sprite": "esqueleto",
+    "corpo": [
+      10,
+      10
+    ],
+    "projetil": {
+      "velocidade": 90,
+      "dano": 11,
+      "intervalo": 0,
+      "quantidade": 4,
+      "dispersao": 360
+    }
+  },
+  "slime": {
+    "nome": "Lodo",
+    "desc": "Pula em você e se divide ao morrer.",
+    "custo": 2,
+    "andarMin": 1,
+    "vida": 7,
+    "velocidade": 0,
+    "salto": 160,
+    "dano": 12,
+    "cera": [
+      1,
+      2
+    ],
+    "ia": "saltar",
+    "divide": "slime_mini",
+    "sprite": "slime",
+    "corpo": [
+      12,
+      9
+    ]
+  },
+  "slime_mini": {
+    "nome": "Lodinho",
+    "desc": "",
+    "custo": 0,
+    "andarMin": 99,
+    "vida": 2,
+    "velocidade": 0,
+    "salto": 185,
+    "dano": 8,
+    "cera": [
+      0,
+      1
+    ],
+    "ia": "saltar",
+    "sprite": "slime",
+    "escala": 0.65,
+    "corpo": [
+      12,
+      9
+    ]
+  },
+  "carnical": {
+    "nome": "Carniçal",
+    "desc": "Lento e duro. Ao morrer, solta dois zumbis.",
+    "custo": 3,
+    "andarMin": 1,
+    "vida": 12,
+    "velocidade": 44,
+    "dano": 16,
+    "cera": [
+      2,
+      3
+    ],
+    "ia": "enxame",
+    "divide": "zumbi",
+    "sprite": "carnical",
+    "corpo": [
+      10,
+      10
+    ]
+  },
+  "mago": {
+    "nome": "Xamã",
+    "desc": "Fica longe e atira leques de balas roxas.",
+    "custo": 3,
+    "andarMin": 1,
+    "vida": 7,
+    "velocidade": 48,
+    "dano": 13,
+    "cera": [
+      2,
+      3
+    ],
+    "ia": "atirador",
+    "sprite": "mago",
+    "corpo": [
+      10,
+      12
+    ],
+    "projetil": {
+      "velocidade": 105,
+      "dano": 13,
+      "intervalo": 1.6,
+      "quantidade": 3,
+      "dispersao": 30
+    }
+  },
+  "lesminha": {
+    "nome": "Lesminha",
+    "desc": "Rápida e nojenta. Vem em bando.",
+    "custo": 1,
+    "andarMin": 2,
+    "grupo": 3,
+    "vida": 2,
+    "velocidade": 74,
+    "dano": 9,
+    "cera": [
+      0,
+      1
+    ],
+    "ia": "enxame",
+    "sprite": "lesminha",
+    "corpo": [
+      10,
+      8
+    ]
+  },
+  "abobora": {
+    "nome": "Cabeça de Abóbora",
+    "desc": "Corre até você e EXPLODE. Mate de longe.",
+    "custo": 3,
+    "andarMin": 1,
+    "vida": 5,
+    "velocidade": 100,
+    "dano": 24,
+    "cera": [
+      1,
+      3
+    ],
+    "ia": "kamikaze",
+    "explosao": 30,
+    "sprite": "abobora",
+    "corpo": [
+      10,
+      12
+    ]
+  },
+  "zumbi_gelo": {
+    "nome": "Zumbi Gelado",
+    "desc": "Atira cristais que te deixam lento.",
+    "custo": 3,
+    "andarMin": 2,
+    "vida": 9,
+    "velocidade": 40,
+    "dano": 12,
+    "cera": [
+      2,
+      3
+    ],
+    "ia": "atirador",
+    "sprite": "zumbi_gelo",
+    "corpo": [
+      10,
+      10
+    ],
+    "projetil": {
+      "velocidade": 85,
+      "dano": 10,
+      "intervalo": 2,
+      "quantidade": 2,
+      "dispersao": 16,
+      "efeito": "lento"
+    }
+  },
+  "chifrudo": {
+    "nome": "Chifrudo",
+    "desc": "Mira, avisa com uma linha vermelha e investe.",
+    "custo": 4,
+    "andarMin": 1,
+    "vida": 11,
+    "velocidade": 50,
+    "dano": 18,
+    "cera": [
+      2,
+      4
+    ],
+    "ia": "investida",
+    "sprite": "chifrudo",
+    "corpo": [
+      10,
+      12
+    ]
+  },
+  "lesma": {
+    "nome": "Lesma de Cera",
+    "desc": "Gorda e lenta. Deixa um rastro de veneno.",
+    "custo": 4,
+    "andarMin": 2,
+    "vida": 18,
+    "velocidade": 24,
+    "dano": 14,
+    "cera": [
+      3,
+      4
+    ],
+    "ia": "rastro",
+    "sprite": "lesma",
+    "corpo": [
+      12,
+      12
+    ]
+  },
+  "anjo": {
+    "nome": "Anjo Caído",
+    "desc": "Se teletransporta e dispara rajadas.",
+    "custo": 4,
+    "andarMin": 2,
+    "vida": 8,
+    "velocidade": 60,
+    "dano": 12,
+    "cera": [
+      2,
+      4
+    ],
+    "ia": "teleporte",
+    "sprite": "anjo",
+    "corpo": [
+      10,
+      10
+    ],
+    "projetil": {
+      "velocidade": 145,
+      "dano": 12,
+      "intervalo": 2.2,
+      "quantidade": 3,
+      "dispersao": 0
+    }
+  },
+  "escudeiro": {
+    "nome": "Orc Escudeiro",
+    "desc": "Escudo de frente: flanqueie ou quebre ele.",
+    "custo": 4,
+    "andarMin": 2,
+    "vida": 15,
+    "velocidade": 46,
+    "dano": 16,
+    "cera": [
+      3,
+      4
+    ],
+    "ia": "escudo",
+    "sprite": "escudeiro",
+    "corpo": [
+      12,
+      12
+    ]
+  },
+  "orc": {
+    "nome": "Orc Mascarado",
+    "desc": "Lento e resistente. Leques e anéis de balas.",
+    "custo": 5,
+    "andarMin": 2,
+    "vida": 19,
+    "velocidade": 36,
+    "dano": 18,
+    "cera": [
+      3,
+      5
+    ],
+    "ia": "tanque",
+    "sprite": "orc",
+    "corpo": [
+      12,
+      12
+    ],
+    "projetil": {
+      "velocidade": 95,
+      "dano": 13,
+      "intervalo": 2.6,
+      "quantidade": 7,
+      "dispersao": 60
+    }
+  },
+  "doutor": {
+    "nome": "Doutor da Peste",
+    "desc": "Cura os monstros e joga veneno. Mate primeiro!",
+    "custo": 4,
+    "andarMin": 2,
+    "vida": 9,
+    "velocidade": 40,
+    "dano": 12,
+    "cera": [
+      3,
+      4
+    ],
+    "ia": "curandeiro",
+    "sprite": "doutor",
+    "corpo": [
+      10,
+      12
+    ],
+    "projetil": {
+      "velocidade": 80,
+      "dano": 10,
+      "intervalo": 2.8,
+      "quantidade": 1,
+      "dispersao": 0,
+      "efeito": "veneno"
+    }
+  },
+  "wogol": {
+    "nome": "Wogol",
+    "desc": "Gira no lugar disparando espirais.",
+    "custo": 5,
+    "andarMin": 3,
+    "vida": 15,
+    "velocidade": 30,
+    "dano": 14,
+    "cera": [
+      3,
+      5
+    ],
+    "ia": "torre",
+    "sprite": "wogol",
+    "corpo": [
+      12,
+      12
+    ],
+    "projetil": {
+      "velocidade": 85,
+      "dano": 12,
+      "intervalo": 3,
+      "quantidade": 3,
+      "dispersao": 360
+    }
+  },
+  "necromante": {
+    "nome": "Necromante",
+    "desc": "Invoca zumbis sem parar. Mate primeiro!",
+    "custo": 5,
+    "andarMin": 3,
+    "vida": 11,
+    "velocidade": 42,
+    "dano": 12,
+    "cera": [
+      3,
+      4
+    ],
+    "ia": "invocador",
+    "invoca": "zumbi",
+    "sprite": "necromante",
+    "corpo": [
+      10,
+      12
+    ],
+    "projetil": {
+      "velocidade": 75,
+      "dano": 11,
+      "intervalo": 0,
+      "quantidade": 8,
+      "dispersao": 360
+    }
+  },
+  "ogro": {
+    "nome": "O Ogro Encerado",
+    "desc": "Chefe do andar 1. Pula e faz o chão tremer.",
+    "custo": 0,
+    "andarMin": 99,
+    "chefe": true,
+    "vida": 130,
+    "velocidade": 55,
+    "dano": 20,
+    "cera": [
+      0,
+      0
+    ],
+    "ia": "chefe_ogro",
+    "sprite": "ogro",
+    "escala": 2,
+    "corpo": [
+      12,
+      12
+    ],
+    "semEscala": true,
+    "projetil": {
+      "velocidade": 95,
+      "dano": 14,
+      "intervalo": 0,
+      "quantidade": 16,
+      "dispersao": 360
+    },
+    "falas": {
+      "inicio": "Cera fresquinha... vou te esmagar e passar no pão!",
+      "furia": "AGORA EU FIQUEI BRAVO!",
+      "morte": "Ugh... eu só queria um lanche..."
+    }
+  },
+  "rei_podre": {
+    "nome": "O Rei Podre",
+    "desc": "Chefe do andar 2. Vomita veneno e chama zumbis.",
+    "custo": 0,
+    "andarMin": 99,
+    "chefe": true,
+    "vida": 180,
+    "velocidade": 40,
+    "dano": 20,
+    "cera": [
+      0,
+      0
+    ],
+    "ia": "chefe_podre",
+    "invoca": "zumbi",
+    "sprite": "rei_podre",
+    "escala": 2,
+    "corpo": [
+      12,
+      12
+    ],
+    "semEscala": true,
+    "projetil": {
+      "velocidade": 90,
+      "dano": 13,
+      "intervalo": 0,
+      "quantidade": 12,
+      "dispersao": 360,
+      "efeito": "veneno"
+    },
+    "falas": {
+      "inicio": "Ajoelhe-se diante do rei... e apodreça.",
+      "furia": "Minha coroa! Você vai pagar com cera!",
+      "morte": "Meu reino... de lama..."
+    }
+  },
+  "apagador": {
+    "nome": "O Apagador",
+    "desc": "O chefe final. Quer apagar a sua chama.",
+    "custo": 0,
+    "andarMin": 99,
+    "chefe": true,
+    "vida": 240,
+    "velocidade": 46,
+    "dano": 20,
+    "cera": [
+      0,
+      0
+    ],
+    "ia": "chefe",
+    "sprite": "apagador",
+    "escala": 2,
+    "corpo": [
+      12,
+      12
+    ],
+    "semEscala": true,
+    "projetil": {
+      "velocidade": 90,
+      "dano": 14,
+      "intervalo": 0,
+      "quantidade": 14,
+      "dispersao": 360
+    },
+    "falas": {
+      "inicio": "Pequena chama. Apaguei mil velas. Você é só mais uma.",
+      "furia": "COMO VOCÊ AINDA BRILHA?!",
+      "morte": "A escuridão... não acaba... comigo..."
+    }
+  },
+  "pavio_negro": {
+    "nome": "O Pavio Negro",
+    "desc": "A sua sombra. Atira, se esquiva e até dá parry.",
+    "custo": 0,
+    "andarMin": 99,
+    "chefe": true,
+    "vida": 320,
+    "velocidade": 70,
+    "dano": 22,
+    "cera": [
+      0,
+      0
+    ],
+    "ia": "chefe_negro",
+    "sprite": "pavio_negro",
+    "escala": 2.2,
+    "corpo": [
+      8,
+      6
+    ],
+    "semEscala": true,
+    "projetil": {
+      "velocidade": 150,
+      "dano": 15,
+      "intervalo": 0,
+      "quantidade": 16,
+      "dispersao": 360
+    },
+    "falas": {
+      "inicio": "Eu sou o que você esconde. Seu medo. Sua sombra.",
+      "furia": "Se me apagar, você apaga a si mesma!",
+      "morte": "Então... você me aceita?"
+    }
+  },
+  "sombra": {
+    "nome": "Sombra",
+    "desc": "Pedaço do Pavio Negro. Corre e explode.",
+    "custo": 0,
+    "andarMin": 99,
+    "vida": 6,
+    "velocidade": 85,
+    "dano": 14,
+    "cera": [
+      1,
+      2
+    ],
+    "ia": "kamikaze",
+    "sprite": "pavio_negro",
+    "escala": 1.2,
+    "corpo": [
+      8,
+      6
+    ],
+    "explosao": 24
+  },
+  "minador": {
+    "nome": "Goblin Minador",
+    "desc": "Espalha minas. Não pise perto.",
+    "custo": 3,
+    "andarMin": 2,
+    "vida": 6,
+    "velocidade": 50,
+    "dano": 12,
+    "cera": [
+      2,
+      3
+    ],
+    "ia": "minador",
+    "sprite": "goblin",
+    "tinta": "#ff8a6a",
+    "corpo": [
+      10,
+      8
+    ]
+  },
+  "esqueleto_arqueiro": {
+    "nome": "Esqueleto Arqueiro",
+    "desc": "Fica longe e atira flechas rápidas.",
+    "custo": 3,
+    "andarMin": 3,
+    "vida": 6,
+    "velocidade": 40,
+    "dano": 12,
+    "cera": [
+      2,
+      3
+    ],
+    "ia": "atirador",
+    "sprite": "esqueleto",
+    "tinta": "#ffe0a0",
+    "corpo": [
+      10,
+      8
+    ],
+    "projetil": {
+      "velocidade": 190,
+      "dano": 12,
+      "intervalo": 1.4,
+      "quantidade": 1,
+      "dispersao": 0
+    }
+  },
+  "fantasma": {
+    "nome": "Alma Penada",
+    "desc": "Atravessa paredes. Só apanha quando aparece.",
+    "custo": 4,
+    "andarMin": 3,
+    "vida": 9,
+    "velocidade": 55,
+    "dano": 14,
+    "cera": [
+      2,
+      4
+    ],
+    "ia": "fantasma",
+    "sprite": "anjo",
+    "tinta": "#d8e8ff",
+    "corpo": [
+      10,
+      10
+    ],
+    "projetil": {
+      "velocidade": 90,
+      "dano": 11,
+      "intervalo": 0,
+      "quantidade": 6,
+      "dispersao": 360
+    }
+  },
+  "cavaleiro_oco": {
+    "nome": "Cavaleiro Oco",
+    "desc": "Armadura vazia que mira e atropela.",
+    "custo": 5,
+    "andarMin": 4,
+    "vida": 22,
+    "velocidade": 40,
+    "dano": 18,
+    "cera": [
+      3,
+      5
+    ],
+    "ia": "investida",
+    "sprite": "heroi_cavaleira",
+    "tinta": "#8a8a9a",
+    "corpo": [
+      10,
+      8
+    ]
+  },
+  "broto_cinza": {
+    "nome": "Broto de Cinza",
+    "desc": "Planta parada que cospe esporos em espiral.",
+    "custo": 3,
+    "andarMin": 99,
+    "andares": [
+      7
+    ],
+    "vida": 16,
+    "velocidade": 0,
+    "dano": 12,
+    "cera": [
+      2,
+      4
+    ],
+    "ia": "torre",
+    "sprite": "lesma",
+    "tinta": "#a8a898",
+    "corpo": [
+      12,
+      8
+    ],
+    "projetil": {
+      "velocidade": 80,
+      "dano": 12,
+      "intervalo": 2.6,
+      "quantidade": 3,
+      "dispersao": 360
+    }
+  },
+  "espantalho": {
+    "nome": "Espantalho",
+    "desc": "Some e reaparece atrás de você.",
+    "custo": 4,
+    "andarMin": 99,
+    "andares": [
+      7
+    ],
+    "vida": 12,
+    "velocidade": 50,
+    "dano": 13,
+    "cera": [
+      2,
+      4
+    ],
+    "ia": "teleporte",
+    "sprite": "abobora",
+    "tinta": "#b8a878",
+    "corpo": [
+      10,
+      10
+    ],
+    "projetil": {
+      "velocidade": 150,
+      "dano": 12,
+      "intervalo": 2,
+      "quantidade": 3,
+      "dispersao": 0
+    }
+  },
+  "corvo": {
+    "nome": "Corvo de Cinzas",
+    "desc": "Vem em bando, mergulhando.",
+    "custo": 2,
+    "grupo": 3,
+    "andarMin": 99,
+    "andares": [
+      7
+    ],
+    "vida": 4,
+    "velocidade": 95,
+    "dano": 10,
+    "cera": [
+      1,
+      2
+    ],
+    "ia": "enxame",
+    "sprite": "morcego",
+    "tinta": "#3a3540",
+    "corpo": [
+      8,
+      8
+    ]
+  },
+  "reflexo_menor": {
+    "nome": "Reflexo",
+    "desc": "Uma cópia sua. Mira e dispara um raio de balas.",
+    "custo": 4,
+    "andarMin": 99,
+    "andares": [
+      8
+    ],
+    "vida": 12,
+    "velocidade": 45,
+    "dano": 13,
+    "cera": [
+      2,
+      4
+    ],
+    "ia": "laser",
+    "sprite": "reflexo",
+    "escalaFixa": 1,
+    "corpo": [
+      8,
+      6
+    ],
+    "projetil": {
+      "velocidade": 240,
+      "dano": 12,
+      "intervalo": 2.4,
+      "quantidade": 8,
+      "dispersao": 0
+    }
+  },
+  "estilhaco": {
+    "nome": "Estilhaço",
+    "desc": "Corre até você e explode em cacos.",
+    "custo": 3,
+    "andarMin": 99,
+    "andares": [
+      8
+    ],
+    "vida": 7,
+    "velocidade": 80,
+    "dano": 14,
+    "cera": [
+      2,
+      3
+    ],
+    "ia": "kamikaze",
+    "sprite": "zumbi_gelo",
+    "tinta": "#a8f0ff",
+    "corpo": [
+      10,
+      8
+    ],
+    "explosao": 26
+  },
+  "vidraceiro": {
+    "nome": "Vidraceiro",
+    "desc": "Atira leques de vidro que quicam.",
+    "custo": 4,
+    "andarMin": 99,
+    "andares": [
+      8
+    ],
+    "vida": 14,
+    "velocidade": 35,
+    "dano": 12,
+    "cera": [
+      3,
+      4
+    ],
+    "ia": "atirador",
+    "sprite": "heroi_maga",
+    "tinta": "#a8e8ff",
+    "corpo": [
+      10,
+      8
+    ],
+    "projetil": {
+      "velocidade": 120,
+      "dano": 12,
+      "intervalo": 2.2,
+      "quantidade": 5,
+      "dispersao": 50,
+      "efeito": "lento"
+    }
+  },
+  "engrenagem": {
+    "nome": "Engrenagem",
+    "desc": "Gira em volta de você atirando para dentro.",
+    "custo": 4,
+    "andarMin": 99,
+    "andares": [
+      9
+    ],
+    "vida": 14,
+    "velocidade": 70,
+    "dano": 12,
+    "cera": [
+      3,
+      4
+    ],
+    "ia": "orbitador",
+    "sprite": "wogol",
+    "tinta": "#ffd23f",
+    "corpo": [
+      12,
+      12
+    ],
+    "projetil": {
+      "velocidade": 110,
+      "dano": 12,
+      "intervalo": 1,
+      "quantidade": 1,
+      "dispersao": 0
+    }
+  },
+  "cuco": {
+    "nome": "Cuco",
+    "desc": "Rapidíssimo. Sai do relógio na hora certa.",
+    "custo": 2,
+    "andarMin": 99,
+    "andares": [
+      9
+    ],
+    "vida": 5,
+    "velocidade": 120,
+    "dano": 11,
+    "cera": [
+      1,
+      2
+    ],
+    "ia": "zigue-zague",
+    "sprite": "morcego",
+    "tinta": "#a0784a",
+    "corpo": [
+      8,
+      8
+    ]
+  },
+  "ponteiro": {
+    "nome": "Ponteiro",
+    "desc": "Aponta para você... e dispara como uma flecha.",
+    "custo": 4,
+    "andarMin": 99,
+    "andares": [
+      9
+    ],
+    "vida": 12,
+    "velocidade": 40,
+    "dano": 16,
+    "cera": [
+      3,
+      4
+    ],
+    "ia": "investida",
+    "sprite": "esqueleto",
+    "tinta": "#ffe066",
+    "corpo": [
+      10,
+      8
+    ]
+  },
+  "agua_viva": {
+    "nome": "Água-Viva de Cera",
+    "desc": "Pula devagar e se divide.",
+    "custo": 3,
+    "andarMin": 99,
+    "andares": [
+      10
+    ],
+    "vida": 10,
+    "velocidade": 0,
+    "salto": 110,
+    "dano": 12,
+    "cera": [
+      2,
+      3
+    ],
+    "ia": "saltar",
+    "sprite": "slime",
+    "tinta": "#7fb8ff",
+    "corpo": [
+      12,
+      8
+    ],
+    "divide": "slime_mini"
+  },
+  "pirata": {
+    "nome": "Pirata de Cera",
+    "desc": "Bacamarte: leques largos de chumbo.",
+    "custo": 4,
+    "andarMin": 99,
+    "andares": [
+      10
+    ],
+    "vida": 15,
+    "velocidade": 40,
+    "dano": 13,
+    "cera": [
+      3,
+      5
+    ],
+    "ia": "atirador",
+    "sprite": "orc",
+    "tinta": "#6a9ae8",
+    "corpo": [
+      12,
+      10
+    ],
+    "projetil": {
+      "velocidade": 130,
+      "dano": 12,
+      "intervalo": 2.4,
+      "quantidade": 7,
+      "dispersao": 70
+    }
+  },
+  "tubarao": {
+    "nome": "Tubarão de Areia",
+    "desc": "Persegue e dá botes.",
+    "custo": 4,
+    "andarMin": 99,
+    "andares": [
+      10
+    ],
+    "vida": 16,
+    "velocidade": 65,
+    "dano": 15,
+    "cera": [
+      3,
+      4
+    ],
+    "ia": "perseguir",
+    "sprite": "heroi_lagarto",
+    "tinta": "#8aa0b8",
+    "corpo": [
+      10,
+      8
+    ]
+  },
+  "brasa_viva": {
+    "nome": "Brasa Viva",
+    "desc": "Deixa um rastro de fogo por onde passa.",
+    "custo": 3,
+    "andarMin": 99,
+    "andares": [
+      11
+    ],
+    "vida": 11,
+    "velocidade": 60,
+    "dano": 13,
+    "cera": [
+      2,
+      4
+    ],
+    "ia": "rastro",
+    "sprite": "chifrudo",
+    "tinta": "#ff9a4a",
+    "corpo": [
+      10,
+      10
+    ]
+  },
+  "guardiao_chama": {
+    "nome": "Guardião da Chama",
+    "desc": "Escudo dourado de frente. Flanqueie.",
+    "custo": 5,
+    "andarMin": 99,
+    "andares": [
+      11
+    ],
+    "vida": 24,
+    "velocidade": 45,
+    "dano": 17,
+    "cera": [
+      3,
+      5
+    ],
+    "ia": "escudo",
+    "sprite": "escudeiro",
+    "tinta": "#ffd23f",
+    "corpo": [
+      12,
+      12
+    ]
+  },
+  "fenix": {
+    "nome": "Fênix Pequena",
+    "desc": "Teletransporta e solta anéis de fogo.",
+    "custo": 5,
+    "andarMin": 99,
+    "andares": [
+      11
+    ],
+    "vida": 14,
+    "velocidade": 60,
+    "dano": 14,
+    "cera": [
+      3,
+      5
+    ],
+    "ia": "teleporte",
+    "sprite": "anjo",
+    "tinta": "#ff8a3a",
+    "corpo": [
+      10,
+      10
+    ],
+    "projetil": {
+      "velocidade": 110,
+      "dano": 13,
+      "intervalo": 2,
+      "quantidade": 10,
+      "dispersao": 360
+    }
+  },
+  "necro_anciao": {
+    "nome": "O Necromante Ancião",
+    "desc": "Chefe do andar 3. Levanta os mortos e some na fumaça.",
+    "custo": 0,
+    "andarMin": 99,
+    "chefe": true,
+    "vida": 200,
+    "velocidade": 38,
+    "dano": 18,
+    "cera": [
+      0,
+      0
+    ],
+    "ia": "chefe_padrao",
+    "sprite": "necromante",
+    "tinta": "#c8a0ff",
+    "escalaFixa": 2.4,
+    "corpo": [
+      12,
+      10
+    ],
+    "semEscala": true,
+    "invoca": "esqueleto",
+    "ataques": [
+      "invocar",
+      "espiral",
+      "teleporte",
+      "anel",
+      "rajada",
+      "chuva"
+    ],
+    "furia": [
+      "espiral_dupla",
+      "invocar"
+    ],
+    "projetil": {
+      "velocidade": 95,
+      "dano": 13,
+      "intervalo": 0,
+      "quantidade": 14,
+      "dispersao": 360
+    },
+    "falas": {
+      "inicio": "Os mortos me obedecem. Logo, você também.",
+      "furia": "Levantem-se! TODOS!",
+      "morte": "Até os ossos... me abandonam..."
+    }
+  },
+  "cavaleiro_derretido": {
+    "nome": "O Cavaleiro Derretido",
+    "desc": "Chefe do andar 4. Investidas e paredes de balas.",
+    "custo": 0,
+    "andarMin": 99,
+    "chefe": true,
+    "vida": 240,
+    "velocidade": 50,
+    "dano": 20,
+    "cera": [
+      0,
+      0
+    ],
+    "ia": "chefe_padrao",
+    "sprite": "heroi_cavaleiro",
+    "tinta": "#ffb080",
+    "escalaFixa": 2.2,
+    "corpo": [
+      10,
+      8
+    ],
+    "semEscala": true,
+    "invoca": "cavaleiro_oco",
+    "ataques": [
+      "investida",
+      "leque",
+      "salto",
+      "parede",
+      "investida",
+      "espiral"
+    ],
+    "furia": [
+      "parede",
+      "investida"
+    ],
+    "projetil": {
+      "velocidade": 105,
+      "dano": 14,
+      "intervalo": 0,
+      "quantidade": 16,
+      "dispersao": 360
+    },
+    "falas": {
+      "inicio": "Jurei proteger esta cripta. Nem que eu derreta.",
+      "furia": "Minha armadura queima... mas eu não caio!",
+      "morte": "Enfim... posso descansar..."
+    }
+  },
+  "jardineira": {
+    "nome": "A Jardineira de Cinzas",
+    "desc": "O Outro Lado 1. Chuva de brasas e flores de bala.",
+    "custo": 0,
+    "andarMin": 99,
+    "chefe": true,
+    "vida": 320,
+    "velocidade": 40,
+    "dano": 20,
+    "cera": [
+      0,
+      0
+    ],
+    "ia": "chefe_padrao",
+    "sprite": "mago",
+    "tinta": "#b8b8a0",
+    "escalaFixa": 2.6,
+    "corpo": [
+      12,
+      10
+    ],
+    "semEscala": true,
+    "invoca": "broto_cinza",
+    "ataques": [
+      "chuva",
+      "flor",
+      "invocar",
+      "anel",
+      "minas",
+      "chuva"
+    ],
+    "furia": [
+      "flor",
+      "chuva"
+    ],
+    "projetil": {
+      "velocidade": 100,
+      "dano": 15,
+      "intervalo": 0,
+      "quantidade": 16,
+      "dispersao": 360
+    },
+    "falas": {
+      "inicio": "Tudo que eu planto vira cinza. Você vai virar adubo.",
+      "furia": "Floresçam, brasas!",
+      "morte": "Meu jardim... vai renascer..."
+    }
+  },
+  "reflexo": {
+    "nome": "O Reflexo",
+    "desc": "O Outro Lado 2. Sua cópia de vidro: raios e clones.",
+    "custo": 0,
+    "andarMin": 99,
+    "chefe": true,
+    "vida": 340,
+    "velocidade": 70,
+    "dano": 20,
+    "cera": [
+      0,
+      0
+    ],
+    "ia": "chefe_padrao",
+    "sprite": "reflexo",
+    "escalaFixa": 2.2,
+    "corpo": [
+      8,
+      6
+    ],
+    "semEscala": true,
+    "invoca": "reflexo_menor",
+    "ataques": [
+      "leque",
+      "laser",
+      "clones",
+      "espiral_dupla",
+      "teleporte",
+      "laser"
+    ],
+    "furia": [
+      "laser",
+      "flor"
+    ],
+    "projetil": {
+      "velocidade": 140,
+      "dano": 15,
+      "intervalo": 0,
+      "quantidade": 14,
+      "dispersao": 360
+    },
+    "falas": {
+      "inicio": "Bonita, não? Eu sou você. Só que melhor.",
+      "furia": "PARE DE ME IMITAR!",
+      "morte": "Eu era só... um reflexo..."
+    }
+  },
+  "relojoeiro": {
+    "nome": "O Relojoeiro",
+    "desc": "O Outro Lado 3. Para as balas no ar e solta tudo de uma vez.",
+    "custo": 0,
+    "andarMin": 99,
+    "chefe": true,
+    "vida": 360,
+    "velocidade": 42,
+    "dano": 20,
+    "cera": [
+      0,
+      0
+    ],
+    "ia": "chefe_padrao",
+    "sprite": "heroi_mago",
+    "tinta": "#ffd23f",
+    "escalaFixa": 2.4,
+    "corpo": [
+      10,
+      8
+    ],
+    "semEscala": true,
+    "invoca": "cuco",
+    "ataques": [
+      "tempo",
+      "espiral",
+      "rajada",
+      "parede",
+      "tempo",
+      "flor"
+    ],
+    "furia": [
+      "tempo",
+      "espiral_dupla"
+    ],
+    "projetil": {
+      "velocidade": 110,
+      "dano": 15,
+      "intervalo": 0,
+      "quantidade": 16,
+      "dispersao": 360
+    },
+    "falas": {
+      "inicio": "Você está atrasada. O seu tempo acabou.",
+      "furia": "TIC. TAC. TIC. TAC.",
+      "morte": "Meu relógio... parou..."
+    }
+  },
+  "leviata": {
+    "nome": "O Leviatã de Cera",
+    "desc": "O Outro Lado 4. Ondas, saltos e um mar de balas.",
+    "custo": 0,
+    "andarMin": 99,
+    "chefe": true,
+    "vida": 400,
+    "velocidade": 40,
+    "dano": 22,
+    "cera": [
+      0,
+      0
+    ],
+    "ia": "chefe_padrao",
+    "sprite": "rei_podre",
+    "tinta": "#6aa0ff",
+    "escalaFixa": 1.9,
+    "corpo": [
+      20,
+      16
+    ],
+    "semEscala": true,
+    "invoca": "agua_viva",
+    "ataques": [
+      "ondas",
+      "parede",
+      "salto",
+      "chuva",
+      "invocar",
+      "ondas"
+    ],
+    "furia": [
+      "parede",
+      "salto"
+    ],
+    "projetil": {
+      "velocidade": 95,
+      "dano": 16,
+      "intervalo": 0,
+      "quantidade": 18,
+      "dispersao": 360
+    },
+    "falas": {
+      "inicio": "O mar de cera engole tudo que flutua.",
+      "furia": "AFUNDE!",
+      "morte": "Volto... para o fundo..."
+    }
+  },
+  "acendedor": {
+    "nome": "O Acendedor",
+    "desc": "O FIM. Quem acendeu a primeira chama e quer queimar o mundo.",
+    "custo": 0,
+    "andarMin": 99,
+    "chefe": true,
+    "vida": 560,
+    "velocidade": 50,
+    "dano": 24,
+    "cera": [
+      0,
+      0
+    ],
+    "ia": "chefe_padrao",
+    "sprite": "apagador",
+    "tinta": "#ffe8a0",
+    "escalaFixa": 1.9,
+    "corpo": [
+      20,
+      16
+    ],
+    "semEscala": true,
+    "invoca": "brasa_viva",
+    "ataques": [
+      "anel",
+      "espiral_dupla",
+      "chuva",
+      "laser",
+      "investida",
+      "invocar",
+      "flor",
+      "parede"
+    ],
+    "furia": [
+      "tempo",
+      "chuva",
+      "laser",
+      "flor"
+    ],
+    "projetil": {
+      "velocidade": 115,
+      "dano": 16,
+      "intervalo": 0,
+      "quantidade": 20,
+      "dispersao": 360
+    },
+    "falas": {
+      "inicio": "Eu acendi a primeira chama. E vou queimar a última.",
+      "furia": "Se tudo queimar, nunca mais haverá escuro!",
+      "morte": "Talvez... a luz não precise de mim..."
+    }
+  },
+  "alvo": {
+    "nome": "Boneco de Treino",
+    "desc": "Não se mexe, não ataca. Só apanha.",
+    "custo": 0,
+    "andarMin": 99,
+    "vida": 4,
+    "velocidade": 0,
+    "dano": 0,
+    "cera": [
+      1,
+      2
+    ],
+    "ia": "alvo",
+    "sprite": "esqueleto",
+    "tinta": "#d8b07a",
+    "corpo": [
+      10,
+      8
+    ],
+    "semEscala": true
+  },
+  "canhao_esquiva": {
+    "nome": "Canhão de Treino",
+    "desc": "Atira leques de balas para você treinar a esquiva.",
+    "custo": 0,
+    "andarMin": 99,
+    "vida": 9999,
+    "velocidade": 0,
+    "dano": 0,
+    "cera": [
+      0,
+      0
+    ],
+    "ia": "canhao",
+    "sprite": "wogol",
+    "tinta": "#8a8a9a",
+    "corpo": [
+      12,
+      12
+    ],
+    "semEscala": true,
+    "projetil": {
+      "velocidade": 105,
+      "dano": 5,
+      "intervalo": 1.1,
+      "quantidade": 5,
+      "dispersao": 50
+    }
+  },
+  "canhao_parry": {
+    "nome": "Canhão de Parry",
+    "desc": "Atira uma bala lenta por vez para você rebater.",
+    "custo": 0,
+    "andarMin": 99,
+    "vida": 9999,
+    "velocidade": 0,
+    "dano": 0,
+    "cera": [
+      0,
+      0
+    ],
+    "ia": "canhao",
+    "sprite": "wogol",
+    "tinta": "#ffd23f",
+    "corpo": [
+      12,
+      12
+    ],
+    "semEscala": true,
+    "projetil": {
+      "velocidade": 70,
+      "dano": 5,
+      "intervalo": 1.4,
+      "quantidade": 1,
+      "dispersao": 0
+    }
+  },
+  "criador": {
+    "nome": "O Criador",
+    "desc": "Chefe secreto. Quem fez o jogo. Ele muda as regras no meio da luta.",
+    "custo": 0,
+    "andarMin": 99,
+    "chefe": true,
+    "vida": 700,
+    "velocidade": 55,
+    "dano": 22,
+    "cera": [
+      0,
+      0
+    ],
+    "ia": "chefe_padrao",
+    "sprite": "pers_luiz",
+    "escalaFixa": 2.4,
+    "corpo": [
+      10,
+      6
+    ],
+    "semEscala": true,
+    "invoca": "reflexo_menor",
+    "ataques": [
+      "leque",
+      "espiral_dupla",
+      "chuva",
+      "flor",
+      "laser",
+      "parede",
+      "teleporte"
+    ],
+    "furia": [
+      "tempo",
+      "clones",
+      "espiral"
+    ],
+    "projetil": {
+      "velocidade": 120,
+      "dano": 16,
+      "intervalo": 0,
+      "quantidade": 18,
+      "dispersao": 360
+    },
+    "falas": {
+      "inicio": "Ué, você chegou aqui? Eu nem terminei de programar essa parte!",
+      "furia": "Deixa eu mudar umas regrinhas...",
+      "morte": "GG. O jogo é seu agora."
+    }
+  },
+  "ladrao": {
+    "nome": "Ladrão de Cera",
+    "desc": "Rouba sua cera e foge. Pegue ele antes!",
+    "custo": 0,
+    "andarMin": 99,
+    "vida": 8,
+    "velocidade": 115,
+    "dano": 0,
+    "cera": [
+      2,
+      3
+    ],
+    "ia": "ladrao",
+    "sprite": "goblin",
+    "tinta": "#ffd23f",
+    "corpo": [
+      10,
+      8
+    ]
+  }
+}

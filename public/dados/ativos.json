@@ -1,0 +1,12 @@
+[
+  { "id": "bomba_cera", "nome": "Bomba de Cera", "desc": "Explode tudo em volta. Abre paredes rachadas.", "icone": "bomba", "cor": "#ff9a2e", "carga": 2, "efeito": "bomba" },
+  { "id": "sopro_sagrado", "nome": "Sopro Sagrado", "desc": "Apaga as balas inimigas e empurra os monstros.", "icone": "sopro", "cor": "#bfe8ff", "carga": 2, "efeito": "sopro" },
+  { "id": "relogio_parado", "nome": "Relógio Parado", "desc": "Congela os monstros e freia as balas.", "icone": "relogio_p", "cor": "#9fdcff", "carga": 3, "efeito": "relogio" },
+  { "id": "pavio_reserva", "nome": "Pavio Reserva", "desc": "Cura 40 de chama.", "icone": "reserva", "cor": "#ffb43a", "carga": 4, "efeito": "cura" },
+  { "id": "espelho_mao", "nome": "Espelho de Mão", "desc": "Parry automático por 3 segundos.", "icone": "espelho_m", "cor": "#e8f0ff", "carga": 3, "efeito": "espelho" },
+  { "id": "polvora_viva", "nome": "Pólvora Viva", "desc": "Dano x2 e tiro rápido por 6 segundos.", "icone": "barril", "cor": "#e2452b", "carga": 3, "efeito": "furia" },
+  { "id": "vela_fugaz", "nome": "Vela Fugaz", "desc": "Teleporta para a mira e explode lá.", "icone": "fugaz", "cor": "#b06bff", "carga": 1, "efeito": "teleporte" },
+  { "id": "dado_cera", "nome": "Dado de Cera", "desc": "Sorteia de novo os itens desta sala.", "icone": "dado", "cor": "#f4ead6", "carga": 2, "efeito": "dado" },
+  { "id": "castical_portatil", "nome": "Castiçal Portátil", "desc": "Uma torre de luz atira por você (10s).", "icone": "castical_p", "cor": "#ffd23f", "carga": 3, "efeito": "torre" },
+  { "id": "sino_apagador", "nome": "Sino do Apagador", "desc": "Mata os monstros da sala. Custa 30 de chama.", "icone": "sino", "cor": "#c86bff", "carga": 6, "efeito": "sino", "maldito": true }
+]

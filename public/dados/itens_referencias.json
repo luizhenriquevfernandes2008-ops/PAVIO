@@ -1,0 +1,2077 @@
+[
+ {
+  "id": "cogumelo_vermelho",
+  "nome": "Cogumelo Vermelho",
+  "desc": "+25 chama máx e balas maiores. Você cresceu! Ao levar dano: empurra tudo.",
+  "icone": "cogumelo",
+  "cor": "#e2452b",
+  "raridade": 2,
+  "tags": [
+   "terra",
+   "coracao"
+  ],
+  "referencia": true,
+  "gatilhos": [
+   {
+    "quando": "dano",
+    "efeitos": [
+     [
+      "empurrar",
+      {
+       "raio": 50,
+       "forca": 300
+      }
+     ]
+    ]
+   }
+  ],
+  "stats": {
+   "chamaMax": 25
+  },
+  "mods": {
+   "tamanho": 1.2
+  }
+ },
+ {
+  "id": "cogumelo_verde",
+  "nome": "Cogumelo Verde",
+  "desc": "+40 chama máx. Uma vida extra, quase.",
+  "icone": "cogumelo",
+  "cor": "#7fdc8a",
+  "raridade": 3,
+  "tags": [
+   "coracao",
+   "sorte"
+  ],
+  "referencia": true,
+  "stats": {
+   "chamaMax": 40
+  }
+ },
+ {
+  "id": "estrela_piscante",
+  "nome": "Estrela Piscante",
+  "desc": "+15% velocidade, esquiva perfeita fácil, chama dourada. O dash machuca quem estiver no caminho.",
+  "icone": "estrela",
+  "cor": "#ffd23f",
+  "raridade": 3,
+  "tags": [
+   "vento",
+   "luz"
+  ],
+  "referencia": true,
+  "passivos": [
+   "diableJambe"
+  ],
+  "stats": {
+   "velocidade": 1.15,
+   "raioEsquiva": 4
+  },
+  "visual": {
+   "chama": "dourada"
+  }
+ },
+ {
+  "id": "triangulo_dourado",
+  "nome": "Triângulo Dourado",
+  "desc": "+10% dano, +10% velocidade, +10 chama máx. A cada 10 de combo, um feixe dourado gira.",
+  "icone": "triangulo",
+  "cor": "#ffd23f",
+  "raridade": 3,
+  "tags": [
+   "ouro",
+   "luz"
+  ],
+  "referencia": true,
+  "gatilhos": [
+   {
+    "quando": "combo",
+    "efeitos": [
+     [
+      "laserGiro",
+      {
+       "seg": 1.5,
+       "dano": 6
+      }
+     ]
+    ]
+   }
+  ],
+  "stats": {
+   "dano": 1.1,
+   "velocidade": 1.1,
+   "chamaMax": 10
+  }
+ },
+ {
+  "id": "recipiente_coracao",
+  "nome": "Recipiente de Coração",
+  "desc": "+20 chama máx.",
+  "icone": "coracao",
+  "cor": "#ff5a8a",
+  "raridade": 1,
+  "tags": [
+   "coracao"
+  ],
+  "referencia": true,
+  "stats": {
+   "chamaMax": 20
+  }
+ },
+ {
+  "id": "frasco_estus",
+  "nome": "Frasco de Estus",
+  "desc": "+5 de chama a cada sala limpa.",
+  "icone": "frasco",
+  "cor": "#ff9a2e",
+  "raridade": 2,
+  "tags": [
+   "frasco",
+   "fogo"
+  ],
+  "referencia": true,
+  "stats": {
+   "curaSala": 5
+  }
+ },
+ {
+  "id": "fogueira",
+  "nome": "Fogueira Acesa",
+  "desc": "A chama queima 20% mais devagar. Descanse aqui. Ao limpar a sala, cura 6.",
+  "icone": "chama",
+  "cor": "#ff7a2e",
+  "raridade": 2,
+  "tags": [
+   "fogo",
+   "vela"
+  ],
+  "referencia": true,
+  "gatilhos": [
+   {
+    "quando": "limpar",
+    "efeitos": [
+     [
+      "curar",
+      {
+       "qtd": 6
+      }
+     ]
+    ]
+   }
+  ],
+  "stats": {
+   "decaimento": 0.8
+  }
+ },
+ {
+  "id": "argola_dourada",
+  "nome": "Argola Dourada",
+  "desc": "+15% velocidade e puxa a cera de longe.",
+  "icone": "anel",
+  "cor": "#ffd23f",
+  "raridade": 2,
+  "tags": [
+   "anel",
+   "vento"
+  ],
+  "referencia": true,
+  "stats": {
+   "velocidade": 1.15,
+   "ima": 0.5
+  }
+ },
+ {
+  "id": "cubo_companheiro",
+  "nome": "Cubo Companheiro",
+  "desc": "Um cubinho fiel gira em volta e bloqueia balas.",
+  "icone": "cubo",
+  "cor": "#ff8ac8",
+  "raridade": 2,
+  "tags": [
+   "cristal"
+  ],
+  "referencia": true,
+  "especial": "orbe"
+ },
+ {
+  "id": "bolo_mentira",
+  "nome": "O Bolo é uma Mentira",
+  "desc": "+40 chama máx, mas ela queima 30% mais rápido.",
+  "icone": "bolo",
+  "cor": "#c86bff",
+  "raridade": 2,
+  "tags": [
+   "coracao"
+  ],
+  "referencia": true,
+  "stats": {
+   "chamaMax": 40,
+   "decaimento": 1.3
+  },
+  "maldito": true
+ },
+ {
+  "id": "pe_de_cabra",
+  "nome": "Pé de Cabra do Cientista",
+  "desc": "Monstros que encostam em você levam dano.",
+  "icone": "osso",
+  "cor": "#ff9a2e",
+  "raridade": 1,
+  "tags": [
+   "osso",
+   "terra"
+  ],
+  "referencia": true,
+  "stats": {
+   "espinhos": 4
+  }
+ },
+ {
+  "id": "pastilha_poder",
+  "nome": "Pastilha de Poder",
+  "desc": "Encostar machuca os monstros. +8% velocidade. Ao matar: corre mais por 2s.",
+  "icone": "orbe",
+  "cor": "#ffd23f",
+  "raridade": 2,
+  "tags": [
+   "ouro"
+  ],
+  "referencia": true,
+  "gatilhos": [
+   {
+    "quando": "matar",
+    "chance": 0.25,
+    "efeitos": [
+     [
+      "buff",
+      {
+       "stat": "velocidade",
+       "mult": 1.3,
+       "seg": 2
+      }
+     ]
+    ]
+   }
+  ],
+  "stats": {
+   "espinhos": 6,
+   "velocidade": 1.08
+  }
+ },
+ {
+  "id": "d20",
+  "nome": "Dado de Vinte Lados",
+  "desc": "+8% crítico. Tirou 20! No crítico (20%): explosão.",
+  "icone": "dado",
+  "cor": "#c86bff",
+  "raridade": 2,
+  "tags": [
+   "dado",
+   "sorte"
+  ],
+  "referencia": true,
+  "gatilhos": [
+   {
+    "quando": "critico",
+    "chance": 0.2,
+    "cd": 1,
+    "efeitos": [
+     [
+      "explosao",
+      {
+       "raio": 24,
+       "dano": 6
+      }
+     ]
+    ]
+   }
+  ],
+  "stats": {
+   "critico": 0.08
+  }
+ },
+ {
+  "id": "pocao_mana",
+  "nome": "Poção de Mana",
+  "desc": "Atira 12% mais rápido. Chama azul.",
+  "icone": "frasco",
+  "cor": "#4f9dff",
+  "raridade": 2,
+  "tags": [
+   "frasco",
+   "eco"
+  ],
+  "referencia": true,
+  "stats": {
+   "cadencia": 0.88
+  },
+  "visual": {
+   "chama": "azul"
+  }
+ },
+ {
+  "id": "pocao_vida",
+  "nome": "Poção de Vida",
+  "desc": "+15 chama máx e enche a chama.",
+  "icone": "frasco",
+  "cor": "#e2452b",
+  "raridade": 1,
+  "tags": [
+   "frasco",
+   "sangue"
+  ],
+  "referencia": true,
+  "especial": "cura",
+  "stats": {
+   "chamaMax": 15
+  }
+ },
+ {
+  "id": "moeda_encanador",
+  "nome": "Moeda do Encanador",
+  "desc": "+20% cera.",
+  "icone": "moeda",
+  "cor": "#ffd23f",
+  "raridade": 1,
+  "tags": [
+   "moeda",
+   "ouro"
+  ],
+  "referencia": true,
+  "stats": {
+   "ceraBonus": 1.2
+  }
+ },
+ {
+  "id": "elmo_espartano",
+  "nome": "Elmo Verde Espartano",
+  "desc": "Um escudo por sala e -15% de dano recebido.",
+  "icone": "mascara",
+  "cor": "#4a8a3a",
+  "raridade": 3,
+  "tags": [
+   "capa",
+   "terra"
+  ],
+  "referencia": true,
+  "especial": "escudo",
+  "stats": {
+   "danoRecebido": 0.85
+  }
+ },
+ {
+  "id": "bichinho_virtual",
+  "nome": "Bichinho Virtual",
+  "desc": "Uma velinha de estimação atira junto com você.",
+  "icone": "gemea",
+  "cor": "#ff8ac8",
+  "raridade": 3,
+  "tags": [
+   "vela"
+  ],
+  "referencia": true,
+  "especial": "gemea"
+ },
+ {
+  "id": "cartucho_assoprado",
+  "nome": "Cartucho Assoprado",
+  "desc": "Recarga 25% mais rápida. Era só assoprar.",
+  "icone": "pente",
+  "cor": "#7d8494",
+  "raridade": 1,
+  "tags": [
+   "pergaminho"
+  ],
+  "referencia": true,
+  "stats": {
+   "recarga": 0.75
+  }
+ },
+ {
+  "id": "codigo_secreto",
+  "nome": "Código Secreto",
+  "desc": "Cima, cima, baixo, baixo... +30 chama máx e +1 dash.",
+  "icone": "pergaminho",
+  "cor": "#ffd23f",
+  "raridade": 3,
+  "tags": [
+   "pergaminho",
+   "sorte"
+  ],
+  "referencia": true,
+  "stats": {
+   "chamaMax": 30,
+   "dashes": 1
+  }
+ },
+ {
+  "id": "gorro_heroi",
+  "nome": "Gorro do Herói",
+  "desc": "+15% alcance e balas que perseguem.",
+  "icone": "chapeu",
+  "cor": "#4a8a3a",
+  "raridade": 2,
+  "tags": [
+   "olhar"
+  ],
+  "referencia": true,
+  "stats": {
+   "alcance": 1.15
+  },
+  "mods": {
+   "teleguiado": 0.6
+  }
+ },
+ {
+  "id": "esfera_estrelas",
+  "nome": "Esfera de Quatro Estrelas",
+  "desc": "+1 sorte e +25% cera. Faltam seis. Ao limpar (20%): 8 gotas de cera.",
+  "icone": "esfera",
+  "cor": "#ff9a2e",
+  "raridade": 2,
+  "tags": [
+   "sorte",
+   "ouro"
+  ],
+  "referencia": true,
+  "gatilhos": [
+   {
+    "quando": "limpar",
+    "chance": 0.2,
+    "efeitos": [
+     [
+      "cera",
+      {
+       "n": 8,
+       "onde": "jogador"
+      }
+     ]
+    ]
+   }
+  ],
+  "stats": {
+   "sorte": 1,
+   "ceraBonus": 1.25
+  }
+ },
+ {
+  "id": "semente_deuses",
+  "nome": "Semente dos Deuses",
+  "desc": "Enche a chama e dá +10 chama máx.",
+  "icone": "lagrima",
+  "cor": "#7fdc8a",
+  "raridade": 1,
+  "tags": [
+   "terra"
+  ],
+  "referencia": true,
+  "especial": "cura",
+  "stats": {
+   "chamaMax": 10
+  }
+ },
+ {
+  "id": "chapeu_palha",
+  "nome": "Chapéu de Palha",
+  "desc": "+1 sorte e +8% velocidade. Vou ser o rei!",
+  "icone": "chapeu_palha",
+  "cor": "#ffd23f",
+  "raridade": 2,
+  "tags": [
+   "sorte",
+   "vento"
+  ],
+  "referencia": true,
+  "stats": {
+   "sorte": 1,
+   "velocidade": 1.08
+  }
+ },
+ {
+  "id": "caderno_morte",
+  "nome": "Caderno da Morte",
+  "desc": "+40% dano, mas a chama queima 25% mais rápido. A cada 30 tiros, mata os fracos.",
+  "icone": "livro",
+  "cor": "#2a2033",
+  "raridade": 3,
+  "tags": [
+   "sombra",
+   "pergaminho"
+  ],
+  "referencia": true,
+  "gatilhos": [
+   {
+    "quando": "tiro",
+    "cada": 30,
+    "efeitos": [
+     [
+      "matarFracos",
+      {
+       "fracao": 0.2
+      }
+     ]
+    ]
+   }
+  ],
+  "stats": {
+   "dano": 1.4,
+   "decaimento": 1.25
+  },
+  "maldito": true
+ },
+ {
+  "id": "bandana_ninja",
+  "nome": "Bandana da Vila Oculta",
+  "desc": "Clones das sombras: +1 tiro. Ao dar dash: clones por 2s.",
+  "icone": "bandana",
+  "cor": "#4f9dff",
+  "raridade": 3,
+  "tags": [
+   "eco"
+  ],
+  "referencia": true,
+  "gatilhos": [
+   {
+    "quando": "dash",
+    "cd": 3,
+    "efeitos": [
+     [
+      "clone",
+      {
+       "seg": 2
+      }
+     ]
+    ]
+   }
+  ],
+  "mods": {
+   "multiplos": 1
+  }
+ },
+ {
+  "id": "olho_copiador",
+  "nome": "Olho Vermelho Copiador",
+  "desc": "Balas perseguem e a esquiva perfeita fica fácil. No parry: copia dois tiros.",
+  "icone": "olho",
+  "cor": "#e2452b",
+  "raridade": 3,
+  "tags": [
+   "olho",
+   "olhar"
+  ],
+  "referencia": true,
+  "gatilhos": [
+   {
+    "quando": "parry",
+    "efeitos": [
+     [
+      "eco",
+      {}
+     ],
+     [
+      "eco",
+      {}
+     ]
+    ]
+   }
+  ],
+  "stats": {
+   "raioEsquiva": 2
+  },
+  "mods": {
+   "teleguiado": 1
+  }
+ },
+ {
+  "id": "mascara_pedra",
+  "nome": "Máscara de Pedra",
+  "desc": "Abates curam 1, mas -20% luz. Vampirismo.",
+  "icone": "mascara",
+  "cor": "#a0784a",
+  "raridade": 2,
+  "tags": [
+   "mascara",
+   "sangue"
+  ],
+  "referencia": true,
+  "stats": {
+   "roubaVida": 1,
+   "luz": 0.8
+  },
+  "maldito": true
+ },
+ {
+  "id": "capa_tropa",
+  "nome": "Capa da Tropa de Exploração",
+  "desc": "+1 dash e +10% velocidade.",
+  "icone": "capa",
+  "cor": "#4a8a3a",
+  "raridade": 2,
+  "tags": [
+   "capa",
+   "vento"
+  ],
+  "referencia": true,
+  "stats": {
+   "dashes": 1,
+   "velocidade": 1.1
+  }
+ },
+ {
+  "id": "pedra_filosofal",
+  "nome": "Pedra Filosofal",
+  "desc": "+30% cera e abates curam 0.5.",
+  "icone": "cristal",
+  "cor": "#e2452b",
+  "raridade": 3,
+  "tags": [
+   "cristal",
+   "sangue"
+  ],
+  "referencia": true,
+  "stats": {
+   "ceraBonus": 1.3,
+   "roubaVida": 0.5
+  }
+ },
+ {
+  "id": "oculos_irmao",
+  "nome": "Óculos do Grande Irmão",
+  "desc": "+15% dano e balas maiores. Quem você pensa que eu sou?",
+  "icone": "oculos",
+  "cor": "#ff5a2e",
+  "raridade": 2,
+  "tags": [
+   "lente"
+  ],
+  "referencia": true,
+  "stats": {
+   "dano": 1.15
+  },
+  "mods": {
+   "tamanho": 1.15
+  },
+  "visual": {
+   "acessorio": "oculos_grandes"
+  }
+ },
+ {
+  "id": "ramen",
+  "nome": "Ramen Quentinho",
+  "desc": "+4 de chama a cada sala limpa.",
+  "icone": "xicara",
+  "cor": "#ffb43a",
+  "raridade": 1,
+  "tags": [
+   "frasco"
+  ],
+  "referencia": true,
+  "stats": {
+   "curaSala": 4
+  }
+ },
+ {
+  "id": "caderno_alquimista",
+  "nome": "Luva de Círculo Alquímico",
+  "desc": "Balas incendeiam e explodem de leve.",
+  "icone": "mao",
+  "cor": "#e2452b",
+  "raridade": 2,
+  "tags": [
+   "luva",
+   "fogo"
+  ],
+  "referencia": true,
+  "mods": {
+   "queima": true,
+   "explosao": 6
+  }
+ },
+ {
+  "id": "um_anel",
+  "nome": "O Um Anel",
+  "desc": "Balas atravessam paredes e você some... mas leva +20% de dano.",
+  "icone": "anel",
+  "cor": "#ffd23f",
+  "raridade": 3,
+  "tags": [
+   "anel",
+   "sombra"
+  ],
+  "referencia": true,
+  "stats": {
+   "danoRecebido": 1.2
+  },
+  "mods": {
+   "espectral": true
+  },
+  "visual": {
+   "acessorio": "lencol"
+  },
+  "maldito": true
+ },
+ {
+  "id": "capa_invisivel",
+  "nome": "Capa da Invisibilidade",
+  "desc": "Esquiva perfeita fácil e +5% crítico.",
+  "icone": "capa",
+  "cor": "#b8b0d0",
+  "raridade": 2,
+  "tags": [
+   "capa",
+   "sombra"
+  ],
+  "referencia": true,
+  "stats": {
+   "raioEsquiva": 4,
+   "critico": 0.05
+  },
+  "visual": {
+   "acessorio": "lencol"
+  }
+ },
+ {
+  "id": "vira_tempo",
+  "nome": "Vira-Tempo",
+  "desc": "Dash volta 25% antes e a câmera lenta dura mais. Ao levar dano: o tempo desacelera.",
+  "icone": "ampulheta",
+  "cor": "#ffd23f",
+  "raridade": 2,
+  "tags": [
+   "relogio",
+   "tempo"
+  ],
+  "referencia": true,
+  "gatilhos": [
+   {
+    "quando": "dano",
+    "efeitos": [
+     [
+      "lento",
+      {
+       "escala": 0.3,
+       "ms": 1200
+      }
+     ]
+    ]
+   }
+  ],
+  "stats": {
+   "cooldownDash": 0.75,
+   "lentoExtra": 1.4
+  }
+ },
+ {
+  "id": "pilula_vermelha",
+  "nome": "Pílula Vermelha",
+  "desc": "Câmera lenta 50% maior e esquiva fácil. Veja o código. Ao dar dash: tempo de bala.",
+  "icone": "pilula",
+  "cor": "#e2452b",
+  "raridade": 2,
+  "tags": [
+   "tempo",
+   "sombra"
+  ],
+  "referencia": true,
+  "gatilhos": [
+   {
+    "quando": "dash",
+    "cd": 1.5,
+    "efeitos": [
+     [
+      "lento",
+      {
+       "escala": 0.5,
+       "ms": 400
+      }
+     ]
+    ]
+   }
+  ],
+  "stats": {
+   "lentoExtra": 1.5,
+   "raioEsquiva": 3
+  }
+ },
+ {
+  "id": "pilula_azul",
+  "nome": "Pílula Azul",
+  "desc": "+4 chama por sala e a chama dura mais. Ignorância é uma bênção.",
+  "icone": "pilula",
+  "cor": "#4f9dff",
+  "raridade": 1,
+  "tags": [
+   "luz"
+  ],
+  "referencia": true,
+  "stats": {
+   "curaSala": 4,
+   "decaimento": 0.9
+  }
+ },
+ {
+  "id": "toalha",
+  "nome": "Toalha do Mochileiro",
+  "desc": "Não entre em pânico: -10% dano recebido e +0.42 sorte.",
+  "icone": "capa",
+  "cor": "#7fd7ff",
+  "raridade": 1,
+  "tags": [
+   "capa",
+   "sorte"
+  ],
+  "referencia": true,
+  "stats": {
+   "danoRecebido": 0.9,
+   "sorte": 0.42
+  }
+ },
+ {
+  "id": "pato_borracha",
+  "nome": "Pato de Borracha",
+  "desc": "+5% crítico e +0.5 sorte. Ele escuta seus problemas. Ao levar dano (50%): 5 críticos.",
+  "icone": "pato",
+  "cor": "#ffd23f",
+  "raridade": 1,
+  "tags": [
+   "sorte"
+  ],
+  "referencia": true,
+  "gatilhos": [
+   {
+    "quando": "dano",
+    "chance": 0.5,
+    "efeitos": [
+     [
+      "criticos",
+      {
+       "n": 5
+      }
+     ]
+    ]
+   }
+  ],
+  "stats": {
+   "critico": 0.05,
+   "sorte": 0.5
+  }
+ },
+ {
+  "id": "espinafre",
+  "nome": "Lata de Espinafre",
+  "desc": "+15% dano e +30% empurrão.",
+  "icone": "barril",
+  "cor": "#4a8a3a",
+  "raridade": 2,
+  "tags": [
+   "terra"
+  ],
+  "referencia": true,
+  "stats": {
+   "dano": 1.15,
+   "empurrao": 1.3
+  }
+ },
+ {
+  "id": "bigorna",
+  "nome": "Bigorna de Desenho Animado",
+  "desc": "Balas enormes e pesadas, mas mais lentas.",
+  "icone": "pedra",
+  "cor": "#7d8494",
+  "raridade": 2,
+  "tags": [
+   "pedra",
+   "terra"
+  ],
+  "referencia": true,
+  "stats": {
+   "empurrao": 1.5
+  },
+  "mods": {
+   "tamanho": 1.4,
+   "velBala": 0.85
+  }
+ },
+ {
+  "id": "caixa_pandora",
+  "nome": "Caixa de Pandora",
+  "desc": "+35% dano e +1 sorte, mas monstros têm +20% vida. Ao entrar: 2 meteoros caem.",
+  "icone": "cubo",
+  "cor": "#c86bff",
+  "raridade": 3,
+  "tags": [
+   "sombra"
+  ],
+  "referencia": true,
+  "gatilhos": [
+   {
+    "quando": "sala",
+    "efeitos": [
+     [
+      "meteoro",
+      {
+       "n": 2,
+       "dano": 8
+      }
+     ]
+    ]
+   }
+  ],
+  "stats": {
+   "dano": 1.35,
+   "sorte": 1,
+   "vidaInimigos": 1.2
+  },
+  "maldito": true
+ },
+ {
+  "id": "calice",
+  "nome": "Cálice Sagrado",
+  "desc": "Abates curam 0.6 e a cera cura +20%. Escolheu bem.",
+  "icone": "votiva",
+  "cor": "#ffd23f",
+  "raridade": 3,
+  "tags": [
+   "ouro",
+   "luz"
+  ],
+  "referencia": true,
+  "stats": {
+   "roubaVida": 0.6,
+   "curaCera": 1.2
+  }
+ },
+ {
+  "id": "chapeu_arqueologo",
+  "nome": "Chapéu do Arqueólogo",
+  "desc": "+1 sorte. Tesouros aparecem mais.",
+  "icone": "chapeu",
+  "cor": "#8a5a2b",
+  "raridade": 2,
+  "tags": [
+   "sorte"
+  ],
+  "referencia": true,
+  "stats": {
+   "sorte": 1
+  }
+ },
+ {
+  "id": "cristal_sabre",
+  "nome": "Cristal de Sabre",
+  "desc": "Balas atravessam 2 monstros.",
+  "icone": "cristal",
+  "cor": "#4f9dff",
+  "raridade": 2,
+  "tags": [
+   "cristal",
+   "lamina"
+  ],
+  "referencia": true,
+  "mods": {
+   "perfura": 2
+  }
+ },
+ {
+  "id": "elmo_beskar",
+  "nome": "Elmo de Beskar",
+  "desc": "-15% dano recebido. Este é o caminho.",
+  "icone": "mascara",
+  "cor": "#cfd8dc",
+  "raridade": 2,
+  "tags": [
+   "mascara",
+   "terra"
+  ],
+  "referencia": true,
+  "stats": {
+   "danoRecebido": 0.85
+  }
+ },
+ {
+  "id": "reator_peito",
+  "nome": "Reator no Peito",
+  "desc": "+20 chama máx e raio que pula 1x. A cada 5s: raio em cadeia.",
+  "icone": "orbe",
+  "cor": "#7fe8ff",
+  "raridade": 3,
+  "tags": [
+   "coracao",
+   "raio"
+  ],
+  "referencia": true,
+  "gatilhos": [
+   {
+    "quando": "tempo",
+    "cada": 5,
+    "efeitos": [
+     [
+      "raios",
+      {
+       "saltos": 3,
+       "dano": 3
+      }
+     ]
+    ]
+   }
+  ],
+  "stats": {
+   "chamaMax": 20
+  },
+  "mods": {
+   "eletrico": 1
+  }
+ },
+ {
+  "id": "escudo_estrelado",
+  "nome": "Escudo Redondo Estrelado",
+  "desc": "Um escudo por sala, e as balas voltam como bumerangue.",
+  "icone": "escudo",
+  "cor": "#4f9dff",
+  "raridade": 3,
+  "tags": [
+   "capa"
+  ],
+  "referencia": true,
+  "especial": "escudo",
+  "mods": {
+   "bumerangue": true
+  }
+ },
+ {
+  "id": "anel_juramento",
+  "nome": "Anel do Juramento Verde",
+  "desc": "+12% dano e chama verde. Na noite mais densa... A cada 20 tiros: construções verdes giram em você.",
+  "icone": "anel",
+  "cor": "#7fdc8a",
+  "raridade": 2,
+  "tags": [
+   "anel",
+   "luz"
+  ],
+  "referencia": true,
+  "gatilhos": [
+   {
+    "quando": "tiro",
+    "cada": 20,
+    "efeitos": [
+     [
+      "laminas",
+      {
+       "n": 2,
+       "seg": 3,
+       "dano": 1.5,
+       "cor": "#7fdc8a"
+      }
+     ]
+    ]
+   }
+  ],
+  "stats": {
+   "dano": 1.12
+  },
+  "visual": {
+   "chama": "verde"
+  }
+ },
+ {
+  "id": "cinto_utilidades",
+  "nome": "Cinto de Utilidades",
+  "desc": "+30% pente e recarga 20% mais rápida.",
+  "icone": "pente",
+  "cor": "#ffd23f",
+  "raridade": 2,
+  "tags": [
+   "pergaminho"
+  ],
+  "referencia": true,
+  "stats": {
+   "pente": 1.3,
+   "recarga": 0.8
+  }
+ },
+ {
+  "id": "cartucho_teia",
+  "nome": "Cartucho de Teia",
+  "desc": "15% de chance de grudar (congelar) o monstro.",
+  "icone": "frasco",
+  "cor": "#cfd8dc",
+  "raridade": 1,
+  "tags": [
+   "mola"
+  ],
+  "referencia": true,
+  "mods": {
+   "congela": 0.15
+  }
+ },
+ {
+  "id": "rosquinha",
+  "nome": "Rosquinha Rosa",
+  "desc": "+15 chama máx, -5% velocidade. Hmmm...",
+  "icone": "rosquinha",
+  "cor": "#ff8ac8",
+  "raridade": 1,
+  "tags": [
+   "coracao"
+  ],
+  "referencia": true,
+  "stats": {
+   "chamaMax": 15,
+   "velocidade": 0.95
+  }
+ },
+ {
+  "id": "cabine_azul",
+  "nome": "Cabine Azul de Bolso",
+  "desc": "Maior por dentro: +40% pente e +15% alcance. Ao levar dano (25%): some e aparece longe.",
+  "icone": "cubo",
+  "cor": "#2a4fd0",
+  "raridade": 2,
+  "tags": [
+   "tempo"
+  ],
+  "referencia": true,
+  "gatilhos": [
+   {
+    "quando": "dano",
+    "chance": 0.25,
+    "efeitos": [
+     [
+      "teleporte",
+      {
+       "para": "aleatorio"
+      }
+     ]
+    ]
+   }
+  ],
+  "stats": {
+   "pente": 1.4,
+   "alcance": 1.15
+  }
+ },
+ {
+  "id": "pisca_pisca",
+  "nome": "Pisca-Pisca de Natal",
+  "desc": "+40% luz. Alguém está tentando falar com você.",
+  "icone": "lamparina",
+  "cor": "#ff5a8a",
+  "raridade": 1,
+  "tags": [
+   "luz"
+  ],
+  "referencia": true,
+  "stats": {
+   "luz": 1.4
+  }
+ },
+ {
+  "id": "cristal_azul",
+  "nome": "Cristal Azul",
+  "desc": "Atira 25% mais rápido, mas a chama queima 20% mais.",
+  "icone": "cristal",
+  "cor": "#7fd7ff",
+  "raridade": 2,
+  "tags": [
+   "vidro"
+  ],
+  "referencia": true,
+  "stats": {
+   "cadencia": 0.75,
+   "decaimento": 1.2
+  },
+  "maldito": true
+ },
+ {
+  "id": "ovo_dragao",
+  "nome": "Ovo de Dragão",
+  "desc": "Balas incendeiam e +10 chama máx. Ao matar (20%): fogo no chão.",
+  "icone": "esfera",
+  "cor": "#a0303a",
+  "raridade": 2,
+  "tags": [
+   "fogo"
+  ],
+  "referencia": true,
+  "gatilhos": [
+   {
+    "quando": "matar",
+    "chance": 0.2,
+    "efeitos": [
+     [
+      "nuvem",
+      {
+       "raio": 22,
+       "seg": 3,
+       "dps": 3,
+       "tipo": "fogo"
+      }
+     ]
+    ]
+   }
+  ],
+  "stats": {
+   "chamaMax": 10
+  },
+  "mods": {
+   "queima": true
+  }
+ },
+ {
+  "id": "medalhao_bruxo",
+  "nome": "Medalhão do Bruxo",
+  "desc": "+5% crítico e balas que perseguem um pouco. Ao entrar: 3 críticos.",
+  "icone": "amuleto",
+  "cor": "#cfd8dc",
+  "raridade": 2,
+  "tags": [
+   "amuleto",
+   "olhar"
+  ],
+  "referencia": true,
+  "gatilhos": [
+   {
+    "quando": "sala",
+    "efeitos": [
+     [
+      "criticos",
+      {
+       "n": 3
+      }
+     ]
+    ]
+   }
+  ],
+  "stats": {
+   "critico": 0.05
+  },
+  "mods": {
+   "teleguiado": 0.4
+  }
+ },
+ {
+  "id": "cafe_danado",
+  "nome": "Café Danado de Bom",
+  "desc": "Atira 12% mais rápido.",
+  "icone": "xicara",
+  "cor": "#8a5a2b",
+  "raridade": 1,
+  "tags": [
+   "eco"
+  ],
+  "referencia": true,
+  "stats": {
+   "cadencia": 0.88
+  }
+ },
+ {
+  "id": "bola_volei",
+  "nome": "Bola de Vôlei Amiga",
+  "desc": "Uma amiga redonda gira em volta e bloqueia balas.",
+  "icone": "esfera",
+  "cor": "#f4ead6",
+  "raridade": 2,
+  "tags": [
+   "sorte"
+  ],
+  "referencia": true,
+  "especial": "orbe"
+ },
+ {
+  "id": "dedo_rei",
+  "nome": "Dedo do Rei das Maldições",
+  "desc": "+25% dano. Ao matar (20%): cortes retalham a sala. Monstros +15% vida.",
+  "icone": "osso",
+  "cor": "#c0303a",
+  "raridade": 3,
+  "tags": [
+   "sangue",
+   "osso"
+  ],
+  "referencia": true,
+  "gatilhos": [
+   {
+    "quando": "matar",
+    "chance": 0.2,
+    "cd": 4,
+    "efeitos": [
+     [
+      "cortes",
+      {
+       "seg": 0.8,
+       "dano": 2
+      }
+     ]
+    ]
+   }
+  ],
+  "stats": {
+   "dano": 1.25,
+   "vidaInimigos": 1.15
+  },
+  "maldito": true
+ },
+ {
+  "id": "punho_divergente",
+  "nome": "Punho Divergente",
+  "desc": "Cada acerto bate de novo um instante depois (50% do dano).",
+  "icone": "mao",
+  "cor": "#4f9dff",
+  "raridade": 3,
+  "tags": [
+   "eco",
+   "luva"
+  ],
+  "referencia": true,
+  "passivos": [
+   "golpeDuplo"
+  ]
+ },
+ {
+  "id": "faisca_negra",
+  "nome": "Faísca Negra",
+  "desc": "Às vezes o golpe sai 2,5x mais forte, com um raio negro.",
+  "icone": "raio",
+  "cor": "#e2452b",
+  "raridade": 3,
+  "tags": [
+   "raio",
+   "sombra"
+  ],
+  "referencia": true,
+  "passivos": [
+   "raioNegro"
+  ]
+ },
+ {
+  "id": "seis_olhos",
+  "nome": "Seis Olhos",
+  "desc": "Infinito: balas inimigas perto de você ficam quase paradas. +10% crítico.",
+  "icone": "olho",
+  "cor": "#4fa8ff",
+  "raridade": 3,
+  "tags": [
+   "olho",
+   "tempo"
+  ],
+  "referencia": true,
+  "passivos": [
+   "infinito"
+  ],
+  "stats": {
+   "critico": 0.1
+  }
+ },
+ {
+  "id": "tecnica_reversa",
+  "nome": "Técnica Reversa",
+  "desc": "No parry: cura 6. +10 chama máx.",
+  "icone": "coracao",
+  "cor": "#7fd7ff",
+  "raridade": 2,
+  "tags": [
+   "coracao",
+   "luz"
+  ],
+  "referencia": true,
+  "gatilhos": [
+   {
+    "quando": "parry",
+    "efeitos": [
+     [
+      "curar",
+      {
+       "qtd": 6
+      }
+     ]
+    ]
+   }
+  ],
+  "stats": {
+   "chamaMax": 10
+  }
+ },
+ {
+  "id": "caes_divinos",
+  "nome": "Cães Divinos",
+  "desc": "Dois cães (um preto, um branco) caçam os monstros para sempre.",
+  "icone": "dente",
+  "cor": "#1b1325",
+  "raridade": 3,
+  "tags": [
+   "sombra",
+   "dente"
+  ],
+  "referencia": true,
+  "passivos": [
+   "caes"
+  ]
+ },
+ {
+  "id": "boneco_palha",
+  "nome": "Boneco de Palha",
+  "desc": "Ressonância: acertar um monstro machuca outro (30%).",
+  "icone": "vela",
+  "cor": "#c99a62",
+  "raridade": 2,
+  "tags": [
+   "raio",
+   "mascara"
+  ],
+  "referencia": true,
+  "passivos": [
+   "ressonancia"
+  ]
+ },
+ {
+  "id": "energia_maldita",
+  "nome": "Energia Amaldiçoada",
+  "desc": "A cada 6 tiros: 3 balas roxas que perseguem.",
+  "icone": "chama",
+  "cor": "#b06bff",
+  "raridade": 2,
+  "tags": [
+   "olhar",
+   "sombra"
+  ],
+  "referencia": true,
+  "gatilhos": [
+   {
+    "quando": "tiro",
+    "cada": 6,
+    "efeitos": [
+     [
+      "teleguiadas",
+      {
+       "n": 3,
+       "dano": 2,
+       "cor": "#b06bff"
+      }
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "id": "fruta_borracha",
+  "nome": "Fruta da Borracha",
+  "desc": "Gomu Gomu: balas vão e voltam e empurram muito. Dash volta 40% antes.",
+  "icone": "esfera",
+  "cor": "#c86bff",
+  "raridade": 3,
+  "tags": [
+   "mola",
+   "vento"
+  ],
+  "referencia": true,
+  "stats": {
+   "empurrao": 1.8,
+   "cooldownDash": 0.6
+  },
+  "mods": {
+   "bumerangue": true
+  }
+ },
+ {
+  "id": "fruta_fogo",
+  "nome": "Fruta do Fogo",
+  "desc": "Balas incendeiam e o dash deixa fogo. Chama vermelha.",
+  "icone": "esfera",
+  "cor": "#ff4a2e",
+  "raridade": 3,
+  "tags": [
+   "fogo",
+   "vento"
+  ],
+  "referencia": true,
+  "passivos": [
+   "mera"
+  ],
+  "mods": {
+   "queima": true
+  },
+  "visual": {
+   "chama": "vermelha"
+  }
+ },
+ {
+  "id": "fruta_gelo",
+  "nome": "Fruta do Gelo",
+  "desc": "25% de congelar, e o dash deixa um rastro de gelo.",
+  "icone": "esfera",
+  "cor": "#8fe3ff",
+  "raridade": 3,
+  "tags": [
+   "gelo",
+   "vento"
+  ],
+  "referencia": true,
+  "gatilhos": [
+   {
+    "quando": "dash",
+    "cd": 0.6,
+    "efeitos": [
+     [
+      "nuvem",
+      {
+       "raio": 22,
+       "seg": 3,
+       "dps": 1,
+       "tipo": "gelo"
+      }
+     ]
+    ]
+   }
+  ],
+  "mods": {
+   "congela": 0.25
+  },
+  "visual": {
+   "chama": "ciano"
+  }
+ },
+ {
+  "id": "haki_armamento",
+  "nome": "Haki do Armamento",
+  "desc": "+20% dano e atravessa escudos.",
+  "icone": "mao",
+  "cor": "#1b1325",
+  "raridade": 3,
+  "tags": [
+   "terra",
+   "lamina"
+  ],
+  "referencia": true,
+  "passivos": [
+   "haki"
+  ],
+  "stats": {
+   "dano": 1.2
+  }
+ },
+ {
+  "id": "tres_espadas",
+  "nome": "Estilo de Três Espadas",
+  "desc": "Cada tiro também solta dois cortes de espada.",
+  "icone": "osso",
+  "cor": "#7fdc8a",
+  "raridade": 3,
+  "tags": [
+   "lamina",
+   "eco"
+  ],
+  "referencia": true,
+  "passivos": [
+   "santoryu"
+  ]
+ },
+ {
+  "id": "perna_diabo",
+  "nome": "Perna do Diabo",
+  "desc": "O dash chuta e queima os monstros. +10% velocidade.",
+  "icone": "sapato",
+  "cor": "#ff7a2e",
+  "raridade": 2,
+  "tags": [
+   "fogo",
+   "bota"
+  ],
+  "referencia": true,
+  "passivos": [
+   "diableJambe"
+  ],
+  "stats": {
+   "velocidade": 1.1
+  }
+ },
+ {
+  "id": "mapa_grande_rota",
+  "nome": "Mapa da Grande Rota",
+  "desc": "Ao entrar numa sala: revela o mapa. +30% cera.",
+  "icone": "pergaminho",
+  "cor": "#ffd23f",
+  "raridade": 2,
+  "tags": [
+   "ouro",
+   "pergaminho"
+  ],
+  "referencia": true,
+  "gatilhos": [
+   {
+    "quando": "sala",
+    "efeitos": [
+     [
+      "revelarMapa",
+      {}
+     ]
+    ]
+   }
+  ],
+  "stats": {
+   "ceraBonus": 1.3
+  }
+ },
+ {
+  "id": "anel_senhor_fogo",
+  "nome": "Anel do Senhor do Fogo",
+  "desc": "Aura: quem chega perto queima.",
+  "icone": "anel",
+  "cor": "#ff7a2e",
+  "raridade": 3,
+  "tags": [
+   "fogo",
+   "anel"
+  ],
+  "referencia": true,
+  "passivos": [
+   "aura"
+  ]
+ },
+ {
+  "id": "tatuagem_e",
+  "nome": "Tatuagem \"E\"",
+  "desc": "A tatuagem do Luiz: +12% dano, +8% crítico. No crítico (25%): raio em cadeia.",
+  "icone": "runa",
+  "cor": "#1b1325",
+  "raridade": 3,
+  "tags": [
+   "sorte",
+   "runa"
+  ],
+  "referencia": true,
+  "gatilhos": [
+   {
+    "quando": "critico",
+    "chance": 0.25,
+    "cd": 0.5,
+    "efeitos": [
+     [
+      "raios",
+      {
+       "saltos": 3,
+       "dano": 3
+      }
+     ]
+    ]
+   }
+  ],
+  "exclusivo": "luiz",
+  "stats": {
+   "dano": 1.12,
+   "critico": 0.08
+  }
+ },
+ {
+  "id": "sorriso_luiz",
+  "nome": "Sorriso do Luiz",
+  "desc": "A foto do Luiz no bolso: com pouca chama, ele aparece, cura 8 e protege (a cada 4s). +10 chama máx.",
+  "icone": "coracao",
+  "cor": "#ff8ac8",
+  "raridade": 3,
+  "tags": [
+   "coracao",
+   "luz"
+  ],
+  "referencia": true,
+  "gatilhos": [
+   {
+    "quando": "chamaBaixa",
+    "cada": 4,
+    "efeitos": [
+     [
+      "curar",
+      {
+       "qtd": 8
+      }
+     ],
+     [
+      "escudo",
+      {}
+     ]
+    ]
+   }
+  ],
+  "exclusivo": "ana",
+  "stats": {
+   "chamaMax": 10
+  }
+ },
+ {
+  "id": "capuz_pelucia",
+  "nome": "Capuz de Pelúcia",
+  "desc": "Quentinho: a chama queima 20% mais devagar e -10% de dano recebido.",
+  "icone": "capa",
+  "cor": "#c99a62",
+  "raridade": 2,
+  "tags": [
+   "capa",
+   "terra"
+  ],
+  "referencia": true,
+  "exclusivo": "ana",
+  "stats": {
+   "decaimento": 0.8,
+   "danoRecebido": 0.9
+  }
+ },
+ {
+  "id": "bigode_lendario",
+  "nome": "Bigode Lendário",
+  "desc": "Monstros que encostam levam 6 e voam longe. +25 chama máx.",
+  "icone": "mascara",
+  "cor": "#3a2a20",
+  "raridade": 3,
+  "tags": [
+   "terra",
+   "coracao"
+  ],
+  "referencia": true,
+  "exclusivo": "henrique",
+  "stats": {
+   "espinhos": 6,
+   "chamaMax": 25,
+   "empurrao": 1.3
+  }
+ },
+ {
+  "id": "rel_vela",
+  "nome": "Pavio Original",
+  "desc": "O pavio da primeira vela: +10 chama máx. Ao limpar a sala, cura 4.",
+  "icone": "pavio",
+  "cor": "#ffe066",
+  "raridade": 2,
+  "tags": [
+   "luz",
+   "vela"
+  ],
+  "referencia": true,
+  "gatilhos": [
+   {
+    "quando": "limpar",
+    "efeitos": [
+     [
+      "curar",
+      {
+       "qtd": 4
+      }
+     ]
+    ]
+   }
+  ],
+  "stats": {
+   "chamaMax": 10
+  }
+ },
+ {
+  "id": "rel_luiz",
+  "nome": "Caneta do Criador",
+  "desc": "Quem fez o jogo desenha o que precisa: ao matar (6%), aparece um baú.",
+  "icone": "pergaminho",
+  "cor": "#f4ead6",
+  "raridade": 3,
+  "tags": [
+   "sorte",
+   "pergaminho"
+  ],
+  "referencia": true,
+  "gatilhos": [
+   {
+    "quando": "matar",
+    "chance": 0.06,
+    "cd": 15,
+    "efeitos": [
+     [
+      "bau",
+      {}
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "id": "rel_ana",
+  "nome": "Foto Revelada",
+  "desc": "Ao entrar numa sala: um flash trava todos por 1,2s e seus 2 próximos tiros são críticos.",
+  "icone": "lente",
+  "cor": "#ff8ac8",
+  "raridade": 3,
+  "tags": [
+   "luz",
+   "olho"
+  ],
+  "referencia": true,
+  "gatilhos": [
+   {
+    "quando": "sala",
+    "efeitos": [
+     [
+      "paralisar",
+      {
+       "seg": 1.2
+      }
+     ],
+     [
+      "criticos",
+      {
+       "n": 2
+      }
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "id": "rel_henrique",
+  "nome": "Abraço de Urso",
+  "desc": "+15 chama máx. Ao levar dano: empurra tudo em volta e cura 5.",
+  "icone": "coracao",
+  "cor": "#a0784a",
+  "raridade": 3,
+  "tags": [
+   "terra",
+   "coracao"
+  ],
+  "referencia": true,
+  "gatilhos": [
+   {
+    "quando": "dano",
+    "efeitos": [
+     [
+      "empurrar",
+      {
+       "raio": 70,
+       "forca": 360,
+       "dano": 2
+      }
+     ],
+     [
+      "curar",
+      {
+       "qtd": 5
+      }
+     ]
+    ]
+   }
+  ],
+  "stats": {
+   "chamaMax": 15
+  }
+ },
+ {
+  "id": "rel_fosforo",
+  "nome": "Palito de Reserva",
+  "desc": "Uma vez por partida: quando a chama acabar, você reacende com metade dela.",
+  "icone": "pavio_curto",
+  "cor": "#e2452b",
+  "raridade": 3,
+  "tags": [
+   "fogo",
+   "vela"
+  ],
+  "referencia": true,
+  "passivos": [
+   "renascer"
+  ]
+ },
+ {
+  "id": "rel_lamparina",
+  "nome": "Óleo Eterno",
+  "desc": "A chama queima 30% mais devagar e ilumina 20% mais.",
+  "icone": "lamparina",
+  "cor": "#7fd7ff",
+  "raridade": 2,
+  "tags": [
+   "luz",
+   "frasco"
+  ],
+  "referencia": true,
+  "stats": {
+   "decaimento": 0.7,
+   "luz": 1.2
+  }
+ },
+ {
+  "id": "rel_aniversario",
+  "nome": "Bolo Surpresa",
+  "desc": "Ao limpar a sala (10%): um item aparece num pedestal.",
+  "icone": "bolo",
+  "cor": "#ff8ac8",
+  "raridade": 3,
+  "tags": [
+   "sorte",
+   "ouro"
+  ],
+  "referencia": true,
+  "gatilhos": [
+   {
+    "quando": "limpar",
+    "chance": 0.1,
+    "efeitos": [
+     [
+      "itemSurpresa",
+      {}
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "id": "rel_isqueiro",
+  "nome": "Pedra de Isqueiro",
+  "desc": "Ao dar dash: um anel de 8 faíscas de fogo.",
+  "icone": "brasa",
+  "cor": "#ff9a2e",
+  "raridade": 2,
+  "tags": [
+   "fogo",
+   "bota"
+  ],
+  "referencia": true,
+  "gatilhos": [
+   {
+    "quando": "dash",
+    "cd": 0.8,
+    "efeitos": [
+     [
+      "anel",
+      {
+       "n": 8,
+       "dano": 1.5,
+       "cor": "#ff9a2e"
+      }
+     ],
+     [
+      "queimar",
+      {
+       "raio": 40,
+       "seg": 2
+      }
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "id": "rel_bruxinha",
+  "nome": "Caldeirão Borbulhante",
+  "desc": "A cada 6s em combate: uma nuvem de veneno cai num monstro.",
+  "icone": "frasco",
+  "cor": "#9cff6b",
+  "raridade": 2,
+  "tags": [
+   "veneno",
+   "frasco"
+  ],
+  "referencia": true,
+  "gatilhos": [
+   {
+    "quando": "tempo",
+    "cada": 6,
+    "efeitos": [
+     [
+      "nuvem",
+      {
+       "onde": "inimigo",
+       "raio": 30,
+       "seg": 5,
+       "dps": 3,
+       "tipo": "veneno"
+      }
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "id": "rel_cavaleiro",
+  "nome": "Brasão da Ordem",
+  "desc": "Um escudo por sala e -10% de dano recebido.",
+  "icone": "escudo",
+  "cor": "#cfd8dc",
+  "raridade": 3,
+  "tags": [
+   "terra",
+   "capa"
+  ],
+  "referencia": true,
+  "especial": "escudo",
+  "stats": {
+   "danoRecebido": 0.9
+  }
+ },
+ {
+  "id": "rel_elfa",
+  "nome": "Flecha Élfica",
+  "desc": "A cada 6 tiros: uma flecha que atravessa tudo.",
+  "icone": "pena",
+  "cor": "#7fdc8a",
+  "raridade": 2,
+  "tags": [
+   "lamina",
+   "olhar"
+  ],
+  "referencia": true,
+  "gatilhos": [
+   {
+    "quando": "tiro",
+    "cada": 6,
+    "efeitos": [
+     [
+      "leque",
+      {
+       "n": 1,
+       "abertura": 0,
+       "dano": 6,
+       "perfura": 99,
+       "tex": "agulha",
+       "cor": "#7fdc8a",
+       "vel": 420
+      }
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "id": "teclado_criador",
+  "nome": "Teclado do Criador",
+  "desc": "A cada 15 tiros, aperta uma tecla aleatória: um efeito surpresa (explosão, raios, meteoros, lâminas...).",
+  "icone": "cubo",
+  "cor": "#7fdc8a",
+  "raridade": 3,
+  "tags": [
+   "eco",
+   "sorte"
+  ],
+  "referencia": true,
+  "gatilhos": [
+   {
+    "quando": "tiro",
+    "cada": 15,
+    "efeitos": [
+     [
+      "aleatorio",
+      {}
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "id": "rel_mago",
+  "nome": "Grimório",
+  "desc": "Seu item ativo carrega 2 por sala limpa.",
+  "icone": "livro",
+  "cor": "#c86bff",
+  "raridade": 3,
+  "tags": [
+   "tempo",
+   "pergaminho"
+  ],
+  "referencia": true,
+  "passivos": [
+   "grimorio"
+  ]
+ }
+]

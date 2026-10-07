@@ -1,0 +1,326 @@
+{
+  "jogador": {
+    "chamaMax": 100,
+    "dano": 1,
+    "velocidade": 115,
+    "dashes": 2,
+    "cooldownDash": 0.5,
+    "alcance": 1,
+    "luz": 1,
+    "decaimento": 0.75,
+    "curaCera": 1,
+    "queimar": 0,
+    "espinhos": 0,
+    "pente": 1,
+    "recarga": 1,
+    "cadencia": 1,
+    "critico": 0,
+    "ceraBonus": 1,
+    "roubaVida": 0,
+    "balasInimigas": 1,
+    "ima": 0,
+    "empurrao": 1,
+    "raioEsquiva": 0,
+    "lentoExtra": 1,
+    "parryExtra": 0,
+    "janelaParry": 0,
+    "sorte": 0,
+    "venenoForca": 1,
+    "danoRecebido": 1,
+    "vidaInimigos": 1,
+    "curaSala": 0
+  },
+  "combate": {
+    "velocidadeDash": 340,
+    "duracaoDash": 0.12,
+    "custoDash": 1,
+    "invencivelAposDano": 0.6,
+    "curaPorGota": 2,
+    "chanceMunicao": 0.14,
+    "chanceSegundaOnda": 0.35,
+    "janelaCombo": 2.2,
+    "chanceBau": 0.12
+  },
+  "armasIniciais": [
+    "pistola",
+    "escopeta"
+  ],
+  "maxArmas": 3,
+  "luz": {
+    "raioMin": 30,
+    "raioMax": 95,
+    "escuridao": 0.93
+  },
+  "andares": 5,
+  "salasPorAndar": [
+    13,
+    15,
+    17,
+    19,
+    21
+  ],
+  "escalaAndar": {
+    "vida": 0.35,
+    "dano": 0.12
+  },
+  "precos": {
+    "castical": 8,
+    "item": 22,
+    "vela": 12,
+    "arma": 22,
+    "municao": 8,
+    "ativo": 20
+  },
+  "altar": [
+    {
+      "id": "chamaMax",
+      "nome": "Cera Grossa",
+      "desc": "+15 de chama máxima",
+      "valor": 15,
+      "custo": [
+        5,
+        10,
+        20
+      ]
+    },
+    {
+      "id": "dano",
+      "nome": "Pólvora Benta",
+      "desc": "+15% de dano",
+      "valor": 0.15,
+      "custo": [
+        10,
+        20,
+        35
+      ]
+    },
+    {
+      "id": "luz",
+      "nome": "Brilho",
+      "desc": "+15% de alcance da luz",
+      "valor": 0.15,
+      "custo": [
+        5,
+        10,
+        15
+      ]
+    },
+    {
+      "id": "ceraInicial",
+      "nome": "Herança",
+      "desc": "Começa a partida com +5 de cera",
+      "valor": 5,
+      "custo": [
+        4,
+        8,
+        12
+      ]
+    },
+    {
+      "id": "smgInicial",
+      "nome": "Contrabando",
+      "desc": "Começa com a Submetralhadora",
+      "valor": 1,
+      "custo": [
+        25
+      ]
+    }
+  ],
+  "parry": {
+    "janela": 0.15,
+    "recarga": 0.8,
+    "raio": 20,
+    "dano": 3,
+    "cura": 2,
+    "maxRefletidas": 6,
+    "danoNoChefe": 0.5
+  },
+  "esquiva": {
+    "raio": 13,
+    "cura": 1,
+    "camaraLenta": 0.3,
+    "duracaoMs": 380
+  },
+  "frenesi": {
+    "combo": 10,
+    "cadencia": 0.8,
+    "velocidade": 1.15,
+    "marcos": [
+      10,
+      20,
+      30,
+      50,
+      75,
+      100
+    ]
+  },
+  "elite": {
+    "chance": 0.1,
+    "chancePorAndar": 0.06,
+    "vida": 2.5,
+    "cera": 3,
+    "anelMorte": 10
+  },
+  "critico": {
+    "chance": 0.06,
+    "multiplicador": 2.2
+  },
+  "velocidadeBalasInimigas": 1.2,
+  "nomesAndares": [
+    "AS CATACUMBAS",
+    "O ESGOTO DE CERA",
+    "O OSSÁRIO",
+    "A CRIPTA DOS CAVALEIROS",
+    "A FORJA DO APAGADOR"
+  ],
+  "chefes": [
+    "ogro",
+    "rei_podre",
+    "necro_anciao",
+    "cavaleiro_derretido",
+    "apagador"
+  ],
+  "musicas": [
+    "masmorra1",
+    "masmorra2",
+    "masmorra1",
+    "masmorra2",
+    "masmorra3"
+  ],
+  "tintaAndar": [
+    "#ffffff",
+    "#c4e6bc",
+    "#e0d4f0",
+    "#c8d0e0",
+    "#ffbfae"
+  ],
+  "chanceSalaEscura": [
+    0.12,
+    0.18,
+    0.25,
+    0.3,
+    0.35
+  ],
+  "orcamento": {
+    "base": 8,
+    "porAndar": 4,
+    "variacao": 3
+  },
+  "raridade": {
+    "pesos": [
+      55,
+      28,
+      12,
+      4,
+      1
+    ]
+  },
+  "abismo": {
+    "nome": "O ABISMO",
+    "chefe": "pavio_negro",
+    "musica": "abismo",
+    "tinta": "#b8a0ff",
+    "salas": 22,
+    "chanceEscura": 0.5
+  },
+  "infinito": {
+    "salas": 20,
+    "chanceEscura": 0.4,
+    "chefes": [
+      "ogro",
+      "rei_podre",
+      "necro_anciao",
+      "cavaleiro_derretido",
+      "apagador",
+      "pavio_negro",
+      "jardineira",
+      "reflexo",
+      "relojoeiro",
+      "leviata",
+      "acendedor"
+    ],
+    "vidaChefeBase": 420,
+    "vidaChefePorAndar": 0.3,
+    "musicas": [
+      "masmorra1",
+      "masmorra2",
+      "masmorra3",
+      "abismo"
+    ],
+    "tintas": [
+      "#ffffff",
+      "#c4e6bc",
+      "#ffbfae",
+      "#b8a0ff",
+      "#a0d8ff"
+    ],
+    "orcamentoMaxAndar": 5,
+    "eliteMax": 0.45
+  },
+  "desafio": {
+    "chance": [
+      0.6,
+      1,
+      1
+    ],
+    "ondas": 3,
+    "intensidade": 1.1
+  },
+  "secreta": {
+    "vidaParede": 30,
+    "chanceAtivoTesouro": 0.3,
+    "chanceAtivoLoja": 0.5
+  },
+  "capitulo3": [
+    {
+      "nome": "O JARDIM DE CINZAS",
+      "chefe": "jardineira",
+      "musica": "abismo",
+      "tinta": "#b8b8a8",
+      "salas": 20,
+      "chanceEscura": 0.3,
+      "perigo": "cinzas",
+      "descricao": "Brasas caem do céu. Olhe para cima."
+    },
+    {
+      "nome": "O ESPELHO PARTIDO",
+      "chefe": "reflexo",
+      "musica": "masmorra3",
+      "tinta": "#a8e8ff",
+      "salas": 21,
+      "chanceEscura": 0.2,
+      "perigo": "espelho",
+      "descricao": "Tudo quica nas paredes. Até o que é seu."
+    },
+    {
+      "nome": "O RELÓGIO PARADO",
+      "chefe": "relojoeiro",
+      "musica": "masmorra1",
+      "tinta": "#ffe6a0",
+      "salas": 22,
+      "chanceEscura": 0.25,
+      "perigo": "tempo",
+      "descricao": "Tic: os monstros param. Tac: eles correm."
+    },
+    {
+      "nome": "O MAR DE CERA",
+      "chefe": "leviata",
+      "musica": "masmorra2",
+      "tinta": "#8fb8ff",
+      "salas": 23,
+      "chanceEscura": 0.3,
+      "perigo": "mar",
+      "descricao": "Ondas de cera atravessam as salas."
+    },
+    {
+      "nome": "O CORAÇÃO DA CHAMA",
+      "chefe": "acendedor",
+      "musica": "chefe",
+      "tinta": "#ffd0a0",
+      "salas": 24,
+      "chanceEscura": 1,
+      "perigo": "coracao",
+      "descricao": "Só a sua luz. E o que morre aqui, queima."
+    }
+  ]
+}

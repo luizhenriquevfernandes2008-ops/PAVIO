@@ -1,0 +1,2387 @@
+[
+ {
+  "id": "vazio_infinito",
+  "nome": "Domínio: Vazio Infinito",
+  "desc": "Informação infinita: todos os monstros travam por 5s e as balas somem.",
+  "icone": "livro",
+  "cor": "#4fa8ff",
+  "carga": 6,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "paralisar",
+    {
+     "seg": 5
+    }
+   ],
+   [
+    "apagarBalas",
+    {}
+   ],
+   [
+    "lento",
+    {
+     "escala": 0.5,
+     "ms": 800
+    }
+   ]
+  ]
+ },
+ {
+  "id": "santuario",
+  "nome": "Domínio: Santuário Malevolente",
+  "desc": "Cortes invisíveis retalham a sala inteira por 4 segundos.",
+  "icone": "livro",
+  "cor": "#e2452b",
+  "carga": 6,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "cortes",
+    {
+     "seg": 4,
+     "dano": 3
+    }
+   ]
+  ]
+ },
+ {
+  "id": "roxo_oco",
+  "nome": "Técnica Proibida: Roxo",
+  "desc": "Junta o azul e o vermelho: uma esfera roxa que apaga tudo no caminho.",
+  "icone": "orbe",
+  "cor": "#b06bff",
+  "carga": 5,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "projetilGigante",
+    {
+     "dano": 40,
+     "tam": 4,
+     "cor": "#b06bff"
+    }
+   ]
+  ]
+ },
+ {
+  "id": "lapso_azul",
+  "nome": "Lapso: Azul",
+  "desc": "Um ponto de atração onde você mira: suga os monstros.",
+  "icone": "orbe",
+  "cor": "#4f9dff",
+  "carga": 3,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "buracoNegro",
+    {
+     "seg": 3,
+     "raio": 50,
+     "dano": 4
+    }
+   ]
+  ]
+ },
+ {
+  "id": "reversao_vermelho",
+  "nome": "Reversão: Vermelho",
+  "desc": "Repulsão: arremessa tudo para longe com uma explosão.",
+  "icone": "orbe",
+  "cor": "#e2452b",
+  "carga": 3,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "explosao",
+    {
+     "onde": "jogador",
+     "raio": 34,
+     "dano": 8
+    }
+   ],
+   [
+    "empurrar",
+    {
+     "raio": 140,
+     "forca": 520,
+     "dano": 3
+    }
+   ]
+  ]
+ },
+ {
+  "id": "haki_rei",
+  "nome": "Haki do Rei",
+  "desc": "Os fracos desmaiam: todos travam por 3s e levam dano.",
+  "icone": "coroa",
+  "cor": "#c86bff",
+  "carga": 5,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "paralisar",
+    {
+     "seg": 3
+    }
+   ],
+   [
+    "danoTodos",
+    {
+     "dano": 4
+    }
+   ]
+  ]
+ },
+ {
+  "id": "shambles",
+  "nome": "Room: Shambles",
+  "desc": "Troca de lugar com o monstro mais longe e corta a sala toda.",
+  "icone": "cubo",
+  "cor": "#4fa8ff",
+  "carga": 3,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "teleporte",
+    {
+     "para": "inimigo"
+    }
+   ],
+   [
+    "danoTodos",
+    {
+     "dano": 5
+    }
+   ]
+  ]
+ },
+ {
+  "id": "fruta_tremor",
+  "nome": "Fruta do Tremor",
+  "desc": "Racha o ar: terremoto que fere tudo e abre paredes.",
+  "icone": "esfera",
+  "cor": "#f4ead6",
+  "carga": 5,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "terremoto",
+    {
+     "dano": 12
+    }
+   ]
+  ]
+ },
+ {
+  "id": "coup_de_burst",
+  "nome": "Coup de Burst",
+  "desc": "Um tiro de canhão de cola: dash gigante e intocável.",
+  "icone": "barril",
+  "cor": "#ffd23f",
+  "carga": 2,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "dashLongo",
+    {}
+   ],
+   [
+    "invulneravel",
+    {
+     "seg": 0.8
+    }
+   ]
+  ]
+ },
+ {
+  "id": "tambores_libertacao",
+  "nome": "Tambores da Libertação",
+  "desc": "Gear 5: dano x2, +40% velocidade, intocável e cura (10s).",
+  "icone": "chapeu_palha",
+  "cor": "#ffffff",
+  "carga": 8,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "buff",
+    {
+     "stat": "dano",
+     "mult": 2,
+     "seg": 10
+    }
+   ],
+   [
+    "buff",
+    {
+     "stat": "velocidade",
+     "mult": 1.4,
+     "seg": 10
+    }
+   ],
+   [
+    "invulneravel",
+    {
+     "seg": 2
+    }
+   ],
+   [
+    "curar",
+    {
+     "qtd": 20
+    }
+   ]
+  ]
+ },
+ {
+  "id": "granada_fragmentacao",
+  "nome": "Granada de Fragmentação",
+  "desc": "Explosão grande onde você mira.",
+  "icone": "bomba",
+  "cor": "#7d8494",
+  "carga": 2,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "explosao",
+    {
+     "onde": "mira",
+     "raio": 44,
+     "dano": 14
+    }
+   ]
+  ]
+ },
+ {
+  "id": "hadouken",
+  "nome": "Bola de Energia do Lutador",
+  "desc": "Uma bola de energia gigante para frente.",
+  "icone": "orbe",
+  "cor": "#7fd7ff",
+  "carga": 2,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "projetilGigante",
+    {
+     "dano": 18,
+     "tam": 2.4,
+     "cor": "#7fd7ff",
+     "vel": 220
+    }
+   ]
+  ]
+ },
+ {
+  "id": "estrela_invencivel",
+  "nome": "Estrela da Invencibilidade",
+  "desc": "Intocável por 6s, mais rápido, e encostar machuca.",
+  "icone": "estrela",
+  "cor": "#ffd23f",
+  "carga": 6,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "invulneravel",
+    {
+     "seg": 6
+    }
+   ],
+   [
+    "buff",
+    {
+     "stat": "velocidade",
+     "mult": 1.3,
+     "seg": 6
+    }
+   ],
+   [
+    "laminas",
+    {
+     "n": 4,
+     "seg": 6,
+     "dano": 2,
+     "cor": "#ffd23f"
+    }
+   ]
+  ]
+ },
+ {
+  "id": "pocao_hp",
+  "nome": "Poção Vermelha Grande",
+  "desc": "Cura 40 de chama.",
+  "icone": "frasco",
+  "cor": "#e2452b",
+  "carga": 4,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "curar",
+    {
+     "qtd": 40
+    }
+   ]
+  ]
+ },
+ {
+  "id": "bomba_cruz",
+  "nome": "Bomba de Pavio Curto",
+  "desc": "Explode em volta e solta 4 chamas em cruz.",
+  "icone": "bomba",
+  "cor": "#1b1325",
+  "carga": 2,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "explosao",
+    {
+     "onde": "jogador",
+     "raio": 30,
+     "dano": 10
+    }
+   ],
+   [
+    "anel",
+    {
+     "n": 4,
+     "dano": 6,
+     "vel": 160,
+     "tex": "bala_grande",
+     "cor": "#ff9a2e",
+     "perfura": 99
+    }
+   ]
+  ]
+ },
+ {
+  "id": "ocarina_tempo",
+  "nome": "Ocarina do Tempo",
+  "desc": "Toca a música: câmera lenta longa e cura.",
+  "icone": "sopro",
+  "cor": "#4fa8ff",
+  "carga": 4,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "lento",
+    {
+     "escala": 0.3,
+     "ms": 3000
+    }
+   ],
+   [
+    "curar",
+    {
+     "qtd": 10
+    }
+   ]
+  ]
+ },
+ {
+  "id": "flecha_luz",
+  "nome": "Flechas de Luz",
+  "desc": "Um leque de 9 flechas de luz que atravessam.",
+  "icone": "pena",
+  "cor": "#fff4b0",
+  "carga": 2,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "leque",
+    {
+     "n": 9,
+     "abertura": 50,
+     "dano": 4,
+     "perfura": 3,
+     "tex": "agulha",
+     "cor": "#fff4b0",
+     "vel": 340
+    }
+   ]
+  ]
+ },
+ {
+  "id": "bau_mimico",
+  "nome": "Baú Mímico",
+  "desc": "Abre a boca: solta 15 gotas de cera... e morde.",
+  "icone": "cubo",
+  "cor": "#8a5a2b",
+  "carga": 3,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "cera",
+    {
+     "n": 15,
+     "onde": "jogador"
+    }
+   ],
+   [
+    "sangria",
+    {
+     "dano": 6,
+     "cura": 3
+    }
+   ]
+  ]
+ },
+ {
+  "id": "kit_medico",
+  "nome": "Kit Médico",
+  "desc": "Cura 20 e dá um escudo.",
+  "icone": "cubo",
+  "cor": "#ffffff",
+  "carga": 3,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "curar",
+    {
+     "qtd": 20
+    }
+   ],
+   [
+    "escudo",
+    {}
+   ]
+  ]
+ },
+ {
+  "id": "luva_antigravidade",
+  "nome": "Luva Antigravidade",
+  "desc": "Puxa tudo para onde você mira e solta numa explosão.",
+  "icone": "mao",
+  "cor": "#ff9a2e",
+  "carga": 3,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "buracoNegro",
+    {
+     "seg": 2,
+     "raio": 50,
+     "dano": 10
+    }
+   ]
+  ]
+ },
+ {
+  "id": "ataque_aereo",
+  "nome": "Ataque Aéreo",
+  "desc": "Pede reforço: 8 bombas caem nos monstros.",
+  "icone": "pergaminho",
+  "cor": "#e2452b",
+  "carga": 5,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "meteoro",
+    {
+     "n": 8,
+     "dano": 9,
+     "raio": 22
+    }
+   ]
+  ]
+ },
+ {
+  "id": "escudo_energia",
+  "nome": "Escudo de Energia",
+  "desc": "Recarrega o escudo e fica intocável por 1,5s.",
+  "icone": "escudo",
+  "cor": "#7fd7ff",
+  "carga": 2,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "escudo",
+    {}
+   ],
+   [
+    "invulneravel",
+    {
+     "seg": 1.5
+    }
+   ]
+  ]
+ },
+ {
+  "id": "moeda_dobrada",
+  "nome": "Moeda Dobrada",
+  "desc": "Cara: cera. Coroa: críticos. Dá os dois.",
+  "icone": "moeda",
+  "cor": "#ffd23f",
+  "carga": 2,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "cera",
+    {
+     "n": 6,
+     "onde": "jogador"
+    }
+   ],
+   [
+    "criticos",
+    {
+     "n": 6
+    }
+   ]
+  ]
+ },
+ {
+  "id": "totem_imortal",
+  "nome": "Totem da Imortalidade",
+  "desc": "Intocável por 2s e cura 15.",
+  "icone": "runa",
+  "cor": "#ffd23f",
+  "carga": 4,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "invulneravel",
+    {
+     "seg": 2
+    }
+   ],
+   [
+    "curar",
+    {
+     "qtd": 15
+    }
+   ]
+  ]
+ },
+ {
+  "id": "bola_neve",
+  "nome": "Bola de Neve Gigante",
+  "desc": "Leque de bolas de neve que congelam.",
+  "icone": "floco",
+  "cor": "#ffffff",
+  "carga": 2,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "leque",
+    {
+     "n": 7,
+     "abertura": 40,
+     "dano": 3,
+     "congela": 0.6,
+     "cor": "#ffffff"
+    }
+   ]
+  ]
+ },
+ {
+  "id": "cartucho_bonus",
+  "nome": "Cartucho Bônus",
+  "desc": "Munição cheia e 5 tiros de graça.",
+  "icone": "pente",
+  "cor": "#7d8494",
+  "carga": 3,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "municao",
+    {}
+   ],
+   [
+    "eco",
+    {}
+   ],
+   [
+    "eco",
+    {}
+   ],
+   [
+    "eco",
+    {}
+   ],
+   [
+    "eco",
+    {}
+   ],
+   [
+    "eco",
+    {}
+   ]
+  ]
+ },
+ {
+  "id": "pokebola",
+  "nome": "Bola de Captura",
+  "desc": "Joga a bola: um bichinho caça os monstros por 15s.",
+  "icone": "esfera",
+  "cor": "#e2452b",
+  "carga": 4,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "caes",
+    {
+     "n": 1,
+     "seg": 15,
+     "cor": "#ffd23f"
+    }
+   ]
+  ]
+ },
+ {
+  "id": "jutsu_clones",
+  "nome": "Jutsu dos Clones das Sombras",
+  "desc": "Dois clones atiram junto com você por 10s.",
+  "icone": "bandana",
+  "cor": "#4f9dff",
+  "carga": 4,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "clone",
+    {
+     "seg": 10
+    }
+   ]
+  ]
+ },
+ {
+  "id": "esfera_coletiva",
+  "nome": "Esfera de Energia Coletiva",
+  "desc": "Levanta as mãos: uma esfera gigante e lenta.",
+  "icone": "esfera",
+  "cor": "#7fd7ff",
+  "carga": 7,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "projetilGigante",
+    {
+     "dano": 60,
+     "tam": 5,
+     "cor": "#7fd7ff",
+     "vel": 110
+    }
+   ]
+  ]
+ },
+ {
+  "id": "corte_lunar",
+  "nome": "Corte Lunar",
+  "desc": "Um leque de lâminas de energia negra.",
+  "icone": "mascara",
+  "cor": "#1b1325",
+  "carga": 3,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "leque",
+    {
+     "n": 5,
+     "abertura": 30,
+     "dano": 8,
+     "perfura": 99,
+     "tex": "serra",
+     "cor": "#e2452b",
+     "vel": 280
+    }
+   ]
+  ]
+ },
+ {
+  "id": "respiracao_trovao",
+  "nome": "Respiração do Trovão",
+  "desc": "Um dash relâmpago e raios em todos.",
+  "icone": "raio",
+  "cor": "#ffe066",
+  "carga": 3,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "dashLongo",
+    {}
+   ],
+   [
+    "raioCeu",
+    {
+     "n": 6,
+     "dano": 5
+    }
+   ]
+  ]
+ },
+ {
+  "id": "respiracao_agua",
+  "nome": "Respiração da Água",
+  "desc": "Ondas que cortam e empurram em volta.",
+  "icone": "lagrima",
+  "cor": "#4f9dff",
+  "carga": 3,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "anel",
+    {
+     "n": 20,
+     "dano": 2.5,
+     "tex": "serra",
+     "cor": "#7fd7ff",
+     "perfura": 2
+    }
+   ],
+   [
+    "empurrar",
+    {
+     "raio": 70,
+     "forca": 260
+    }
+   ]
+  ]
+ },
+ {
+  "id": "olho_copiador_a",
+  "nome": "Olho que Copia",
+  "desc": "Copia o golpe: as balas inimigas viram suas.",
+  "icone": "olho",
+  "cor": "#e2452b",
+  "carga": 3,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "apagarBalas",
+    {
+     "converter": true
+    }
+   ]
+  ]
+ },
+ {
+  "id": "pagina_arrancada",
+  "nome": "Página Arrancada",
+  "desc": "Escreve um nome: mata quem tem menos de 40% da vida.",
+  "icone": "livro",
+  "cor": "#2a2033",
+  "carga": 4,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "matarFracos",
+    {
+     "fracao": 0.4
+    }
+   ]
+  ]
+ },
+ {
+  "id": "rajada_socos",
+  "nome": "Stand: Rajada de Socos",
+  "desc": "ORA ORA! Cadência x3 por 3s e 3 tiros de graça.",
+  "icone": "mao",
+  "cor": "#c86bff",
+  "carga": 4,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "buff",
+    {
+     "stat": "cadencia",
+     "mult": 3,
+     "seg": 3
+    }
+   ],
+   [
+    "eco",
+    {}
+   ],
+   [
+    "eco",
+    {}
+   ],
+   [
+    "eco",
+    {}
+   ]
+  ]
+ },
+ {
+  "id": "mundo_parado",
+  "nome": "O Mundo Parado",
+  "desc": "Para o tempo: tudo trava 4s e as balas somem.",
+  "icone": "relogio_p",
+  "cor": "#ffd23f",
+  "carga": 6,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "paralisar",
+    {
+     "seg": 4
+    }
+   ],
+   [
+    "apagarBalas",
+    {}
+   ],
+   [
+    "lento",
+    {
+     "escala": 0.25,
+     "ms": 1200
+    }
+   ]
+  ]
+ },
+ {
+  "id": "manto_raposa",
+  "nome": "Manto da Raposa",
+  "desc": "Chama laranja: dano x1,6 e lâminas de fogo por 8s.",
+  "icone": "chama",
+  "cor": "#ff9a2e",
+  "carga": 5,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "buff",
+    {
+     "stat": "dano",
+     "mult": 1.6,
+     "seg": 8
+    }
+   ],
+   [
+    "queimar",
+    {
+     "seg": 4
+    }
+   ],
+   [
+    "laminas",
+    {
+     "n": 3,
+     "seg": 8,
+     "dano": 2,
+     "cor": "#ff9a2e"
+    }
+   ]
+  ]
+ },
+ {
+  "id": "roda_adaptacao",
+  "nome": "Roda da Adaptação",
+  "desc": "Gira: escudo, cura e um golpe em tudo.",
+  "icone": "runa",
+  "cor": "#cfd8dc",
+  "carga": 5,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "escudo",
+    {}
+   ],
+   [
+    "curar",
+    {
+     "qtd": 12
+    }
+   ],
+   [
+    "danoTodos",
+    {
+     "dano": 6
+    }
+   ]
+  ]
+ },
+ {
+  "id": "grito_tita",
+  "nome": "Grito do Titã",
+  "desc": "Um rugido que trava e empurra tudo.",
+  "icone": "dente",
+  "cor": "#a0784a",
+  "carga": 4,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "paralisar",
+    {
+     "seg": 2
+    }
+   ],
+   [
+    "empurrar",
+    {
+     "raio": 160,
+     "forca": 400,
+     "dano": 2
+    }
+   ]
+  ]
+ },
+ {
+  "id": "kunai_explosiva",
+  "nome": "Kunai Explosiva",
+  "desc": "Teleporta para onde mira e explode.",
+  "icone": "pena",
+  "cor": "#ff4a2e",
+  "carga": 2,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "teleporte",
+    {}
+   ],
+   [
+    "explosao",
+    {
+     "onde": "jogador",
+     "raio": 32,
+     "dano": 9
+    }
+   ]
+  ]
+ },
+ {
+  "id": "sabre_luz",
+  "nome": "Sabre de Luz",
+  "desc": "Lâminas de luz giram em você por 6s.",
+  "icone": "cristal",
+  "cor": "#4fa8ff",
+  "carga": 3,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "laminas",
+    {
+     "n": 3,
+     "seg": 6,
+     "dano": 3,
+     "cor": "#7fd7ff"
+    }
+   ]
+  ]
+ },
+ {
+  "id": "empurrao_forca",
+  "nome": "Empurrão da Força",
+  "desc": "Use a Força: empurra tudo e apaga as balas.",
+  "icone": "mao",
+  "cor": "#7fd7ff",
+  "carga": 2,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "empurrar",
+    {
+     "raio": 200,
+     "forca": 450,
+     "dano": 2
+    }
+   ],
+   [
+    "apagarBalas",
+    {}
+   ]
+  ]
+ },
+ {
+  "id": "pocao_polissuco",
+  "nome": "Poção Polissuco",
+  "desc": "Vira outra pessoa: um monstro troca de lugar com você.",
+  "icone": "frasco",
+  "cor": "#8a7a4a",
+  "carga": 2,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "teleporte",
+    {
+     "para": "inimigo"
+    }
+   ],
+   [
+    "invulneravel",
+    {
+     "seg": 1
+    }
+   ]
+  ]
+ },
+ {
+  "id": "volta_tempo",
+  "nome": "Volta no Tempo",
+  "desc": "Cura 30 e o tempo desacelera.",
+  "icone": "ampulheta",
+  "cor": "#ffd23f",
+  "carga": 5,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "curar",
+    {
+     "qtd": 30
+    }
+   ],
+   [
+    "lento",
+    {
+     "escala": 0.5,
+     "ms": 800
+    }
+   ]
+  ]
+ },
+ {
+  "id": "martelo_trovao",
+  "nome": "Martelo do Trovão",
+  "desc": "Só os dignos: 10 raios caem do céu.",
+  "icone": "raio",
+  "cor": "#cfd8dc",
+  "carga": 5,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "raioCeu",
+    {
+     "n": 10,
+     "dano": 7
+    }
+   ]
+  ]
+ },
+ {
+  "id": "manopla",
+  "nome": "Manopla das Joias",
+  "desc": "Estala os dedos: metade da sala vira pó.",
+  "icone": "mao",
+  "cor": "#ffd23f",
+  "carga": 8,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "matarFracos",
+    {
+     "fracao": 0.55
+    }
+   ],
+   [
+    "danoTodos",
+    {
+     "dano": 10
+    }
+   ]
+  ]
+ },
+ {
+  "id": "neuralizador",
+  "nome": "Neuralizador",
+  "desc": "Flash! Todos ficam atordoados por 3s.",
+  "icone": "lente",
+  "cor": "#ffffff",
+  "carga": 3,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "paralisar",
+    {
+     "seg": 3
+    }
+   ]
+  ]
+ },
+ {
+  "id": "armadilha_fantasmas",
+  "nome": "Armadilha de Fantasmas",
+  "desc": "Suga tudo para onde você mira e prende.",
+  "icone": "cubo",
+  "cor": "#ffe066",
+  "carga": 3,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "buracoNegro",
+    {
+     "seg": 3,
+     "raio": 60,
+     "dano": 5,
+     "onde": "mira"
+    }
+   ],
+   [
+    "paralisar",
+    {
+     "seg": 1
+    }
+   ]
+  ]
+ },
+ {
+  "id": "capacitor_fluxo",
+  "nome": "Capacitor de Fluxo",
+  "desc": "88 milhas por hora: dash longo e câmera lenta.",
+  "icone": "raio",
+  "cor": "#7fd7ff",
+  "carga": 2,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "dashLongo",
+    {}
+   ],
+   [
+    "lento",
+    {
+     "escala": 0.4,
+     "ms": 1000
+    }
+   ]
+  ]
+ },
+ {
+  "id": "tempo_bala",
+  "nome": "Tempo de Bala",
+  "desc": "Câmera lenta longa e as balas inimigas viram suas.",
+  "icone": "pilula",
+  "cor": "#7fdc8a",
+  "carga": 5,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "lento",
+    {
+     "escala": 0.25,
+     "ms": 2500
+    }
+   ],
+   [
+    "apagarBalas",
+    {
+     "converter": true
+    }
+   ]
+  ]
+ },
+ {
+  "id": "chave_sonica_a",
+  "nome": "Chave Sônica",
+  "desc": "Abre portas: um tremor que racha as paredes.",
+  "icone": "chave",
+  "cor": "#7fdc8a",
+  "carga": 1,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "terremoto",
+    {
+     "dano": 2
+    }
+   ]
+  ]
+ },
+ {
+  "id": "cabine_tempo",
+  "nome": "Cabine no Tempo",
+  "desc": "Some e aparece num lugar seguro, curado.",
+  "icone": "cubo",
+  "cor": "#2a4fd0",
+  "carga": 3,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "teleporte",
+    {
+     "para": "aleatorio"
+    }
+   ],
+   [
+    "curar",
+    {
+     "qtd": 12
+    }
+   ]
+  ]
+ },
+ {
+  "id": "flor_invertida",
+  "nome": "Flor do Mundo Invertido",
+  "desc": "Pétalas: um anel de 24 balas que atravessam.",
+  "icone": "trevo",
+  "cor": "#e2452b",
+  "carga": 3,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "anel",
+    {
+     "n": 24,
+     "dano": 2.5,
+     "perfura": 2,
+     "cor": "#e2452b"
+    }
+   ]
+  ]
+ },
+ {
+  "id": "walkie_talkie",
+  "nome": "Walkie-Talkie",
+  "desc": "Chama os amigos: 2 cães e uma torre de luz.",
+  "icone": "sino",
+  "cor": "#ffd23f",
+  "carga": 5,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "caes",
+    {
+     "n": 2,
+     "seg": 12
+    }
+   ],
+   [
+    "torre",
+    {}
+   ]
+  ]
+ },
+ {
+  "id": "sapatos_rubi",
+  "nome": "Sapatos de Rubi",
+  "desc": "Bata os calcanhares: some, cura e ganha escudo.",
+  "icone": "sapato",
+  "cor": "#e2452b",
+  "carga": 3,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "teleporte",
+    {
+     "para": "aleatorio"
+    }
+   ],
+   [
+    "curar",
+    {
+     "qtd": 15
+    }
+   ],
+   [
+    "escudo",
+    {}
+   ]
+  ]
+ },
+ {
+  "id": "flauta_magica",
+  "nome": "Flauta Mágica",
+  "desc": "Os monstros dançam: travam 2s e levam dano.",
+  "icone": "sopro",
+  "cor": "#ffd23f",
+  "carga": 3,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "paralisar",
+    {
+     "seg": 2
+    }
+   ],
+   [
+    "danoTodos",
+    {
+     "dano": 3
+    }
+   ]
+  ]
+ },
+ {
+  "id": "lampada_genio_a",
+  "nome": "Lâmpada do Gênio",
+  "desc": "Três desejos: cura, cera e críticos.",
+  "icone": "lamparina",
+  "cor": "#ffd23f",
+  "carga": 6,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "curar",
+    {
+     "qtd": 20
+    }
+   ],
+   [
+    "cera",
+    {
+     "n": 10,
+     "onde": "jogador"
+    }
+   ],
+   [
+    "criticos",
+    {
+     "n": 10
+    }
+   ]
+  ]
+ },
+ {
+  "id": "tesoura_destino",
+  "nome": "Tesoura do Destino",
+  "desc": "Corta os fios: mata quem tem menos de 30% e cura.",
+  "icone": "mao",
+  "cor": "#cfd8dc",
+  "carga": 3,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "matarFracos",
+    {
+     "fracao": 0.3
+    }
+   ],
+   [
+    "curar",
+    {
+     "qtd": 8
+    }
+   ]
+  ]
+ },
+ {
+  "id": "raio_encolhedor_a",
+  "nome": "Controle Remoto Universal",
+  "desc": "Pausa: tudo para por 2s.",
+  "icone": "cubo",
+  "cor": "#3b3f4a",
+  "carga": 3,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "paralisar",
+    {
+     "seg": 2
+    }
+   ],
+   [
+    "lento",
+    {
+     "escala": 0.3,
+     "ms": 800
+    }
+   ]
+  ]
+ },
+ {
+  "id": "vulcao",
+  "nome": "Vulcão de Bolso",
+  "desc": "Erupção: 6 meteoros e fogo em todos.",
+  "icone": "pedra",
+  "cor": "#e2452b",
+  "carga": 5,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "meteoro",
+    {
+     "n": 6,
+     "dano": 10
+    }
+   ],
+   [
+    "queimar",
+    {
+     "seg": 4
+    }
+   ]
+  ]
+ },
+ {
+  "id": "arco_iris",
+  "nome": "Arco-Íris",
+  "desc": "Sete cores: um leque largo de 21 balas.",
+  "icone": "estrela",
+  "cor": "#ff5af0",
+  "carga": 3,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "leque",
+    {
+     "n": 21,
+     "abertura": 120,
+     "dano": 2.5,
+     "cor": "#ff5af0"
+    }
+   ]
+  ]
+ },
+ {
+  "id": "ninho_vespas",
+  "nome": "Ninho de Vespas",
+  "desc": "14 vespas que perseguem e envenenam.",
+  "icone": "frasco",
+  "cor": "#ffd23f",
+  "carga": 3,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "teleguiadas",
+    {
+     "n": 14,
+     "dano": 1.5,
+     "cor": "#ffd23f"
+    }
+   ],
+   [
+    "envenenar",
+    {
+     "seg": 3
+    }
+   ]
+  ]
+ },
+ {
+  "id": "inverno_eterno",
+  "nome": "Inverno Eterno",
+  "desc": "Congela a sala 4s e espalha gelo no chão.",
+  "icone": "floco",
+  "cor": "#bfefff",
+  "carga": 4,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "congelar",
+    {
+     "seg": 4
+    }
+   ],
+   [
+    "nuvem",
+    {
+     "onde": "jogador",
+     "raio": 50,
+     "seg": 6,
+     "dps": 1,
+     "tipo": "gelo"
+    }
+   ]
+  ]
+ },
+ {
+  "id": "chuva_acida",
+  "nome": "Chuva Ácida",
+  "desc": "Envenena a sala e solta uma nuvem onde mira.",
+  "icone": "lagrima",
+  "cor": "#9cff6b",
+  "carga": 3,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "envenenar",
+    {
+     "seg": 6
+    }
+   ],
+   [
+    "nuvem",
+    {
+     "onde": "mira",
+     "raio": 40,
+     "seg": 6,
+     "dps": 3,
+     "tipo": "veneno"
+    }
+   ]
+  ]
+ },
+ {
+  "id": "tempestade_laminas",
+  "nome": "Tempestade de Lâminas",
+  "desc": "8 lâminas giram em você por 5s.",
+  "icone": "osso",
+  "cor": "#cfd8dc",
+  "carga": 4,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "laminas",
+    {
+     "n": 8,
+     "seg": 5,
+     "dano": 1.8
+    }
+   ]
+  ]
+ },
+ {
+  "id": "velas_bolo",
+  "nome": "Velas de Aniversário",
+  "desc": "Faça um pedido: um anel de 16 fogos de artifício.",
+  "icone": "bolo",
+  "cor": "#ff8ac8",
+  "carga": 3,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "anel",
+    {
+     "n": 16,
+     "dano": 3,
+     "tex": "foguete",
+     "cor": "#ff5af0",
+     "vel": 200
+    }
+   ]
+  ]
+ },
+ {
+  "id": "farol",
+  "nome": "Farol",
+  "desc": "Um feixe gira em volta de você por 4s.",
+  "icone": "lamparina",
+  "cor": "#fff4b0",
+  "carga": 4,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "laserGiro",
+    {
+     "seg": 4,
+     "dano": 7
+    }
+   ]
+  ]
+ },
+ {
+  "id": "ventilador",
+  "nome": "Ventilador de Teto",
+  "desc": "Empurra tudo e acelera você.",
+  "icone": "pena",
+  "cor": "#c8f0e0",
+  "carga": 1,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "empurrar",
+    {
+     "raio": 120,
+     "forca": 300
+    }
+   ],
+   [
+    "buff",
+    {
+     "stat": "velocidade",
+     "mult": 1.4,
+     "seg": 4
+    }
+   ]
+  ]
+ },
+ {
+  "id": "ima_gigante",
+  "nome": "Ímã Gigante",
+  "desc": "Atrai fortuna: solta 6 gotas de cera em você.",
+  "icone": "ima",
+  "cor": "#e2452b",
+  "carga": 2,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "cera",
+    {
+     "n": 6,
+     "onde": "jogador"
+    }
+   ]
+  ]
+ },
+ {
+  "id": "bola_cristal",
+  "nome": "Bola de Cristal",
+  "desc": "Vê o futuro: revela o mapa e dá 5 críticos.",
+  "icone": "esfera",
+  "cor": "#c8a0ff",
+  "carga": 3,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "revelarMapa",
+    {}
+   ],
+   [
+    "criticos",
+    {
+     "n": 5
+    }
+   ]
+  ]
+ },
+ {
+  "id": "ampulheta_areia",
+  "nome": "Ampulheta de Areia",
+  "desc": "Câmera lenta e pernas mais rápidas.",
+  "icone": "ampulheta",
+  "cor": "#e8d8b0",
+  "carga": 2,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "lento",
+    {
+     "escala": 0.3,
+     "ms": 1500
+    }
+   ],
+   [
+    "buff",
+    {
+     "stat": "velocidade",
+     "mult": 1.2,
+     "seg": 3
+    }
+   ]
+  ]
+ },
+ {
+  "id": "banana_dinamite",
+  "nome": "Banana de Dinamite",
+  "desc": "Joga onde mira: explosão enorme.",
+  "icone": "dinamite",
+  "cor": "#e2452b",
+  "carga": 3,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "explosao",
+    {
+     "onde": "mira",
+     "raio": 60,
+     "dano": 20
+    }
+   ]
+  ]
+ },
+ {
+  "id": "caixa_minas",
+  "nome": "Caixa de Minas",
+  "desc": "Planta 10 minas em volta.",
+  "icone": "barril",
+  "cor": "#7d8494",
+  "carga": 3,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "minas",
+    {
+     "n": 10,
+     "dano": 10
+    }
+   ]
+  ]
+ },
+ {
+  "id": "incenso",
+  "nome": "Incenso Sagrado",
+  "desc": "Fumaça que queima os monstros em volta e cura 10.",
+  "icone": "votiva",
+  "cor": "#c8a0ff",
+  "carga": 3,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "nuvem",
+    {
+     "onde": "jogador",
+     "raio": 60,
+     "seg": 6,
+     "dps": 3,
+     "tipo": "fogo"
+    }
+   ],
+   [
+    "curar",
+    {
+     "qtd": 10
+    }
+   ]
+  ]
+ },
+ {
+  "id": "olho_tempestade",
+  "nome": "Olho da Tempestade",
+  "desc": "Raios em cadeia saem de você 3 vezes.",
+  "icone": "olho",
+  "cor": "#ffe066",
+  "carga": 3,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "raios",
+    {
+     "saltos": 6,
+     "dano": 4
+    }
+   ],
+   [
+    "raios",
+    {
+     "saltos": 6,
+     "dano": 4
+    }
+   ],
+   [
+    "raios",
+    {
+     "saltos": 6,
+     "dano": 4
+    }
+   ]
+  ]
+ },
+ {
+  "id": "espelho_duplo",
+  "nome": "Espelho Duplo",
+  "desc": "Duas cópias suas por 6s e um escudo.",
+  "icone": "espelho",
+  "cor": "#e8f0ff",
+  "carga": 4,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "clone",
+    {
+     "seg": 6
+    }
+   ],
+   [
+    "escudo",
+    {}
+   ]
+  ]
+ },
+ {
+  "id": "sangue_frio",
+  "nome": "Sangue Frio",
+  "desc": "Gela a sala e suga a vida de 4 monstros.",
+  "icone": "gota_sangue",
+  "cor": "#8fe3ff",
+  "carga": 4,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "congelar",
+    {
+     "seg": 2
+    }
+   ],
+   [
+    "sangria",
+    {
+     "dano": 5,
+     "cura": 3
+    }
+   ],
+   [
+    "sangria",
+    {
+     "dano": 5,
+     "cura": 3
+    }
+   ],
+   [
+    "sangria",
+    {
+     "dano": 5,
+     "cura": 3
+    }
+   ],
+   [
+    "sangria",
+    {
+     "dano": 5,
+     "cura": 3
+    }
+   ]
+  ]
+ },
+ {
+  "id": "show_fogos",
+  "nome": "Show de Fogos",
+  "desc": "5 meteoros coloridos e um leque de foguetes.",
+  "icone": "estrela",
+  "cor": "#ffd23f",
+  "carga": 4,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "meteoro",
+    {
+     "n": 5,
+     "dano": 7
+    }
+   ],
+   [
+    "leque",
+    {
+     "n": 7,
+     "abertura": 70,
+     "dano": 3,
+     "tex": "foguete",
+     "cor": "#ff5af0"
+    }
+   ]
+  ]
+ },
+ {
+  "id": "cartola",
+  "nome": "Cartola do Mágico",
+  "desc": "Tira da cartola: 3 cães, cera e um escudo.",
+  "icone": "chapeu",
+  "cor": "#1b1325",
+  "carga": 5,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "caes",
+    {
+     "n": 3,
+     "seg": 10,
+     "cor": "#ffffff"
+    }
+   ],
+   [
+    "cera",
+    {
+     "n": 5,
+     "onde": "jogador"
+    }
+   ],
+   [
+    "escudo",
+    {}
+   ]
+  ]
+ },
+ {
+  "id": "relampago_globular",
+  "nome": "Relâmpago Globular",
+  "desc": "Uma esfera elétrica onde mira e raios em cadeia.",
+  "icone": "raio",
+  "cor": "#ffe066",
+  "carga": 3,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "buracoNegro",
+    {
+     "seg": 3,
+     "raio": 30,
+     "dano": 4,
+     "onde": "mira"
+    }
+   ],
+   [
+    "raios",
+    {
+     "saltos": 5,
+     "dano": 3
+    }
+   ]
+  ]
+ },
+ {
+  "id": "quebra_cabeca",
+  "nome": "Quebra-Cabeça Antigo",
+  "desc": "Rola os itens da sala e troca sua arma.",
+  "icone": "cubo",
+  "cor": "#ffd23f",
+  "carga": 4,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "rolarItens",
+    {}
+   ],
+   [
+    "trocarArma",
+    {}
+   ]
+  ]
+ },
+ {
+  "id": "furia_berserker",
+  "nome": "Fúria Berserker",
+  "desc": "Perde 15 de chama: dano x2 e cadência x1,5 por 8s.",
+  "icone": "mascara",
+  "cor": "#e2452b",
+  "carga": 2,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "custo",
+    {
+     "chama": 15
+    }
+   ],
+   [
+    "buff",
+    {
+     "stat": "dano",
+     "mult": 2,
+     "seg": 8
+    }
+   ],
+   [
+    "buff",
+    {
+     "stat": "cadencia",
+     "mult": 1.5,
+     "seg": 8
+    }
+   ]
+  ]
+ },
+ {
+  "id": "oracao",
+  "nome": "Oração da Velinha",
+  "desc": "Cura 15 e protege por 2s.",
+  "icone": "votiva",
+  "cor": "#fff4b0",
+  "carga": 3,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "curar",
+    {
+     "qtd": 15
+    }
+   ],
+   [
+    "invulneravel",
+    {
+     "seg": 2
+    }
+   ]
+  ]
+ },
+ {
+  "id": "tufao",
+  "nome": "Tufão",
+  "desc": "Um ciclone puxa os monstros para você e corta.",
+  "icone": "sopro",
+  "cor": "#c8f0e0",
+  "carga": 3,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "buracoNegro",
+    {
+     "seg": 2.5,
+     "raio": 70,
+     "dano": 3,
+     "onde": "jogador"
+    }
+   ],
+   [
+    "laminas",
+    {
+     "n": 3,
+     "seg": 3,
+     "dano": 2
+    }
+   ]
+  ]
+ },
+ {
+  "id": "sementes_explosivas",
+  "nome": "Sementes Explosivas",
+  "desc": "Planta 5 minas e envenena a sala.",
+  "icone": "trevo",
+  "cor": "#7fdc8a",
+  "carga": 3,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "minas",
+    {
+     "n": 5,
+     "dano": 8
+    }
+   ],
+   [
+    "envenenar",
+    {
+     "seg": 3
+    }
+   ]
+  ]
+ },
+ {
+  "id": "eclipse",
+  "nome": "Eclipse",
+  "desc": "Escuridão: intocável 2s, todos levam dano e você ganha críticos.",
+  "icone": "esfera",
+  "cor": "#1b1325",
+  "carga": 4,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "invulneravel",
+    {
+     "seg": 2
+    }
+   ],
+   [
+    "danoTodos",
+    {
+     "dano": 7
+    }
+   ],
+   [
+    "criticos",
+    {
+     "n": 5
+    }
+   ]
+  ]
+ },
+ {
+  "id": "metralha_cera",
+  "nome": "Metralha de Cera",
+  "desc": "Um leque de 30 gotas de cera quente.",
+  "icone": "gota_sangue",
+  "cor": "#ffb43a",
+  "carga": 3,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "leque",
+    {
+     "n": 30,
+     "abertura": 90,
+     "dano": 1.5,
+     "queima": true,
+     "cor": "#ffb43a"
+    }
+   ]
+  ]
+ },
+ {
+  "id": "raizes_vivas",
+  "nome": "Raízes Vivas",
+  "desc": "Raízes prendem e envenenam todos por 3s.",
+  "icone": "trevo",
+  "cor": "#4a8a3a",
+  "carga": 3,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "paralisar",
+    {
+     "seg": 3
+    }
+   ],
+   [
+    "envenenar",
+    {
+     "seg": 3
+    }
+   ]
+  ]
+ },
+ {
+  "id": "cometa",
+  "nome": "Cometa",
+  "desc": "Uma pedra em chamas que atravessa a sala.",
+  "icone": "pedra",
+  "cor": "#ff9a2e",
+  "carga": 3,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "projetilGigante",
+    {
+     "dano": 25,
+     "tam": 3,
+     "cor": "#ff9a2e",
+     "vel": 260
+    }
+   ],
+   [
+    "queimar",
+    {
+     "seg": 2
+    }
+   ]
+  ]
+ },
+ {
+  "id": "bumerangue_prata",
+  "nome": "Bumerangue de Prata",
+  "desc": "Cinco lâminas em leque que atravessam tudo.",
+  "icone": "bumerangue",
+  "cor": "#cfd8dc",
+  "carga": 2,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "leque",
+    {
+     "n": 5,
+     "abertura": 50,
+     "dano": 4,
+     "perfura": 99,
+     "tex": "serra",
+     "cor": "#cfd8dc",
+     "vel": 220
+    }
+   ]
+  ]
+ },
+ {
+  "id": "harpa_celestial",
+  "nome": "Harpa Celestial",
+  "desc": "Notas que curam 8 e soltam um raio.",
+  "icone": "sino",
+  "cor": "#fff4b0",
+  "carga": 2,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "curar",
+    {
+     "qtd": 8
+    }
+   ],
+   [
+    "raios",
+    {
+     "saltos": 3,
+     "dano": 3
+    }
+   ]
+  ]
+ },
+ {
+  "id": "vela_derretida",
+  "nome": "Vela Derretida",
+  "desc": "Gasta 10 de chama: o chão em volta vira lava.",
+  "icone": "vela_grossa",
+  "cor": "#ff7a2e",
+  "carga": 1,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "custo",
+    {
+     "chama": 10
+    }
+   ],
+   [
+    "nuvem",
+    {
+     "onde": "jogador",
+     "raio": 70,
+     "seg": 6,
+     "dps": 4,
+     "tipo": "fogo"
+    }
+   ]
+  ]
+ },
+ {
+  "id": "pergaminho_fogo",
+  "nome": "Pergaminho de Fogo",
+  "desc": "Um leque de 12 bolas de fogo.",
+  "icone": "pergaminho",
+  "cor": "#ff4a2e",
+  "carga": 2,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "leque",
+    {
+     "n": 12,
+     "abertura": 70,
+     "dano": 3,
+     "queima": true,
+     "cor": "#ff4a2e"
+    }
+   ]
+  ]
+ },
+ {
+  "id": "pergaminho_gelo",
+  "nome": "Pergaminho de Gelo",
+  "desc": "Um leque de 12 estilhaços de gelo.",
+  "icone": "pergaminho",
+  "cor": "#8fe3ff",
+  "carga": 2,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "leque",
+    {
+     "n": 12,
+     "abertura": 70,
+     "dano": 2.5,
+     "congela": 0.5,
+     "tex": "cristal",
+     "cor": "#8fe3ff"
+    }
+   ]
+  ]
+ },
+ {
+  "id": "pergaminho_trovao",
+  "nome": "Pergaminho do Trovão",
+  "desc": "Raios caem em 8 monstros.",
+  "icone": "pergaminho",
+  "cor": "#ffe066",
+  "carga": 3,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "raioCeu",
+    {
+     "n": 8,
+     "dano": 6
+    }
+   ]
+  ]
+ },
+ {
+  "id": "moeda_barqueiro",
+  "nome": "Moeda do Barqueiro",
+  "desc": "Paga a travessia: perde 10 de chama e mata os fracos.",
+  "icone": "moeda",
+  "cor": "#7d8494",
+  "carga": 3,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "custo",
+    {
+     "chama": 10
+    }
+   ],
+   [
+    "matarFracos",
+    {
+     "fracao": 0.5
+    }
+   ]
+  ]
+ },
+ {
+  "id": "orbe_sombras",
+  "nome": "Orbe das Sombras",
+  "desc": "Clones, críticos e intocável: o kit do assassino.",
+  "icone": "orbe",
+  "cor": "#b06bff",
+  "carga": 5,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "clone",
+    {
+     "seg": 5
+    }
+   ],
+   [
+    "criticos",
+    {
+     "n": 8
+    }
+   ],
+   [
+    "invulneravel",
+    {
+     "seg": 1
+    }
+   ]
+  ]
+ },
+ {
+  "id": "pedra_runas",
+  "nome": "Pedra das Runas",
+  "desc": "Escudo, lâminas e câmera lenta.",
+  "icone": "runa",
+  "cor": "#c8a0ff",
+  "carga": 4,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "escudo",
+    {}
+   ],
+   [
+    "laminas",
+    {
+     "n": 4,
+     "seg": 5,
+     "dano": 2
+    }
+   ],
+   [
+    "lento",
+    {
+     "escala": 0.5,
+     "ms": 800
+    }
+   ]
+  ]
+ },
+ {
+  "id": "apito_dragao",
+  "nome": "Apito do Dragão",
+  "desc": "Um dragão passa: fogo em tudo e 4 meteoros.",
+  "icone": "sopro",
+  "cor": "#e2452b",
+  "carga": 6,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "queimar",
+    {
+     "seg": 6
+    }
+   ],
+   [
+    "meteoro",
+    {
+     "n": 4,
+     "dano": 12,
+     "raio": 30
+    }
+   ]
+  ]
+ },
+ {
+  "id": "ultima_chama",
+  "nome": "A Última Chama",
+  "desc": "Enche a chama, +5 de chama máxima e intocável 2s.",
+  "icone": "chama",
+  "cor": "#fff4b0",
+  "carga": 8,
+  "efeito": "composto",
+  "efeitos": [
+   [
+    "curar",
+    {
+     "qtd": 999
+    }
+   ],
+   [
+    "chamaMax",
+    {
+     "qtd": 5
+    }
+   ],
+   [
+    "invulneravel",
+    {
+     "seg": 2
+    }
+   ]
+  ]
+ }
+]

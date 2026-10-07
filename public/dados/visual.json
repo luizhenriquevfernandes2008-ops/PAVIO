@@ -1,0 +1,193 @@
+{
+  "_leia": "Liga a arte do jogo aos quadros do pack 0x72 (public/assets/0x72). 'anim' é o prefixo do quadro no tile_list.txt (sem o _f0, _f1...). Para usar outro pack, troque o atlas/lista e os nomes. Se o atlas não existir, o jogo usa a arte embutida.",
+  "atlas": "assets/0x72/atlas.png",
+  "lista": "assets/0x72/tile_list.txt",
+  "personagens": [
+    {
+      "id": "vela",
+      "nome": "Vela"
+    },
+    {
+      "id": "cavaleiro",
+      "nome": "Cavaleiro",
+      "atlas": "knight_m"
+    },
+    {
+      "id": "cavaleira",
+      "nome": "Cavaleira",
+      "atlas": "knight_f"
+    },
+    {
+      "id": "elfo",
+      "nome": "Elfo",
+      "atlas": "elf_m"
+    },
+    {
+      "id": "elfa",
+      "nome": "Elfa",
+      "atlas": "elf_f"
+    },
+    {
+      "id": "mago",
+      "nome": "Mago",
+      "atlas": "wizzard_m"
+    },
+    {
+      "id": "maga",
+      "nome": "Maga",
+      "atlas": "wizzard_f"
+    },
+    {
+      "id": "lagarto",
+      "nome": "Lagarto",
+      "atlas": "lizard_m"
+    },
+    {
+      "id": "lagarta",
+      "nome": "Lagarta",
+      "atlas": "lizard_f"
+    },
+    {
+      "id": "anao",
+      "nome": "Anão",
+      "atlas": "dwarf_m"
+    },
+    {
+      "id": "ana_ana",
+      "nome": "Anã",
+      "atlas": "dwarf_f"
+    }
+  ],
+  "inimigos": {
+    "morcego": {
+      "anim": "imp_run_anim"
+    },
+    "esqueleto": {
+      "anim": "skelet_run_anim"
+    },
+    "slime": {
+      "anim": "swampy_anim"
+    },
+    "mago": {
+      "anim": "orc_shaman_run_anim"
+    },
+    "goblin": {
+      "anim": "goblin_run_anim"
+    },
+    "orc": {
+      "anim": "masked_orc_run_anim"
+    },
+    "necromante": {
+      "anim": "necromancer_anim"
+    },
+    "zumbi": {
+      "anim": "tiny_zombie_run_anim"
+    },
+    "apagador": {
+      "anim": "big_demon_run_anim",
+      "escala": 1.6,
+      "corpo": [
+        20,
+        16
+      ]
+    },
+    "carnical": {
+      "anim": "zombie_anim"
+    },
+    "lesminha": {
+      "anim": "tiny_slug_anim"
+    },
+    "lesma": {
+      "anim": "slug_anim"
+    },
+    "abobora": {
+      "anim": "pumpkin_dude_run_anim"
+    },
+    "zumbi_gelo": {
+      "anim": "ice_zombie_anim"
+    },
+    "chifrudo": {
+      "anim": "chort_run_anim"
+    },
+    "anjo": {
+      "anim": "angel_run_anim"
+    },
+    "escudeiro": {
+      "anim": "orc_warrior_run_anim"
+    },
+    "doutor": {
+      "anim": "doc_run_anim"
+    },
+    "wogol": {
+      "anim": "wogol_run_anim"
+    },
+    "ogro": {
+      "anim": "ogre_run_anim",
+      "escala": 1.4,
+      "corpo": [
+        20,
+        16
+      ]
+    },
+    "rei_podre": {
+      "anim": "big_zombie_run_anim",
+      "escala": 1.5,
+      "corpo": [
+        20,
+        16
+      ]
+    }
+  },
+  "cenario": {
+    "piso": [
+      "floor_1",
+      "floor_1",
+      "floor_1",
+      "floor_1",
+      "floor_2",
+      "floor_3",
+      "floor_4",
+      "floor_5",
+      "floor_6",
+      "floor_7",
+      "floor_8"
+    ],
+    "parede": [
+      "wall_mid",
+      "wall_hole_1",
+      "wall_hole_2",
+      "wall_goo"
+    ],
+    "bau": [
+      "chest_full_open_anim_f0",
+      "chest_full_open_anim_f1",
+      "chest_full_open_anim_f2"
+    ],
+    "escada": [
+      "floor_ladder"
+    ],
+    "estandarte": [
+      "wall_banner_red",
+      "wall_banner_blue",
+      "wall_banner_green",
+      "wall_banner_yellow"
+    ],
+    "caveira": [
+      "skull"
+    ],
+    "fonte": [
+      "wall_fountain_mid_red_anim_f0",
+      "wall_fountain_mid_red_anim_f1",
+      "wall_fountain_mid_red_anim_f2"
+    ],
+    "espinhos": [
+      "floor_spikes_anim_f0",
+      "floor_spikes_anim_f1",
+      "floor_spikes_anim_f2",
+      "floor_spikes_anim_f3"
+    ],
+    "caixote": [
+      "crate"
+    ]
+  }
+}
