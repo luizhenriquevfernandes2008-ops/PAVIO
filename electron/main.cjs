@@ -1,12 +1,13 @@
 // PAVIO para desktop: abre o jogo numa janela própria (Electron), 100% offline.
-// O jogo já compilado (pasta dist, feita pelo "vite build") é servido por um protocolo interno
+// O jogo já compilado é servido por um protocolo interno
 // (app://pavio/), assim tudo funciona igual no navegador e o save (localStorage) fica guardado no PC.
 const { app, BrowserWindow, protocol, net, ipcMain, shell, Menu } = require('electron');
 const path = require('path');
 const fs = require('fs');
 const { pathToFileURL } = require('url');
 
-const RAIZ = path.join(__dirname, '..', 'dist');
+// no projeto de desenvolvimento o jogo compilado fica em dist/; na versão publicada, na raiz
+const RAIZ = fs.existsSync(path.join(__dirname, '..', 'dist', 'index.html')) ? path.join(__dirname, '..', 'dist') : path.join(__dirname, '..');
 const HOST = 'pavio';
 
 // gráficos: usa a placa de vídeo dedicada nos notebooks e não deixa o Chromium recusar a GPU
